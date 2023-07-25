@@ -12,10 +12,32 @@ const Footer = ({ translations }) => {
     <div>
       <Container maxWidth="xl">{/* <MessageForm /> */}</Container>
       {/* <MySlider /> */}
-      <div style={{ background: "#fff" }}>
-        {/* <Triangle width="44" height="44"/> */}
-        <Container maxWidth="xl" style={{ padding: "100px 0 53px 0" }}>
-          <Grid container spacing={4}>
+      <div>
+        <Container
+          maxWidth="xl"
+          style={{
+            padding: "76px 0 33px 0",
+            position: "relative",
+          }}
+        >
+          <Triangle width="30" height="30" top="120" left="-100" />
+          <Triangle
+            color="#FFC93C"
+            width="40"
+            height="40"
+            bottom="20"
+            left="650"
+          />
+          <Cloud width="40" height="30" top="50" left="20" />
+          <Cloud width="70" height="35" bottom="50" left="-80" />
+          <Cloud width="70" height="35" bottom="20" right="500" />
+
+          <Cloud width="70" height="35" top="200" right="0" />
+          <Grid
+            container
+            spacing={4}
+            style={{ position: "inherit", zIndex: 100 }}
+          >
             <Grid item xs={12} sm={12} md={12} lg={4}>
               <p className="footer_title">
                 {translations.footer.titleAboutNewroz}

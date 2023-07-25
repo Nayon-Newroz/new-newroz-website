@@ -28,7 +28,7 @@ const theme = createTheme({
   palette: {
     primary: {
       // main: "#40739e",
-      main: "#25316D",
+      main: "#FF7539",
       contrastText: "#fff",
     },
     // secondary: {
@@ -160,9 +160,9 @@ function App(props) {
         >
           <Header translations={translations} setLang={setLang} />
 
-          {/* <div>
-            <Navigation />
-          </div> */}
+          <div>
+            <Navigation lang={lang} />
+          </div>
           <div>
             <Footer translations={translations} />{" "}
           </div>

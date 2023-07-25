@@ -1,6 +1,6 @@
 import React from "react";
 
-const Cloud = ({ width, height, color }) => {
+const Cloud = ({ width, height, color, top, right, bottom, left }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,13 @@ const Cloud = ({ width, height, color }) => {
       height={height || "28"}
       viewBox="0 0 57 28"
       fill="none"
+      style={{
+        position: "absolute",
+        top: top,
+        right: right,
+        bottom: bottom,
+        left: left,
+      }}
     >
       <path
         fill-rule="evenodd"

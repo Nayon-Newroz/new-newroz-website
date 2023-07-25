@@ -3,12 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Test from "../Test";
 
-const Navigation = () => {
+const Navigation = ({ lang }) => {
   return (
     <div>
       {" "}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home lang={lang} />} />
 
         <Route path="/test" element={<Test />} />
       </Routes>

@@ -2,12 +2,21 @@ import React, { useEffect } from "react";
 import "../App.css";
 import { Button, Container, Grid } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import MagicWand from "../svg-icons/MagicWand";
+import Pattern from "../svg-icons/Pattern";
+import CurveLine from "../svg-icons/CurveLine";
+import Plane from "../svg-icons/Plane";
+import Start from "../svg-icons/Start";
+import Cloud from "../svg-icons/Cloud";
+import Triangle from "../svg-icons/Triangle";
+import GlowBG from "../svg-icons/GlowBG";
+import { Transform } from "@mui/icons-material";
 // import "../compoments/MouseDown.css";
 // import Lottie from "lottie-react";
 // import splash from "../animations/splash.json";
 // import UnlockThePower from "../animations/UnlockThePower.json";
 
-const Home = () => {
+const Home = ({ lang }) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -17,37 +26,58 @@ const Home = () => {
   }, []);
 
   return (
-    <div>Home
-      {/* <Container maxWidth="xl" className="container home_circle_bg">
+    <div>
+      <Container maxWidth="xl" style={{ position: "relative" }}>
+        <Cloud width="56" top="50" left="-150" />
+        <Cloud width="120" height="55" top="50" left="350" />
+        <Triangle
+          color="#FFC93C"
+          width="125"
+          height="125"
+          top="150"
+          right="-120"
+        />
+        <Triangle
+          color="white"
+          width="72"
+          height="72"
+          bottom="50"
+          left="-120"
+        />
+        <GlowBG bottom="120px" left="-300px" />
+        <GlowBG color="#113CFC" bottom="120px" right="-300px" />
         <Grid
           container
           alignItems="center"
           className="home_main_section"
           style={{ position: "relative" }}
         >
-          <div id="mouse-animation" className="mouse_holder">
-            <div className="scroll-downs">
-              <div className="mousey">
-                <div className="scroller"></div>
-              </div>
-            </div>
-          </div>
-          <Grid item xs={12} md={6} lg={6} xl={5}>
+          <Grid item xs={12} md={6} lg={6} xl={6}>
             <p
-              className="title_large mb24 hideForMobileViewOnly centerForTabAndMobileViewOnly"
-              data-aos="fade-down"
-              data-aos-delay="300"
-              data-aos-offset="0"
+              className="title_large mb12 hideForMobileViewOnly centerForTabAndMobileViewOnly"
+              style={{ position: "relative" }}
+              // data-aos="fade-down"
+              // data-aos-delay="300"
+              // data-aos-offset="0"
             >
-              Build a powerful,
-              <br /> white-label <br />
-              <span style={{ color: "#CB2027" }}>payments platform</span>.
+              Empowering
+              <Cloud width="120" height="55" top="-100" left="-40" />
+              <Start top="-30" left="0" />
+              <Start width="14" height="14" top="-5" left="25" />
             </p>
             <p
-              className="title_large mb24 showForMobileViewOnly"
-              data-aos="fade-down"
-              data-aos-delay="300"
-              data-aos-offset="0"
+              className="subtitle mb20 hideForMobileViewOnly centerForTabAndMobileViewOnly"
+              // data-aos="fade-down"
+              // data-aos-delay="300"
+              // data-aos-offset="0"
+            >
+              Businesses With Advanced Technology
+            </p>
+            <p
+              className="title_large mb50 showForMobileViewOnly"
+              // data-aos="fade-down"
+              // data-aos-delay="300"
+              // data-aos-offset="0"
             >
               Build a <b>powerful,</b>
               <br /> white-label <br />
@@ -58,43 +88,101 @@ const Home = () => {
             </p>
 
             <p
-              className="text_body_medium mb24 centerForTabAndMobileViewOnly"
-              style={{ maxWidth: "500px" }}
-              data-aos="fade-down"
-              data-aos-delay="600"
-              data-aos-offset="0"
+              className="text_body_medium mb50 centerForTabAndMobileViewOnly"
+              style={{ fontWeight: 400, color: "#525252" }}
+              // data-aos="fade-down"
+              // data-aos-delay="600"
+              // data-aos-offset="0"
             >
-              Our API-driven SaaS platform is a revolutionary way to build
-              digital banking and payment products quickly, without hefty
-              upfront investments, saving time and accelerating release.
+              We are a team of passionate individuals who go the extra mile to
+              create wonderful experiences for your business.
             </p>
-
-            <Button
-              variant="contained"
-              color="error"
-              endIcon={<ArrowForwardIcon />}
-              className="contained_buttton hideForMobileViewOnly hideForTabViewOnly"
-              disableElevation
-              data-aos="fade-down"
-              data-aos-delay="900"
-              data-aos-offset="0"
-            >
-              Get a cot code
-            </Button>
-
-            <div className="center showForTabAndMobileViewOnly">
+            <div style={{ position: "relative" }}>
               <Button
                 variant="contained"
-                color="error"
-                endIcon={<ArrowForwardIcon />}
-                className=""
+                color="primary"
+                startIcon={<MagicWand />}
+                className="contained_buttton"
                 disableElevation
-                data-aos="fade-down"
-                data-aos-delay="900"
-                data-aos-offset="0"
+                // data-aos="fade-down"
+                // data-aos-delay="900"
+                // data-aos-offset="0"
               >
-                Request a demo
+                CONNECT WITH US
               </Button>
+              &nbsp; &nbsp;
+              <Button
+                // variant="contained"
+                color="primary"
+                startIcon={
+                  <div
+                    style={{
+                      height: "27px",
+                      width: "27px",
+                      padding: "14px 11px 14px 17px",
+                      border: "1px solid #FF7539",
+                      borderRadius: "50%",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="19"
+                      height="22"
+                      viewBox="0 0 19 22"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.3657 9.13514C18.6991 9.90494 18.6991 11.8294 17.3657 12.5992L3.11572 20.8265C1.78239 21.5963 0.115722 20.634 0.115722 19.0944L0.115722 2.63994C0.115722 1.10034 1.78239 0.138094 3.11572 0.907894L17.3657 9.13514Z"
+                        fill="#FF7539"
+                      />
+                    </svg>
+                  </div>
+                }
+                className="play_button"
+                disableElevation
+                // data-aos="fade-down"
+                // data-aos-delay="900"
+                // data-aos-offset="0"
+              >
+                &nbsp; How it works
+              </Button>
+              <div style={{ position: "absolute", left: 180 }}>
+                <CurveLine />
+                <div style={{ position: "absolute", top: -81, left: 465 }}>
+                  <Plane />
+                  <div
+                    className="extend"
+                    style={{
+                      background: "#fff",
+                      boxShadow: "10px 9px 16px 0px rgba(0, 0, 0, 0.25)",
+                      borderRadius: "26px",
+                      color: "#2A2A2A",
+                      fontFamily: "'Poppins', sans-serif",
+                      fontSize: "14px",
+                      fontStyle: "normal",
+                      fontWeight: 600,
+                      padding: "5px 15px",
+                      zIndex: 200,
+                      position: "absolute",
+                      whiteSpace: "nowrap",
+                      left: 50,
+                      top: 95,
+                      overflow: "hidden",
+                    }}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                    >
+                      <circle cx="5" cy="5" r="5" fill="#39FF41" />
+                    </svg>{" "}
+                    &nbsp;&nbsp; We are here to help you achieve your success.
+                  </div>
+                </div>
+              </div>
             </div>
           </Grid>
           <Grid
@@ -102,15 +190,44 @@ const Home = () => {
             xs={12}
             md={6}
             lg={6}
-            xl={7}
+            xl={6}
             className="hideForMobileViewOnly hideForTabViewOnly"
+            style={{ position: "relative" }}
           >
-            <Lottie animationData={splash} loop={true} />
+            <GlowBG top="-120px" />
+            <div
+              style={{
+                width: "350px",
+                height: "550px",
+                background: "#fff",
+                borderRadius: "300px",
+                margin: "auto",
+                position: "relative",
+                zIndex: 100,
+                boxShadow:
+                  lang === "kr"
+                    ? "rgba(161, 186, 234,.7) -32px 68px 79px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"
+                    : "rgba(161, 186, 234,.7) 32px 68px 79px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
+              }}
+            >
+              <img
+                src="/images/man.png"
+                alt=""
+                style={{
+                  width: "130%",
+                  position: "absolute",
+                  bottom: 6,
+                  right: lang === "kr" ? -118 : 15,
+                  transform: lang === "kr" && "scaleX(-1)",
+                }}
+              />
+              <Pattern right={lang === "kr" ? "328" : "-155"} bottom="-70" />
+            </div>
+            {/* <Lottie animationData={splash} loop={true} /> */}
           </Grid>
         </Grid>
       </Container>
-      <div style={{ height: "1px", background: "#fff" }}></div>
-      <Container maxWidth="lg" className="container">
+      {/*  <Container maxWidth="lg" className="container">
         <div
           className="card1 section_style"
           data-aos="fade-up"
@@ -695,7 +812,7 @@ const Home = () => {
             </Grid>
           </Grid>
         </div>
-      </Container> */} 
+      </Container> */}
     </div>
   );
 };
