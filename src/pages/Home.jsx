@@ -44,8 +44,8 @@ const Home = ({ lang }) => {
           bottom="50"
           left="-120"
         />
+        <GlowBG color="#113CFC" bottom="120px" right="-180px" />
         <GlowBG bottom="120px" left="-300px" />
-        <GlowBG color="#113CFC" bottom="120px" right="-300px" />
         <Grid
           container
           alignItems="center"
@@ -56,9 +56,6 @@ const Home = ({ lang }) => {
             <p
               className="title_large mb12 hideForMobileViewOnly centerForTabAndMobileViewOnly"
               style={{ position: "relative" }}
-              // data-aos="fade-down"
-              // data-aos-delay="300"
-              // data-aos-offset="0"
             >
               Empowering
               <Cloud width="120" height="55" top="-100" left="-40" />
@@ -101,7 +98,7 @@ const Home = ({ lang }) => {
               <Button
                 variant="contained"
                 color="primary"
-                startIcon={<MagicWand />}
+                startIcon={<MagicWand lang={lang} />}
                 className="contained_buttton"
                 disableElevation
                 // data-aos="fade-down"
@@ -119,7 +116,10 @@ const Home = ({ lang }) => {
                     style={{
                       height: "27px",
                       width: "27px",
-                      padding: "14px 11px 14px 17px",
+                      padding:
+                        lang === "kr"
+                          ? "14px 17px 14px 11px"
+                          : "14px 11px 14px 17px",
                       border: "1px solid #FF7539",
                       borderRadius: "50%",
                     }}
@@ -130,6 +130,7 @@ const Home = ({ lang }) => {
                       height="22"
                       viewBox="0 0 19 22"
                       fill="none"
+                      style={{ transform: lang === "kr" && "scaleX(-1)" }}
                     >
                       <path
                         d="M17.3657 9.13514C18.6991 9.90494 18.6991 11.8294 17.3657 12.5992L3.11572 20.8265C1.78239 21.5963 0.115722 20.634 0.115722 19.0944L0.115722 2.63994C0.115722 1.10034 1.78239 0.138094 3.11572 0.907894L17.3657 9.13514Z"
@@ -146,41 +147,47 @@ const Home = ({ lang }) => {
               >
                 &nbsp; How it works
               </Button>
-              <div style={{ position: "absolute", left: 180 }}>
+              <div
+                style={{
+                  position: "absolute",
+                  left: lang === "kr" ? 95 : 180,
+                  transform: lang === "kr" && "scaleX(-1)",
+                }}
+              >
                 <CurveLine />
-                <div style={{ position: "absolute", top: -81, left: 465 }}>
-                  <Plane />
-                  <div
-                    className="extend"
-                    style={{
-                      background: "#fff",
-                      boxShadow: "10px 9px 16px 0px rgba(0, 0, 0, 0.25)",
-                      borderRadius: "26px",
-                      color: "#2A2A2A",
-                      fontFamily: "'Poppins', sans-serif",
-                      fontSize: "14px",
-                      fontStyle: "normal",
-                      fontWeight: 600,
-                      padding: "5px 15px",
-                      zIndex: 200,
-                      position: "absolute",
-                      whiteSpace: "nowrap",
-                      left: 50,
-                      top: 95,
-                      overflow: "hidden",
-                    }}
+                <Plane top="-80" right="-110" />
+              </div>
+              <div style={{ position: "absolute", top: -81, left: 465 }}>
+                <div
+                  className="extend"
+                  style={{
+                    background: "#fff",
+                    boxShadow: "10px 9px 16px 0px rgba(0, 0, 0, 0.25)",
+                    borderRadius: "26px",
+                    color: "#2A2A2A",
+                    fontFamily: "'Poppins', sans-serif",
+                    fontSize: "14px",
+                    fontStyle: "normal",
+                    fontWeight: 600,
+                    padding: "5px 15px",
+                    zIndex: 200,
+                    position: "absolute",
+                    whiteSpace: "nowrap",
+                    left: lang === "kr" ? -755 : 220,
+                    top: 170,
+                    overflow: "hidden",
+                  }}
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
+                    fill="none"
                   >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="10"
-                      height="10"
-                      viewBox="0 0 10 10"
-                      fill="none"
-                    >
-                      <circle cx="5" cy="5" r="5" fill="#39FF41" />
-                    </svg>{" "}
-                    &nbsp;&nbsp; We are here to help you achieve your success.
-                  </div>
+                    <circle cx="5" cy="5" r="5" fill="#39FF41" />
+                  </svg>{" "}
+                  &nbsp;&nbsp; We are here to help you achieve your success.
                 </div>
               </div>
             </div>
