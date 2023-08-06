@@ -38,5 +38,14 @@ const fr = {
     termsOfUse: "شروط الاستخدام",
     allRightsReserved: "كل الحقوق محفوظة",
   },
+  homeTopSetion: {
+    title: "التمكين",
+    subtitle: "الأعمال مع التكنولوجيا المتقدمة",
+    details:
+      "نحن فريق من الأفراد المتحمسين الذين يذهبون إلى أبعد من ذلك لخلق تجارب رائعة لعملك.",
+    connectWithUs: "اتصل بنا",
+    howItWorks: "كيف تعمل",
+    animationText: "We are here to help you achieve your success.",
+  },
 };
 export default fr;

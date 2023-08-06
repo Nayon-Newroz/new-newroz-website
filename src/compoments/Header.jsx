@@ -165,7 +165,125 @@ const Header = ({ translations, setLang }) => {
                 className="header_logo_style"
               />
             </Box>
-            <Box sx={{ display: { xs: "block", md: "none" } }}>
+            <Box
+              sx={{
+                display: { xs: "block", sm: "block", md: "block", lg: "none" },
+              }}
+            >
+              <Button
+                className="nav_button"
+                endIcon={<KeyboardArrowDownIcon />}
+                // onClick={handleClickOpen}
+                id="basic-button"
+                aria-controls={openLanguage ? "basic-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={openLanguage ? "true" : undefined}
+                onClick={handleLanguageClick}
+              >
+                {languageButtonValue}
+              </Button>
+              <Menu
+                id="basic-menu"
+                anchorEl={anchorEl}
+                open={openLanguage}
+                onClose={handleLanguageClose}
+                MenuListProps={{
+                  "aria-labelledby": "basic-button",
+                }}
+              >
+                <MenuItem
+                  onClick={() => {
+                    handleLanguageClose();
+                    setLang("en");
+                    setLanguageButtonValue("English");
+                  }}
+                >
+                  &nbsp;&nbsp;{translations.header.english} &nbsp; &nbsp;
+                </MenuItem>
+                <MenuItem
+                  onClick={() => {
+                    handleLanguageClose();
+                    setLang("kr");
+                    setLanguageButtonValue("Kurdish");
+                  }}
+                >
+                  {" "}
+                  &nbsp;&nbsp;{translations.header.kurdish} &nbsp;&nbsp;
+                </MenuItem>
+              </Menu>
+
+              <Button
+                className="nav_button"
+                sx={{
+                  display: { xs: "none", sm: "inline-flex" },
+                }}
+                startIcon={
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="23"
+                    height="20"
+                    viewBox="0 0 23 20"
+                    fill="none"
+                  >
+                    <rect
+                      x="1.26758"
+                      y="3.69531"
+                      width="21.2322"
+                      height="14.9096"
+                      rx="1.5"
+                      fill="white"
+                      stroke="#113CFC"
+                    />
+                    <path
+                      d="M1.26758 9.47917V9.97917H1.76758H9.13566V11.4146C9.13566 12.2431 9.80723 12.9146 10.6357 12.9146H13.1317C13.9601 12.9146 14.6317 12.2431 14.6317 11.4146V9.97917H21.9998H22.4998V9.47917V5.19531C22.4998 4.36689 21.8282 3.69531 20.9998 3.69531H2.76758C1.93915 3.69531 1.26758 4.36688 1.26758 5.19531V9.47917Z"
+                      fill="#FFC93C"
+                      stroke="#113CFC"
+                    />
+                    <path
+                      d="M6.95801 2.93193V3.43193H7.45801H15.6773H16.1773V2.93193V2.03516C16.1773 1.20673 15.5058 0.535156 14.6773 0.535156H8.45801C7.62958 0.535156 6.95801 1.20673 6.95801 2.03516V2.93193Z"
+                      stroke="#113CFC"
+                    />
+                  </svg>
+                }
+                onClick={handleClickOpen}
+              >
+                {translations.header.anyBusinessIdea}
+              </Button>
+              <IconButton
+                style={{ marginRight: "16px", background: "#113CFC" }}
+                onClick={MenuHandleClick}
+                aria-controls={menuOpen ? "menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={menuOpen ? "true" : undefined}
+              >
+                {/* <MenuIcon style={{ color: "#303030" }} /> */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="25"
+                  viewBox="0 0 24 25"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_1104_3066"
+                    style={{ maskType: "alpha" }}
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="24"
+                    height="25"
+                  >
+                    <rect y="0.570312" width="24" height="24" fill="#D9D9D9" />
+                  </mask>
+                  <g mask="url(#mask0_1104_3066)">
+                    <path
+                      d="M12 21.0703C9.63109 21.0703 7.63372 20.2469 5.97855 18.5918C4.32339 16.9366 3.5 14.9392 3.5 12.5703C3.5 10.2014 4.32339 8.20403 5.97855 6.54887C7.63372 4.8937 9.63109 4.07031 12 4.07031C12.0483 4.07031 12.0965 4.07069 12.1444 4.07144C11.8062 4.44231 11.5147 4.86055 11.2701 5.32474C10.8229 6.17362 10.6 7.09141 10.6 8.07031C10.6 9.70141 11.1766 11.104 12.3214 12.2489C13.4663 13.3937 14.8689 13.9703 16.5 13.9703C17.494 13.9703 18.417 13.7481 19.26 13.2991C19.718 13.0552 20.1314 12.7648 20.4989 12.4282C20.4996 12.4754 20.5 12.5227 20.5 12.5703C20.5 14.9392 19.6766 16.9366 18.0214 18.5918C16.3663 20.2469 14.3689 21.0703 12 21.0703Z"
+                      stroke="white"
+                    />
+                  </g>
+                </svg>
+              </IconButton>
+
               <MobileDrawer
                 checkServiceMenuActive={checkServiceMenuActive}
                 checkUseCasesMenuActive={checkUseCasesMenuActive}
@@ -173,7 +291,11 @@ const Header = ({ translations, setLang }) => {
                 checkWhoWeServeMenuActive={checkWhoWeServeMenuActive}
               />
             </Box>
-            <Box sx={{ display: { xs: "none", md: "block" } }}>
+            <Box
+              sx={{
+                display: { xs: "none", sm: "none", md: "none", lg: "block" },
+              }}
+            >
               <Button
                 component={Link}
                 to="/"
@@ -218,7 +340,7 @@ const Header = ({ translations, setLang }) => {
               >
                 {translations.header.company}
               </Button>
-              <Button
+              {/* <Button
                 component={Link}
                 to="/career"
                 className={`nav_item ${
@@ -226,7 +348,7 @@ const Header = ({ translations, setLang }) => {
                 }`}
               >
                 {translations.header.career}
-              </Button>
+              </Button> */}
               <Button
                 component={Link}
                 to="/contact"

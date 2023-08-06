@@ -45,6 +45,7 @@ const en = {
       "We are a team of passionate individuals who go the extra mile to create wonderful experiences for your business.",
     connectWithUs: "CONNECT WITH US",
     howItWorks: "How it works",
+    animationText:"We are here to help you achieve your success."
   },
 };
 

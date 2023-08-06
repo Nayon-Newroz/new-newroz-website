@@ -1,20 +1,165 @@
 body {
   background: #eff4fe;
 }
-.cloud_box {
-  max-width: 2400px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-}
-.cloud_style {
+.top_cloud1 {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -2400px;
-  min-width: 4800px;
-  /* width: 100%; */
-  animation: cloudAnimation 60s infinite linear reverse;
+  width: 56px;
+  height: 56px;
+  top: 80px;
+  left: -150px;
+}
+.top_cloud1_for_rtl {
+  right: -150px;
+  left: unset;
+}
+
+.top_cloud2 {
+  position: absolute;
+  width: 120px;
+  height: 55px;
+  top: 55px;
+  left: 350px;
+}
+.top_cloud2_for_rtl {
+  right: 350px;
+  left: unset;
+}
+.top_cloud3 {
+  position: absolute;
+  width: 120px;
+  height: 55px;
+  top: -100px;
+  left: -40px;
+}
+.top_cloud3_for_rtl {
+  right: -20px;
+  left: unset;
+}
+.start1 {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  top: -38px;
+  left: 4px;
+}
+.start1_for_rtl {
+  right: 4px;
+  left: unset;
+}
+.start2 {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -15px;
+  left: 30px;
+}
+.start2_for_rtl {
+  right: 30px;
+  left: unset;
+}
+.top_triangle1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  top: 150px;
+  right: -120px;
+  animation: spin infinite 20s linear;
+}
+.top_triangle1_for_rtl {
+  left: -80px;
+  right: unset;
+}
+.top_triangle2 {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  bottom: 50px;
+  left: -120px;
+  animation: spin infinite 20s linear;
+}
+.top_triangle2_for_rtl {
+  right: -120px;
+  left: unset;
+}
+.top_GlowBG1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  filter: blur(280px);
+  opacity: 0.5;
+  z-index: -1;
+  bottom: 120px;
+  right: -180px;
+}
+.top_GlowBG1_for_rtl {
+  left: -180px;
+  right: unset;
+}
+.top_GlowBG2 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  filter: blur(280px);
+  opacity: 0.5;
+  z-index: -1;
+  bottom: 120px;
+  left: -300px;
+}
+
+.top_GlowBG2_for_rtl {
+  right: -300px;
+  left: unset;
+}
+
+.top_GlowBG3 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  filter: blur(280px);
+  opacity: 0.5;
+  z-index: -1;
+  top: -120px;
+}
+.top_image_holder {
+  width: 350px;
+  height: 550px;
+  background: #fff;
+  border-radius: 300px;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+.plane {
+  position: absolute;
+  width: 148px;
+  height: 78px;
+  top: -80px;
+  right: -110px;
+}
+.text_animation_holder {
+  position: absolute;
+  top: -81px;
+  left: 465px;
+}
+.extend_div {
+  position: absolute;
+  background: #fff;
+  box-shadow: 10px 9px 16px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  color: #2a2a2a;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 5px 15px;
+  white-space: nowrap;
+  top: 170px;
+  overflow: hidden;
+  z-index: 200;
+  animation: extend 2s linear;
 }
 
 .home_main_section {

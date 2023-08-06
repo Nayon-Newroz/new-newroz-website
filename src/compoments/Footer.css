@@ -1,3 +1,51 @@
+.footer {
+  background: #fff;
+}
+.footer_triangle1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 120px;
+  left: -100px;
+  animation: spin infinite 20s linear;
+}
+.footer_triangle2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  left: 650px;
+  animation: spin infinite 20s linear;
+}
+.footer_cloud1 {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 50px;
+  left: 20px;
+}
+.footer_cloud2 {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  bottom: 50px;
+  left: -80px;
+}
+.footer_cloud3 {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  bottom: 20px;
+  right: 500px;
+}
+.footer_cloud4 {
+  position: absolute;
+  width: 70px;
+  height: 35px;
+  top: 200px;
+  right: 0px;
+}
+
 .footer_logo_style {
   width: 200px;
 }
@@ -10,7 +58,6 @@
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  /* line-height: 19px; */
   color: #2b2b2b;
   margin: 0 0 24px;
 }
@@ -23,6 +70,20 @@
   color: #303030;
   margin: 0 0 20px;
   cursor: pointer;
+}
+.footer_list {
+  padding: 0;
+}
+.footer_list li {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* line-height: 24px; */
+  color: #303030;
+  margin: 0 0 20px;
+  cursor: pointer;
+  list-style-type: none;
 }
 .link_style {
   text-decoration: none;

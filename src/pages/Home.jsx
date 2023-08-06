@@ -16,7 +16,7 @@ import { Transform } from "@mui/icons-material";
 // import splash from "../animations/splash.json";
 // import UnlockThePower from "../animations/UnlockThePower.json";
 
-const Home = ({ lang }) => {
+const Home = ({ translations, lang }) => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -28,24 +28,43 @@ const Home = ({ lang }) => {
   return (
     <div>
       <Container maxWidth="xl" style={{ position: "relative" }}>
-        <Cloud width="56" top="50" left="-150" />
-        <Cloud width="120" height="55" top="50" left="350" />
+        <Cloud
+          myClass={
+            lang === "kr" ? "top_cloud1 top_cloud1_for_rtl" : "top_cloud1"
+          }
+        />
+        <Cloud
+          myClass={
+            lang === "kr" ? "top_cloud2 top_cloud2_for_rtl" : "top_cloud2"
+          }
+        />
         <Triangle
           color="#FFC93C"
-          width="125"
-          height="125"
-          top="150"
-          right="-120"
+          myClass={
+            lang === "kr"
+              ? "top_triangle1 top_triangle1_for_rtl"
+              : "top_triangle1"
+          }
         />
         <Triangle
           color="white"
-          width="72"
-          height="72"
-          bottom="50"
-          left="-120"
+          myClass={
+            lang === "kr"
+              ? "top_triangle2 top_triangle2_for_rtl"
+              : "top_triangle2"
+          }
         />
-        <GlowBG color="#113CFC" bottom="120px" right="-180px" />
-        <GlowBG bottom="120px" left="-300px" />
+        <GlowBG
+          color="#113CFC"
+          myClass={
+            lang === "kr" ? "top_GlowBG1 top_GlowBG1_for_rtl" : "top_GlowBG1"
+          }
+        />
+        <GlowBG
+          myClass={
+            lang === "kr" ? "top_GlowBG2 top_GlowBG2_for_rtl" : "top_GlowBG2"
+          }
+        />
         <Grid
           container
           alignItems="center"
@@ -53,23 +72,26 @@ const Home = ({ lang }) => {
           style={{ position: "relative" }}
         >
           <Grid item xs={12} md={6} lg={6} xl={6}>
-            <p
+            <h2
               className="title_large mb12 hideForMobileViewOnly centerForTabAndMobileViewOnly"
               style={{ position: "relative" }}
             >
-              Empowering
-              <Cloud width="120" height="55" top="-100" left="-40" />
-              <Start top="-30" left="0" />
-              <Start width="14" height="14" top="-5" left="25" />
-            </p>
-            <p
-              className="subtitle mb20 hideForMobileViewOnly centerForTabAndMobileViewOnly"
-              // data-aos="fade-down"
-              // data-aos-delay="300"
-              // data-aos-offset="0"
-            >
-              Businesses With Advanced Technology
-            </p>
+              <Cloud
+                myClass={
+                  lang === "kr" ? "top_cloud3 top_cloud3_for_rtl" : "top_cloud3"
+                }
+              />
+              <Start
+                myClass={lang === "kr" ? "start1 start1_for_rtl" : "start1"}
+              />
+              <Start
+                myClass={lang === "kr" ? "start2 start2_for_rtl" : "start2"}
+              />
+              {translations.homeTopSetion.title}
+            </h2>
+            <h3 className="subtitle mb20 hideForMobileViewOnly centerForTabAndMobileViewOnly">
+              {translations.homeTopSetion.subtitle}
+            </h3>
             <p
               className="title_large mb50 showForMobileViewOnly"
               // data-aos="fade-down"
@@ -91,8 +113,7 @@ const Home = ({ lang }) => {
               // data-aos-delay="600"
               // data-aos-offset="0"
             >
-              We are a team of passionate individuals who go the extra mile to
-              create wonderful experiences for your business.
+              {translations.homeTopSetion.details}
             </p>
             <div style={{ position: "relative" }}>
               <Button
@@ -101,11 +122,8 @@ const Home = ({ lang }) => {
                 startIcon={<MagicWand lang={lang} />}
                 className="contained_buttton"
                 disableElevation
-                // data-aos="fade-down"
-                // data-aos-delay="900"
-                // data-aos-offset="0"
               >
-                CONNECT WITH US
+                {translations.homeTopSetion.connectWithUs}
               </Button>
               &nbsp; &nbsp;
               <Button
@@ -141,41 +159,24 @@ const Home = ({ lang }) => {
                 }
                 className="play_button"
                 disableElevation
-                // data-aos="fade-down"
-                // data-aos-delay="900"
-                // data-aos-offset="0"
               >
-                &nbsp; How it works
+                &nbsp; {translations.homeTopSetion.howItWorks}
               </Button>
               <div
                 style={{
                   position: "absolute",
-                  left: lang === "kr" ? 95 : 180,
+                  left: 180,
                   transform: lang === "kr" && "scaleX(-1)",
                 }}
               >
                 <CurveLine />
-                <Plane top="-80" right="-110" />
+                <Plane myClass="plane" />
               </div>
-              <div style={{ position: "absolute", top: -81, left: 465 }}>
+              <div className="text_animation_holder">
                 <div
-                  className="extend"
+                  className="extend_div"
                   style={{
-                    background: "#fff",
-                    boxShadow: "10px 9px 16px 0px rgba(0, 0, 0, 0.25)",
-                    borderRadius: "26px",
-                    color: "#2A2A2A",
-                    fontFamily: "'Poppins', sans-serif",
-                    fontSize: "14px",
-                    fontStyle: "normal",
-                    fontWeight: 600,
-                    padding: "5px 15px",
-                    zIndex: 200,
-                    position: "absolute",
-                    whiteSpace: "nowrap",
                     left: lang === "kr" ? -755 : 220,
-                    top: 170,
-                    overflow: "hidden",
                   }}
                 >
                   <svg
@@ -187,7 +188,7 @@ const Home = ({ lang }) => {
                   >
                     <circle cx="5" cy="5" r="5" fill="#39FF41" />
                   </svg>{" "}
-                  &nbsp;&nbsp; We are here to help you achieve your success.
+                  &nbsp;&nbsp; {translations.homeTopSetion.animationText}
                 </div>
               </div>
             </div>
@@ -201,16 +202,10 @@ const Home = ({ lang }) => {
             className="hideForMobileViewOnly hideForTabViewOnly"
             style={{ position: "relative" }}
           >
-            <GlowBG top="-120px" />
+            <GlowBG myClass="top_GlowBG3" />
             <div
+              className="top_image_holder"
               style={{
-                width: "350px",
-                height: "550px",
-                background: "#fff",
-                borderRadius: "300px",
-                margin: "auto",
-                position: "relative",
-                zIndex: 100,
                 boxShadow:
                   lang === "kr"
                     ? "rgba(161, 186, 234,.7) -32px 68px 79px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"

@@ -501,7 +501,7 @@ const MobileDrawer = ({
   );
 
   return (
-    <div>
+    <>
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
@@ -513,7 +513,7 @@ const MobileDrawer = ({
             edge="start"
             color="primary"
             sx={{
-              display: { md: "none" },
+              // display: { md: "none" },
               padding: "6px 9px",
               minWidth: "0px !important",
             }}
@@ -530,7 +530,7 @@ const MobileDrawer = ({
           </Drawer>
         </React.Fragment>
       ))}
-    </div>
+    </>
   );
 };
 
