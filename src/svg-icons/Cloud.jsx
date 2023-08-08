@@ -1,22 +1,17 @@
 import React from "react";
 
-const Cloud = ({ myClass, width, height, color, top, right, bottom, left }) => {
-   
+const Cloud = ({
+  lang,
+  color,
+  myClass,
+  rtlClass, 
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      // width={width || "57"}
-      // height={height || "28"}
       viewBox="0 0 57 28"
       fill="none"
-      // style={{
-      //   position: "absolute",
-      //   top: top,
-      //   right: right,
-      //   bottom: bottom,
-      //   left: left,
-      // }}
-      className={`${myClass}`}
+      className={`${myClass} ${lang === "kr" && rtlClass}`}
     >
       <path
         fill-rule="evenodd"

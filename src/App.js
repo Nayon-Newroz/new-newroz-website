@@ -90,6 +90,7 @@ function ScrollTop(props) {
 
 function App(props) {
   const [lang, setLang] = useState("en");
+  const [darkMode, setDarkMode] = useState(false);
   let translations = new LocalizedStrings(data);
   const languageHandler = (e) => {
     let lang = e.target.value;
@@ -148,7 +149,9 @@ function App(props) {
     });
   }, []);
   return (
-    <>
+    <div
+    //  style={{ background: darkMode ? "#000518" : "#eff4fe" }}
+    >
       <ThemeProvider theme={theme}>
         {/* <Test /> */}
         <div
@@ -157,16 +160,35 @@ function App(props) {
             position: "relative",
             maxWidth: "100%",
             margin: "auto",
+            overflow: "hidden",
+            background: darkMode ? "#000518" : "#eff4fe",
             // display: "none",
           }}
         >
-          <Header translations={translations} setLang={setLang} />
+          <Header
+            translations={translations}
+            setLang={setLang}
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+          />
 
-          <div style={{ overflow: "hidden" }}>
-            <Navigation translations={translations} lang={lang} />
+          <div
+          //  style={{ overflow: "hidden" }}
+          >
+            <Navigation
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+              setDarkMode={setDarkMode}
+            />
           </div>
           <div>
-            <Footer translations={translations} />{" "}
+            <Footer
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+              setDarkMode={setDarkMode}
+            />{" "}
           </div>
           <ScrollTop {...props}>
             <Fab
@@ -180,7 +202,7 @@ function App(props) {
           </ScrollTop>
         </div>
       </ThemeProvider>
-    </>
+    </div>
   );
 }
 

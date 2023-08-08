@@ -38,7 +38,7 @@ const en = {
     termsOfUse: "Terms of Use",
     allRightsReserved: "All Rights Reserved",
   },
-  homeTopSetion: {
+  homeTopSetion: { 
     title: "Empowering",
     subtitle: "BUSINESSES WITH ADVANCED TECHNOLOGY",
     details:

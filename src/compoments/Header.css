@@ -33,6 +33,9 @@
   border: 2px solid rgba(0, 0, 0, 0) !important;
   border-radius: 0px !important;
 }
+.nav_item_dark_color {
+  color: #fff !important;
+}
 .nav_button {
   color: #113cfc !important;
   font-weight: 600 !important;
@@ -45,12 +48,28 @@
   border-radius: 100px !important;
   margin-right: 10px !important;
 }
- .nav_button .MuiButton-endIcon{
+.nav_button .MuiButton-endIcon {
   margin-left: 0px;
- }
+}
+.nav_button_dark_color {
+  color: #fff !important;
+  background: #113cfc !important;
+}
+.mode_button {
+  margin-right: 16px !important;
+  background: #113cfc !important;
+}
+.mode_button_dark_color {
+  background: none !important;
+  border: 1px solid #ff7539 !important;
+}
 .active {
   color: #113cfc !important;
   border-bottom: 2px solid #113cfc !important;
+}
+.dark_active {
+  color: #ff7539 !important;
+  border-bottom: 2px solid #ff7539 !important;
 }
 .topbar_submenu li {
   font-style: normal;

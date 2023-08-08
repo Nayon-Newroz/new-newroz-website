@@ -21,21 +21,14 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-const Header = ({ translations, setLang }) => {
+const Header = ({ translations, setLang, darkMode, setDarkMode }) => {
   // const { window } = props;
   const location = useLocation();
   const navigate = useNavigate();
   console.log("location", location.pathname);
   const [serveOpen, setServeOpen] = useState(false);
   const [open, setOpen] = React.useState(false);
-  const [serviceAnchorEl, setServiceAnchorEl] = useState(null);
-  const [useCaseAnchorEl, setUseCaseAnchorEl] = useState(null);
-  const [caseStudiesAnchorEl, setCaseStudiesAnchorEl] = useState(null);
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const serviceOpen = Boolean(serviceAnchorEl);
-  const useCaseOpen = Boolean(useCaseAnchorEl);
-  const caseStudiesOpen = Boolean(caseStudiesAnchorEl);
-  const menuOpen = Boolean(menuAnchorEl);
   const [anchorEl, setAnchorEl] = React.useState(null);
   const openLanguage = Boolean(anchorEl);
 
@@ -64,34 +57,8 @@ const Header = ({ translations, setLang }) => {
     }
   };
 
-  const handleChange = () => {
-    setServeOpen((prev) => !prev);
-  };
-
   const MenuHandleClick = (event) => {
     setMenuAnchorEl(event.currentTarget);
-  };
-  const MenuHandleClose = () => {
-    setServeOpen(false);
-    setMenuAnchorEl(null);
-  };
-  const ServiceHandleClick = (event) => {
-    setServiceAnchorEl(event.currentTarget);
-  };
-  const ServiceHandleClose = () => {
-    setServiceAnchorEl(null);
-  };
-  const UseCaseHandleClick = (event) => {
-    setUseCaseAnchorEl(event.currentTarget);
-  };
-  const UseCaseHandleClose = () => {
-    setUseCaseAnchorEl(null);
-  };
-  const CaseStudiesHandleClick = (event) => {
-    setCaseStudiesAnchorEl(event.currentTarget);
-  };
-  const CaseStudiesHandleClose = () => {
-    setCaseStudiesAnchorEl(null);
   };
 
   const checkServiceMenuActive = () => {
@@ -170,7 +137,7 @@ const Header = ({ translations, setLang }) => {
                 display: { xs: "block", sm: "block", md: "block", lg: "none" },
               }}
             >
-              <Button
+              {/* <Button
                 className="nav_button"
                 endIcon={<KeyboardArrowDownIcon />}
                 // onClick={handleClickOpen}
@@ -181,7 +148,7 @@ const Header = ({ translations, setLang }) => {
                 onClick={handleLanguageClick}
               >
                 {languageButtonValue}
-              </Button>
+              </Button> */}
               <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
@@ -250,38 +217,72 @@ const Header = ({ translations, setLang }) => {
                 {translations.header.anyBusinessIdea}
               </Button>
               <IconButton
-                style={{ marginRight: "16px", background: "#113CFC" }}
-                onClick={MenuHandleClick}
-                aria-controls={menuOpen ? "menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={menuOpen ? "true" : undefined}
+                // style={{ marginRight: "16px", background: "#113CFC" }}
+                className={
+                  darkMode
+                    ? `mode_button mode_button_dark_color`
+                    : `mode_button`
+                }
+                onClick={() => setDarkMode(!darkMode)}
               >
-                {/* <MenuIcon style={{ color: "#303030" }} /> */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <mask
-                    id="mask0_1104_3066"
-                    style={{ maskType: "alpha" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
+                {darkMode ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <mask
+                      id="mask0_1160_14018"
+                      style={{ maskType: "alpha" }}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="24"
+                      height="24"
+                    >
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_1160_14018)">
+                      <path
+                        d="M1 15V13H5V15H1ZM6.35 9.75L3.525 6.925L4.925 5.5L7.75 8.35L6.35 9.75ZM7 18V15H17V18H7ZM11 7V2H13V7H11ZM17.65 9.75L16.25 8.35L19.075 5.525L20.5 6.925L17.65 9.75ZM19 15V13H23V15H19Z"
+                        fill="#FF7539"
+                      />
+                    </g>
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
                   >
-                    <rect y="0.570312" width="24" height="24" fill="#D9D9D9" />
-                  </mask>
-                  <g mask="url(#mask0_1104_3066)">
-                    <path
-                      d="M12 21.0703C9.63109 21.0703 7.63372 20.2469 5.97855 18.5918C4.32339 16.9366 3.5 14.9392 3.5 12.5703C3.5 10.2014 4.32339 8.20403 5.97855 6.54887C7.63372 4.8937 9.63109 4.07031 12 4.07031C12.0483 4.07031 12.0965 4.07069 12.1444 4.07144C11.8062 4.44231 11.5147 4.86055 11.2701 5.32474C10.8229 6.17362 10.6 7.09141 10.6 8.07031C10.6 9.70141 11.1766 11.104 12.3214 12.2489C13.4663 13.3937 14.8689 13.9703 16.5 13.9703C17.494 13.9703 18.417 13.7481 19.26 13.2991C19.718 13.0552 20.1314 12.7648 20.4989 12.4282C20.4996 12.4754 20.5 12.5227 20.5 12.5703C20.5 14.9392 19.6766 16.9366 18.0214 18.5918C16.3663 20.2469 14.3689 21.0703 12 21.0703Z"
-                      stroke="white"
-                    />
-                  </g>
-                </svg>
+                    <mask
+                      id="mask0_1104_3066"
+                      style={{ maskType: "alpha" }}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="24"
+                      height="25"
+                    >
+                      <rect
+                        y="0.570312"
+                        width="24"
+                        height="24"
+                        fill="#D9D9D9"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_1104_3066)">
+                      <path
+                        d="M12 21.0703C9.63109 21.0703 7.63372 20.2469 5.97855 18.5918C4.32339 16.9366 3.5 14.9392 3.5 12.5703C3.5 10.2014 4.32339 8.20403 5.97855 6.54887C7.63372 4.8937 9.63109 4.07031 12 4.07031C12.0483 4.07031 12.0965 4.07069 12.1444 4.07144C11.8062 4.44231 11.5147 4.86055 11.2701 5.32474C10.8229 6.17362 10.6 7.09141 10.6 8.07031C10.6 9.70141 11.1766 11.104 12.3214 12.2489C13.4663 13.3937 14.8689 13.9703 16.5 13.9703C17.494 13.9703 18.417 13.7481 19.26 13.2991C19.718 13.0552 20.1314 12.7648 20.4989 12.4282C20.4996 12.4754 20.5 12.5227 20.5 12.5703C20.5 14.9392 19.6766 16.9366 18.0214 18.5918C16.3663 20.2469 14.3689 21.0703 12 21.0703Z"
+                        stroke="white"
+                      />
+                    </g>
+                  </svg>
+                )}
               </IconButton>
 
               <MobileDrawer
@@ -299,7 +300,13 @@ const Header = ({ translations, setLang }) => {
               <Button
                 component={Link}
                 to="/"
-                className={`nav_item ${location.pathname === "/" && "active"}`}
+                className={
+                  darkMode
+                    ? `nav_item nav_item_dark_color ${
+                        location.pathname === "/" && "dark_active"
+                      }`
+                    : `nav_item ${location.pathname === "/" && "active"}`
+                }
               >
                 {translations.header.home}
               </Button>
@@ -307,36 +314,58 @@ const Header = ({ translations, setLang }) => {
               <Button
                 component={Link}
                 to="/services"
-                className={`nav_item ${
-                  location.pathname === "/services" && "active"
-                }`}
+                className={
+                  darkMode
+                    ? `nav_item nav_item_dark_color ${
+                        location.pathname === "/services" && "dark_active"
+                      }`
+                    : `nav_item ${
+                        location.pathname === "/services" && "active"
+                      }`
+                }
               >
                 {translations.header.services}
               </Button>
               <Button
                 component={Link}
                 to="/products"
-                className={`nav_item ${
-                  location.pathname === "/products" && "active"
-                }`}
+                className={
+                  darkMode
+                    ? `nav_item nav_item_dark_color ${
+                        location.pathname === "/products" && "dark_active"
+                      }`
+                    : `nav_item ${
+                        location.pathname === "/products" && "active"
+                      }`
+                }
               >
                 {translations.header.products}
               </Button>
               <Button
                 component={Link}
                 to="/case-studies"
-                className={`nav_item ${
-                  location.pathname === "/case-studies" && "active"
-                }`}
+                className={
+                  darkMode
+                    ? `nav_item nav_item_dark_color ${
+                        location.pathname === "/case-studies" && "dark_active"
+                      }`
+                    : `nav_item ${
+                        location.pathname === "/case-studies" && "active"
+                      }`
+                }
               >
                 {translations.header.caseStudies}
               </Button>
               <Button
                 component={Link}
                 to="/company"
-                className={`nav_item ${
-                  location.pathname === "/company" && "active"
-                }`}
+                className={
+                  darkMode
+                    ? `nav_item nav_item_dark_color ${
+                        location.pathname === "/company" && "dark_active"
+                      }`
+                    : `nav_item ${location.pathname === "/company" && "active"}`
+                }
               >
                 {translations.header.company}
               </Button>
@@ -352,17 +381,22 @@ const Header = ({ translations, setLang }) => {
               <Button
                 component={Link}
                 to="/contact"
-                className={`nav_item ${
-                  location.pathname === "/contact" && "active"
-                }`}
+                className={
+                  darkMode
+                    ? `nav_item nav_item_dark_color ${
+                        location.pathname === "/contact" && "dark_active"
+                      }`
+                    : `nav_item ${location.pathname === "/contact" && "active"}`
+                }
               >
                 {translations.header.contact}
               </Button>
 
               <Button
-                className="nav_button"
+                className={
+                  darkMode ? `nav_button nav_button_dark_color` : `nav_button`
+                }
                 endIcon={<KeyboardArrowDownIcon />}
-                // onClick={handleClickOpen}
                 id="basic-button"
                 aria-controls={openLanguage ? "basic-menu" : undefined}
                 aria-haspopup="true"
@@ -402,7 +436,9 @@ const Header = ({ translations, setLang }) => {
               </Menu>
 
               <Button
-                className="nav_button"
+                className={
+                  darkMode ? `nav_button nav_button_dark_color` : `nav_button`
+                }
                 startIcon={
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -436,38 +472,72 @@ const Header = ({ translations, setLang }) => {
                 {translations.header.anyBusinessIdea}
               </Button>
               <IconButton
-                style={{ marginRight: "16px", background: "#113CFC" }}
-                onClick={MenuHandleClick}
-                aria-controls={menuOpen ? "menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={menuOpen ? "true" : undefined}
+                // style={{ marginRight: "16px", background: "#113CFC" }}
+                className={
+                  darkMode
+                    ? `mode_button mode_button_dark_color`
+                    : `mode_button`
+                }
+                onClick={() => setDarkMode(!darkMode)}
               >
-                {/* <MenuIcon style={{ color: "#303030" }} /> */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="25"
-                  viewBox="0 0 24 25"
-                  fill="none"
-                >
-                  <mask
-                    id="mask0_1104_3066"
-                    style={{ maskType: "alpha" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
+                {darkMode ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <mask
+                      id="mask0_1160_14018"
+                      style={{ maskType: "alpha" }}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="24"
+                      height="24"
+                    >
+                      <rect width="24" height="24" fill="#D9D9D9" />
+                    </mask>
+                    <g mask="url(#mask0_1160_14018)">
+                      <path
+                        d="M1 15V13H5V15H1ZM6.35 9.75L3.525 6.925L4.925 5.5L7.75 8.35L6.35 9.75ZM7 18V15H17V18H7ZM11 7V2H13V7H11ZM17.65 9.75L16.25 8.35L19.075 5.525L20.5 6.925L17.65 9.75ZM19 15V13H23V15H19Z"
+                        fill="#FF7539"
+                      />
+                    </g>
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
                   >
-                    <rect y="0.570312" width="24" height="24" fill="#D9D9D9" />
-                  </mask>
-                  <g mask="url(#mask0_1104_3066)">
-                    <path
-                      d="M12 21.0703C9.63109 21.0703 7.63372 20.2469 5.97855 18.5918C4.32339 16.9366 3.5 14.9392 3.5 12.5703C3.5 10.2014 4.32339 8.20403 5.97855 6.54887C7.63372 4.8937 9.63109 4.07031 12 4.07031C12.0483 4.07031 12.0965 4.07069 12.1444 4.07144C11.8062 4.44231 11.5147 4.86055 11.2701 5.32474C10.8229 6.17362 10.6 7.09141 10.6 8.07031C10.6 9.70141 11.1766 11.104 12.3214 12.2489C13.4663 13.3937 14.8689 13.9703 16.5 13.9703C17.494 13.9703 18.417 13.7481 19.26 13.2991C19.718 13.0552 20.1314 12.7648 20.4989 12.4282C20.4996 12.4754 20.5 12.5227 20.5 12.5703C20.5 14.9392 19.6766 16.9366 18.0214 18.5918C16.3663 20.2469 14.3689 21.0703 12 21.0703Z"
-                      stroke="white"
-                    />
-                  </g>
-                </svg>
+                    <mask
+                      id="mask0_1104_3066"
+                      style={{ maskType: "alpha" }}
+                      maskUnits="userSpaceOnUse"
+                      x="0"
+                      y="0"
+                      width="24"
+                      height="25"
+                    >
+                      <rect
+                        y="0.570312"
+                        width="24"
+                        height="24"
+                        fill="#D9D9D9"
+                      />
+                    </mask>
+                    <g mask="url(#mask0_1104_3066)">
+                      <path
+                        d="M12 21.0703C9.63109 21.0703 7.63372 20.2469 5.97855 18.5918C4.32339 16.9366 3.5 14.9392 3.5 12.5703C3.5 10.2014 4.32339 8.20403 5.97855 6.54887C7.63372 4.8937 9.63109 4.07031 12 4.07031C12.0483 4.07031 12.0965 4.07069 12.1444 4.07144C11.8062 4.44231 11.5147 4.86055 11.2701 5.32474C10.8229 6.17362 10.6 7.09141 10.6 8.07031C10.6 9.70141 11.1766 11.104 12.3214 12.2489C13.4663 13.3937 14.8689 13.9703 16.5 13.9703C17.494 13.9703 18.417 13.7481 19.26 13.2991C19.718 13.0552 20.1314 12.7648 20.4989 12.4282C20.4996 12.4754 20.5 12.5227 20.5 12.5703C20.5 14.9392 19.6766 16.9366 18.0214 18.5918C16.3663 20.2469 14.3689 21.0703 12 21.0703Z"
+                        stroke="white"
+                      />
+                    </g>
+                  </svg>
+                )}
               </IconButton>
             </Box>
           </Toolbar>

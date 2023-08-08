@@ -9,7 +9,7 @@ import Cloud from "../svg-icons/Cloud";
 // console.log("year", new Date().getFullYear());
 const Footer = ({ translations }) => {
   return (
-    <footer  >
+    <footer style={{ overflow: "hidden" }}>
       <Container
         maxWidth="xl"
         style={{
