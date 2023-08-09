@@ -160,7 +160,7 @@ function App(props) {
             position: "relative",
             maxWidth: "100%",
             margin: "auto",
-            overflow: "hidden",
+            // overflow: "hidden",
             background: darkMode ? "#000518" : "#eff4fe",
             // display: "none",
           }}
@@ -173,7 +173,7 @@ function App(props) {
           />
 
           <div
-          //  style={{ overflow: "hidden" }}
+           style={{ overflow: "hidden" }}
           >
             <Navigation
               translations={translations}
