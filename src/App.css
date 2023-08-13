@@ -76,6 +76,10 @@
 .Magicwand_for_rtl {
   left: 15px;
 }
+.send_icon_for_rtl {
+  position: relative;
+  right: -14px;
+}
 .play_icon_holder {
   height: 27px;
   width: 27px;
@@ -295,7 +299,6 @@
   color: #2b2b2b;
   font-size: 20px;
   font-style: normal;
-
   line-height: normal;
 }
 .fw300 {
@@ -466,7 +469,7 @@
   right: 0;
   transform: translateX(100%);
 }
-.card3 {
+.card2_style {
   border-radius: 16px;
   box-sizing: border-box;
   display: flex;
@@ -474,19 +477,27 @@
   flex: 0 0 calc(50% - 15px);
   background: rgba(255, 255, 255, 0.2);
   box-shadow: -2px -2px 0px 0px #c2d0e5 inset;
+  padding-left: 4px;
+  border-top: 3px solid #fff;
+  /* border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid #fff; */
 }
+/* .card2_style img {
+  height: 99%;
+} */
 
-.card3_left {
+.card2_left {
   flex: 4;
   position: relative;
   overflow: hidden;
-  display: flex;
-  /* justify-content: center; */
+  /* display: flex;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100%; */
 }
-.card3_right {
+.card2_right {
   flex: 8;
   display: flex;
   flex-direction: column;
@@ -523,7 +534,7 @@
   overflow: hidden;
   position: relative; */
 }
-.card6 {
+.card1_style {
   flex: 0 0 calc(33% - 17px);
   border-radius: 10px;
   box-sizing: border-box;
@@ -535,7 +546,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.card6_for_dark,
+.card1_style_for_dark,
 .card3_for_dark {
   box-shadow: none;
   border-top: 3px solid #262626;
@@ -548,7 +559,7 @@
   /* border-right: 1px solid #fff;
   box-shadow: 2px -2px 0px 0px #c2d0e5 inset; */
 }
-.card6:first-child {
+.card1_style:first-child {
   border-top: none;
   border-left: none;
   background: none;
@@ -649,13 +660,22 @@
 }
 
 .message_form_input_style .MuiOutlinedInput-root {
-  padding: 16.5px 42px 15.5px 16px !important;
-  background: #ffffff !important;
-  border-radius: 8px !important;
-  letter-spacing: 0.32px !important;
-  font-weight: 500 !important;
+  padding: 20px 38px !important;
+  border: 1px solid #fff !important;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 10px !important;
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.05) !important;
   font-size: 16px !important;
-  color: #686868 !important;
+  color: #525252 !important;
+  backdrop-filter: blur(5px) !important;
+}
+.message_form_input_style_dark .MuiOutlinedInput-root {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(80, 80, 80, 0.2) !important;
+  border-radius: 10px !important;
+  box-shadow: 10px 10px 17px 0px rgba(0, 0, 0, 0.1) !important;
+  font-size: 16px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 .demo_form_input_style .MuiOutlinedInput-root {
   padding: 16.5px 42px 15.5px 16px !important;
@@ -666,15 +686,15 @@
   font-size: 16px !important;
   color: #303030 !important;
 }
-.message_form_textarea_style .MuiOutlinedInput-root {
+/* .message_form_textarea_style .MuiOutlinedInput-root {
   padding: 16.5px 42px 15.5px 16px !important;
   background: #ffffff !important;
   border-radius: 8px !important;
   letter-spacing: 0.32px !important;
   font-weight: 500 !important;
   font-size: 16px !important;
-  color: #686868 !important;
-}
+  color: #686868 !important; 
+} */
 .demo_form_textarea_style .MuiOutlinedInput-root {
   padding: 16.5px 42px 15.5px 16px !important;
   background: #f6faff !important;
@@ -1088,6 +1108,9 @@
 .mb8 {
   margin-bottom: 8px !important;
 }
+.mb10 {
+  margin-bottom: 10px !important;
+}
 .mb16 {
   margin-bottom: 16px !important;
 }
@@ -1232,7 +1255,7 @@
   .card2_non_hover {
     flex: 0 0 calc(25% - 15px);
   }
-  .card3 {
+  .card2_style {
     flex: 0 0 calc(50% - 7.5px);
   }
   .card_padding {
@@ -1332,8 +1355,6 @@
 
   .text_body_medium {
     /* changed */
-
-    font-weight: 400 !important;
     font-size: 14px !important;
     line-height: 22px !important;
   }
@@ -1359,7 +1380,7 @@
   .card_image {
     width: 70%;
   }
-  .card6 {
+  .card1_style {
     flex: 0 0 calc(50% - 15px);
   }
 }
@@ -1371,14 +1392,14 @@
     background-size: 800px; */
     /* animation: spin infinite 20s linear; */
   }
-  .card3 {
+  .card2_style {
     flex: 0 0 100%;
     /* flex: 0 0 calc(100% - 60px); */
   }
   .card4 {
     background-size: 200px;
   }
-  .card6 {
+  .card1_style {
     flex: 0 0 calc(50% - 15px);
   }
   .card7 {
@@ -1510,8 +1531,7 @@
   }
   .text_body_medium {
     /* changed */
-    text-align: center;
-    font-weight: 400 !important;
+    /* text-align: center; */
     font-size: 14px !important;
     line-height: 22px !important;
   }
@@ -1572,10 +1592,10 @@
   .margin_left_50 {
     margin-left: 0px;
   }
-  .card3 {
+  .card2_style {
     flex: 0 0 100%;
     /* flex: 0 0 calc(100% - 3.75px); */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .card5_image {
     width: 115px;
@@ -1591,7 +1611,7 @@
   .menu_button_group {
     min-width: 900px;
   }
-  .card6:first-child {
+  .card1_style:first-child {
     text-align: center;
   }
   .mobile_view_center {

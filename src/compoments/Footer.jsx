@@ -7,7 +7,7 @@ import MessageForm from "./MessageForm";
 import Triangle from "../svg-icons/Triangle";
 import Cloud from "../svg-icons/Cloud";
 // console.log("year", new Date().getFullYear());
-const Footer = ({ translations }) => {
+const Footer = ({ translations, lang, darkMode }) => {
   return (
     <footer style={{ overflow: "hidden" }}>
       <Container
@@ -18,23 +18,53 @@ const Footer = ({ translations }) => {
           position: "relative",
         }}
       >
-        <Triangle myClass="footer_triangle1" />
-        <Triangle color="#FFC93C" myClass="footer_triangle2" />
-        <Cloud myClass="footer_cloud1" />
-        <Cloud myClass="footer_cloud2" />
-        <Cloud myClass="footer_cloud3" />
-        <Cloud myClass="footer_cloud4" />
+        <Triangle
+          lang={lang}
+          color={darkMode && "#ABCCFE"}
+          myClass="footer_triangle1 hide_for_tab_and_smaller_view"
+          //  rtlClass="top_triangle1_for_rtl"
+        />
+        <Triangle
+          lang={lang}
+          color={darkMode ? "#FF7539" : "#FFC93C"}
+          myClass="footer_triangle2 hide_for_tab_and_smaller_view"
+          //  rtlClass="top_triangle1_for_rtl"
+        />
+        <Cloud
+          lang={lang}
+          color={darkMode && "#10214B"}
+          myClass="footer_cloud1 hide_for_tab_and_smaller_view"
+          // rtlClass="top_cloud1_for_rtl"
+        />
+        <Cloud
+          lang={lang}
+          color={darkMode && "#10214B"}
+          myClass="footer_cloud2 hide_for_tab_and_smaller_view"
+          // rtlClass="top_cloud1_for_rtl"
+        />
+        <Cloud
+          lang={lang}
+          color={darkMode && "#10214B"}
+          myClass="footer_cloud3 hide_for_tab_and_smaller_view"
+          // rtlClass="top_cloud1_for_rtl"
+        />
+        <Cloud
+          lang={lang}
+          color={darkMode && "#10214B"}
+          myClass="footer_cloud4 hide_for_tab_and_smaller_view"
+          // rtlClass="top_cloud1_for_rtl"
+        />
         <Grid
           container
           spacing={4}
           style={{ position: "inherit", zIndex: 100 }}
         >
           <Grid item xs={12} sm={12} md={12} lg={4}>
-            <p className="footer_title">
+            <p className={`footer_title ${darkMode && "white"}`}>
               {translations.footer.titleAboutNewroz}
             </p>
             <p
-              className="footer_item"
+              className={`footer_item ${darkMode && "white"}`}
               style={{
                 marginTop: "30px",
                 marginBottom: "30px",
@@ -101,8 +131,11 @@ const Footer = ({ translations }) => {
             </div>
           </Grid>
           <Grid item xs={12} sm={6} md={6} lg={2}>
-            <p className="footer_title"> {translations.footer.titleAbout}</p>
-            <ul className="footer_list">
+            <p className={`footer_title ${darkMode && "white"}`}>
+              {" "}
+              {translations.footer.titleAbout}
+            </p>
+            <ul className={`footer_list ${darkMode && "footer_list_dark"}`}>
               <li>
                 {/* <Link to="/platform" className="link_style"> */}
                 {translations.footer.aboutUs}
@@ -116,10 +149,10 @@ const Footer = ({ translations }) => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} md={6} lg={3}>
-            <p className="footer_title">
+            <p className={`footer_title ${darkMode && "white"}`}>
               {translations.footer.titleSoftwareEngineering}
             </p>
-            <ul className="footer_list">
+            <ul className={`footer_list ${darkMode && "footer_list_dark"}`}>
               <li>{translations.footer.webAppDevelopment}</li>
               <li>{translations.footer.mobileAppDevelopment}</li>
               <li>{translations.footer.cloudConsultancy}</li>
@@ -128,10 +161,10 @@ const Footer = ({ translations }) => {
             </ul>
           </Grid>
           <Grid item xs={12} sm={6} md={6} lg={3}>
-            <p className="footer_title">
+            <p className={`footer_title ${darkMode && "white"}`}>
               {translations.footer.titleCentersofExcellence}
             </p>
-            <ul className="footer_list">
+            <ul className={`footer_list ${darkMode && "footer_list_dark"}`}>
               <li>{translations.footer.technicalDebtReduction}</li>
               <li>{translations.footer.roboticProcessAutomation}</li>
               <li>{translations.footer.aIAndMachineLearning}</li>
@@ -146,26 +179,44 @@ const Footer = ({ translations }) => {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={8} md={8}>
               <Grid container>
-                <p className="footer_item" style={{ margin: "0 40px 0 0" }}>
+                <p
+                  className={`footer_item ${darkMode && "white"}`}
+                  style={{ margin: "0 40px 0 0" }}
+                >
                   {translations.footer.aboutUs}
                 </p>
 
-                <p className="footer_item" style={{ margin: "0 40px 0 0" }}>
+                <p
+                  className={`footer_item ${darkMode && "white"}`}
+                  style={{ margin: "0 40px 0 0" }}
+                >
                   {translations.footer.contact}
                 </p>
-                <p className="footer_item" style={{ margin: "0 40px 0 0" }}>
+                <p
+                  className={`footer_item ${darkMode && "white"}`}
+                  style={{ margin: "0 40px 0 0" }}
+                >
                   {translations.footer.privacyPolicy}
                 </p>
-                <p className="footer_item" style={{ margin: "0 40px 0 0" }}>
+                <p
+                  className={`footer_item ${darkMode && "white"}`}
+                  style={{ margin: "0 40px 0 0" }}
+                >
                   Sitemap {translations.footer.sitemap}
                 </p>
-                <p className="footer_item" style={{ margin: "0 40px 0 0" }}>
+                <p
+                  className={`footer_item ${darkMode && "white"}`}
+                  style={{ margin: "0 40px 0 0" }}
+                >
                   Terms of Use {translations.footer.termsOfUse}
                 </p>
               </Grid>
             </Grid>
             <Grid item xs={12} sm={4} md={4} className="hideForMobileViewOnly">
-              <p className="footer_item" style={{ textAlign: "right" }}>
+              <p
+                className={`footer_item ${darkMode && "white"}`}
+                style={{ textAlign: "right" }}
+              >
                 &copy; 2019-{new Date().getFullYear()},{" "}
                 {translations.footer.allRightsReserved}
               </p>

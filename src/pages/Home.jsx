@@ -13,6 +13,8 @@ import GlowBG from "../svg-icons/GlowBG";
 import { DarkMode, Transform } from "@mui/icons-material";
 import BusinessIcon from "../svg-icons/BusinessIcon";
 import CommaIcon from "../svg-icons/CommaIcon";
+import SendIcon from "../svg-icons/SendIcon";
+import { Link } from "react-router-dom";
 // import "../compoments/MouseDown.css";
 // import Lottie from "lottie-react";
 // import splash from "../animations/splash.json";
@@ -247,7 +249,7 @@ const Home = ({ translations, lang, darkMode }) => {
       <Container maxWidth="xl">
         <div className="section_style">
           <div className="card_holder mb45">
-            <div className="card6">
+            <div className="card1_style">
               <p className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
                 {translations.homeService.card1.title}
               </p>
@@ -277,7 +279,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </Button>
             </div>
             <div
-              className={`card6  ${darkMode && "card6_for_dark"} ${
+              className={`card1_style  ${darkMode && "card1_style_for_dark"} ${
                 lang === "kr" && "card6_for_rtl"
               }`}
             >
@@ -356,7 +358,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card6  ${darkMode && "card6_for_dark"} ${
+              className={`card1_style  ${darkMode && "card1_style_for_dark"} ${
                 lang === "kr" && "card6_for_rtl"
               }`}
             >
@@ -450,7 +452,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card6  ${darkMode && "card6_for_dark"} ${
+              className={`card1_style  ${darkMode && "card1_style_for_dark"} ${
                 lang === "kr" && "card6_for_rtl"
               }`}
             >
@@ -516,7 +518,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card6  ${darkMode && "card6_for_dark"} ${
+              className={`card1_style  ${darkMode && "card1_style_for_dark"} ${
                 lang === "kr" && "card6_for_rtl"
               }`}
             >
@@ -577,7 +579,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card6  ${darkMode && "card6_for_dark"} ${
+              className={`card1_style  ${darkMode && "card1_style_for_dark"} ${
                 lang === "kr" && "card6_for_rtl"
               }`}
             >
@@ -768,19 +770,18 @@ const Home = ({ translations, lang, darkMode }) => {
           </p>
           <div className="card_holder mb45">
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+              // style={{ height: "245px" }}
             >
-              <div className="card3_left">
+              <div className="card2_left">
                 <img
                   src="/images/QRPay.png"
                   alt="product image"
                   // width="100%"
-                  height="100%"
+                  // height="99%"
                 />
               </div>
-              <div className="card3_right">
+              <div className="card2_right">
                 <div>
                   <div
                     className={`card_left_padding`}
@@ -822,19 +823,18 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+              // style={{ height: "245px" }}
             >
-              <div className="card3_left">
+              <div className="card2_left">
                 <img
                   src="/images/QRPay.png"
                   alt="product image"
                   // width="100%"
-                  height="100%"
+                  // height="99%"
                 />
               </div>
-              <div className="card3_right">
+              <div className="card2_right">
                 <div>
                   <div
                     className={`card_left_padding`}
@@ -876,19 +876,18 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+              // style={{ height: "245px" }}
             >
-              <div className="card3_left">
+              <div className="card2_left">
                 <img
                   src="/images/QRPay.png"
                   alt="product image"
                   // width="100%"
-                  height="100%"
+                  // height="99%"
                 />
               </div>
-              <div className="card3_right">
+              <div className="card2_right">
                 <div>
                   <div
                     className={`card_left_padding`}
@@ -930,19 +929,18 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+              // style={{ height: "245px" }}
             >
-              <div className="card3_left">
+              <div className="card2_left">
                 <img
                   src="/images/QRPay.png"
                   alt="product image"
                   // width="100%"
-                  height="100%"
+                  // height="99%"
                 />
               </div>
-              <div className="card3_right">
+              <div className="card2_right">
                 <div>
                   <div
                     className={`card_left_padding`}
@@ -1027,11 +1025,7 @@ const Home = ({ translations, lang, darkMode }) => {
             <Grid item xs={12} sm={6}>
               <Grid container alignItems="center">
                 <Grid item xs={12} sm={6}>
-                  <div
-                    className={`card8  ${darkMode && "card8_for_dark"} ${
-                      lang === "kr" && "card3_for_rtl"
-                    }`}
-                  >
+                  <div className={`card8  ${darkMode && "card8_for_dark"}`}>
                     <img
                       src="/images/ISO_9001_light.png"
                       alt=""
@@ -1054,11 +1048,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                  <div
-                    className={`card8 mb24 ${darkMode && "card8_for_dark"} ${
-                      lang === "kr" && "card3_for_rtl"
-                    }`}
-                  >
+                  <div className={`card8 mb24 ${darkMode && "card8_for_dark"}`}>
                     <img
                       src="/images/basis_light.png"
                       alt=""
@@ -1080,11 +1070,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     </p>
                   </div>
 
-                  <div
-                    className={`card8  ${darkMode && "card8_for_dark"} ${
-                      lang === "kr" && "card3_for_rtl"
-                    }`}
-                  >
+                  <div className={`card8  ${darkMode && "card8_for_dark"}`}>
                     <img
                       src="/images/ISO_27001 _light.png"
                       alt=""
@@ -1119,9 +1105,7 @@ const Home = ({ translations, lang, darkMode }) => {
           </p>
           <div className="card_holder mb45">
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
               style={{ display: "block", overflow: "hidden" }}
             >
               <img
@@ -1164,9 +1148,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
               style={{ display: "block", overflow: "hidden" }}
             >
               <img
@@ -1209,9 +1191,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
               style={{ display: "block", overflow: "hidden" }}
             >
               <img
@@ -1254,9 +1234,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </div>
             </div>
             <div
-              className={`card3  ${darkMode && "card6_for_dark"} ${
-                lang === "kr" && "card3_for_rtl"
-              }`}
+              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
               style={{ display: "block", overflow: "hidden" }}
             >
               <img
@@ -1332,7 +1310,102 @@ const Home = ({ translations, lang, darkMode }) => {
           </p>
           <Grid container alignItems="center">
             <Grid item xs={12} sm={6} className="mobile_view_center">
-              
+              <address>
+                {/* <p className="footer_title">Contact Us</p> */}
+                <Grid container spacing={2} className="mb60">
+                  <Grid item xs={2}>
+                    <img
+                      src={
+                        darkMode
+                          ? "/images/mobile_icon_dark.png"
+                          : "/images/mobile_icon_light.png"
+                      }
+                      alt="Have Any Idea"
+                      width="100%"
+                      // style={{ width: "20px" }}
+                      // className="image_style"
+                    />
+                  </Grid>
+                  <Grid item xs={10}>
+                    <h4
+                      style={{ color: "#D23F00" }}
+                      className={`title_semibold_medium fw400 mb10`}
+                    >
+                      {translations.homeContact.contactTitle}
+                    </h4>
+
+                    <Link
+                      to="mailto:contact@newroztech.com"
+                      style={{ textDecoration: "none", display: "block" }}
+                      className={`text_body_medium fw500 mb6 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.homeContact.email}
+                    </Link>
+
+                    <p
+                      className={`text_body_medium fw500 mb6 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.homeContact.usNumber}
+                    </p>
+                    <p
+                      className={`text_body_medium fw500 mb6 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.homeContact.bdNumber}
+                    </p>
+                    <p
+                      className={`text_body_medium fw500 mb6 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.homeContact.iqNumber}
+                    </p>
+                    <p
+                      className={`text_body_medium fw500 mb6 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.homeContact.uaeNumber}
+                    </p>
+                  </Grid>
+                </Grid>
+                <Grid container spacing={2}>
+                  <Grid item xs={2}>
+                    <img
+                      src={
+                        darkMode
+                          ? "/images/time_icon_dark.png"
+                          : "/images/time_icon_light.png"
+                      }
+                      alt="Have Any Idea"
+                      width="100%"
+                      // style={{ width: "20px" }}
+                      // className="image_style"
+                    />
+                  </Grid>
+                  <Grid item xs={10}>
+                    <h4
+                      style={{ color: "#D23F00" }}
+                      className={`title_semibold_medium fw400 mb10`}
+                    >
+                      {translations.homeContact.workingHourTitle}
+                    </h4>
+
+                    <p
+                      className={`text_body_medium fw500 mb6 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.homeContact.workingHour}
+                    </p>
+                  </Grid>
+                </Grid>
+              </address>
             </Grid>
 
             <Grid item xs={12} sm={6}>
@@ -1348,7 +1421,10 @@ const Home = ({ translations, lang, darkMode }) => {
                     size="small"
                     id="outlined-basic"
                     variant="outlined"
-                    className="message_form_input_style"
+                    // className="message_form_input_style"
+                    className={`message_form_input_style ${
+                      darkMode && "message_form_input_style_dark"
+                    }`}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -1358,7 +1434,9 @@ const Home = ({ translations, lang, darkMode }) => {
                     size="small"
                     id="outlined-basic"
                     variant="outlined"
-                    className="message_form_input_style"
+                    className={`message_form_input_style ${
+                      darkMode && "message_form_input_style_dark"
+                    }`}
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -1368,7 +1446,9 @@ const Home = ({ translations, lang, darkMode }) => {
                     size="small"
                     id="outlined-basic"
                     variant="outlined"
-                    className="message_form_input_style"
+                    className={`message_form_input_style ${
+                      darkMode && "message_form_input_style_dark"
+                    }`}
                   />
                 </Grid>
 
@@ -1379,7 +1459,9 @@ const Home = ({ translations, lang, darkMode }) => {
                     size="small"
                     id="outlined-basic"
                     variant="outlined"
-                    className="message_form_textarea_style"
+                    className={`message_form_input_style ${
+                      darkMode && "message_form_input_style_dark"
+                    }`}
                     multiline
                     rows={4}
                   />
@@ -1389,11 +1471,11 @@ const Home = ({ translations, lang, darkMode }) => {
                     variant="contained"
                     color="primary"
                     startIcon={
-                      <MagicWand
+                      <SendIcon
                         lang={lang}
                         color={darkMode && "#1C1C1C"}
-                        myClass="Magicwand"
-                        rtlClass="Magicwand_for_rtl"
+                        // myClass="Magicwand"
+                        rtlClass="send_icon_for_rtl"
                       />
                     }
                     className={`top_contained_buttton ${darkMode && "black"}`}
