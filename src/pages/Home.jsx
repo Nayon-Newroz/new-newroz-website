@@ -779,6 +779,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   alt="product image"
                   // width="100%"
                   // height="99%"
+                  className="card2_image_style"
                 />
               </div>
               <div className="card2_right">
@@ -832,6 +833,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   alt="product image"
                   // width="100%"
                   // height="99%"
+                  className="card2_image_style"
                 />
               </div>
               <div className="card2_right">
@@ -885,6 +887,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   alt="product image"
                   // width="100%"
                   // height="99%"
+                  className="card2_image_style"
                 />
               </div>
               <div className="card2_right">
@@ -938,6 +941,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   alt="product image"
                   // width="100%"
                   // height="99%"
+                  className="card2_image_style"
                 />
               </div>
               <div className="card2_right">
@@ -1003,7 +1007,7 @@ const Home = ({ translations, lang, darkMode }) => {
         </div>
         <div className="section_style">
           <Grid container alignItems="center">
-            <Grid item xs={12} sm={6} className="mobile_view_center">
+            <Grid item xs={12} sm={6} className="centerForTabAndMobileViewOnly">
               <p className={`title_large2 ${darkMode && "lightBlue"}`}>
                 {translations.homeAccreditation.title1}
               </p>
@@ -1022,7 +1026,7 @@ const Home = ({ translations, lang, darkMode }) => {
               </p>
             </Grid>
 
-            <Grid item xs={12} sm={6}>
+            <Grid item xs={12} sm={6} className="hide_for_tab_and_smaller_view">
               <Grid container alignItems="center">
                 <Grid item xs={12} sm={6}>
                   <div className={`card8  ${darkMode && "card8_for_dark"}`}>
@@ -1071,6 +1075,111 @@ const Home = ({ translations, lang, darkMode }) => {
                   </div>
 
                   <div className={`card8  ${darkMode && "card8_for_dark"}`}>
+                    <img
+                      src="/images/ISO_27001 _light.png"
+                      alt=""
+                      style={{
+                        width: "60%",
+                        display: "block",
+                        margin: "auto",
+                      }}
+                      className="mb24"
+                    />
+
+                    <p
+                      className={`text_body_small_regular center`}
+                      style={{
+                        color: darkMode ? "#C7C7C7" : "#2B2B2B",
+                      }}
+                    >
+                      {translations.homeAccreditation.card3.details}
+                    </p>
+                  </div>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid
+              item
+              xs={12}
+              md={12}
+              lg={6}
+              className="showForTabAndMobileViewOnly"
+            >
+              <Grid container alignItems="center" spacing={3}>
+                <Grid item xs={12} sm={6} md={4} lg={6}>
+                  <div
+                    className={`card8 card8_height_for_tab_view  ${
+                      darkMode && "card8_for_dark"
+                    }`}
+                  >
+                    <img
+                      src="/images/ISO_9001_light.png"
+                      alt=""
+                      style={{
+                        width: "60%",
+                        display: "block",
+                        margin: "auto",
+                      }}
+                      className="mb24"
+                    />
+
+                    <p
+                      className={`text_body_small_regular center`}
+                      style={{
+                        color: darkMode ? "#C7C7C7" : "#2B2B2B",
+                      }}
+                    >
+                      {translations.homeAccreditation.card1.details}
+                    </p>
+                  </div>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  sm={6}
+                  md={4}
+                  lg={6}
+                  className="showForTabAndMobileViewOnly"
+                >
+                  <div
+                    className={`card8 card8_height_for_tab_view ${
+                      darkMode && "card8_for_dark"
+                    }`}
+                  >
+                    <img
+                      src="/images/basis_light.png"
+                      alt=""
+                      style={{
+                        width: "60%",
+                        display: "block",
+                        margin: "auto",
+                      }}
+                      className="mb45"
+                    />
+
+                    <p
+                      className={`text_body_small_regular center`}
+                      style={{
+                        color: darkMode ? "#C7C7C7" : "#2B2B2B",
+                      }}
+                    >
+                      {translations.homeAccreditation.card2.details}
+                    </p>
+                  </div>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={4}
+                  lg={6}
+                  className="showForTabAndMobileViewOnly"
+                >
+                  <div
+                    className={`card8 card8_height_for_tab_view ${
+                      darkMode && "card8_for_dark"
+                    }`}
+                  >
                     <img
                       src="/images/ISO_27001 _light.png"
                       alt=""
