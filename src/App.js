@@ -167,14 +167,13 @@ function App(props) {
         >
           <Header
             translations={translations}
+            lang={lang}
             setLang={setLang}
             darkMode={darkMode}
             setDarkMode={setDarkMode}
           />
 
-          <div
-           style={{ overflow: "hidden" }}
-          >
+          <div style={{ overflow: "hidden" }}>
             <Navigation
               translations={translations}
               lang={lang}

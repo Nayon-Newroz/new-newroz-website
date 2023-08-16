@@ -51,6 +51,10 @@
 .nav_button .MuiButton-endIcon {
   margin-left: 0px;
 }
+.nav_button_endIcon .MuiButton-endIcon {
+  margin-left: -8px;
+  margin-right: 4px;
+}
 .nav_button_dark_color {
   color: #fff !important;
   background: #113cfc !important;
@@ -59,6 +63,10 @@
   margin-right: 16px !important;
   border: 1px solid #113cfc !important;
   /* background: #113cfc !important; */
+}
+.button_start_icon .MuiButton-startIcon {
+  margin-right: 0px;
+  margin-left: 10px;
 }
 .mode_button_dark_color {
   background: none !important;
