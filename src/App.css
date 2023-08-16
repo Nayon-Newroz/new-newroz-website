@@ -142,6 +142,29 @@
   bottom: 120px;
   right: -180px;
 }
+.section_glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  filter: blur(280px);
+  /* opacity: 0.5; */
+  /* z-index: -1; */
+  /* bottom: 120px;
+  right: -180px; */
+}
+.section_right_glow_holder {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 250px;
+}
+.section_left_glow_holder {
+  position: absolute;
+  z-index: 1;
+  left: -320px;
+  top: 250px;
+}
 .top_GlowBG1_for_rtl {
   left: -180px;
   right: unset;
@@ -192,10 +215,16 @@
 }
 .top_image_holder_for_dark {
   background: #4790e4;
-  box-shadow: rgba(71, 144, 228, 0.3) -32px 68px 79px,
+  box-shadow: rgba(71, 144, 228, 0.2) 10px 68px 79px,
     rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+/* .top_image_holder_for_dark_rtl {
+  background: #4790e4;
+  box-shadow: rgba(71, 144, 228, 0.2) 40px 68px 79px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} */
 .model_image {
   width: 130%;
   position: absolute;
@@ -213,6 +242,9 @@
   left: 465px;
 }
 .image_style {
+  width: 100%;
+}
+.image_style2 {
   width: 100%;
 }
 .home_main_section {
@@ -477,8 +509,9 @@
   flex: 0 0 calc(50% - 15px);
   background: rgba(255, 255, 255, 0.2);
   box-shadow: -2px -2px 0px 0px #c2d0e5 inset;
-  padding-left: 4px;
+  /* padding-left: 4px; */
   border-top: 3px solid #fff;
+  border-left: 1px solid #fff;
   overflow: hidden;
   /* border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -781,29 +814,41 @@
   padding-left: 10px;
   padding-right: 80px;
 }
+.card_triangle_holder {
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: 115px;
+}
+
 .card_triangle {
   position: absolute;
   height: 100px;
-  right: -110px;
-  top: 30px;
-  opacity: 0.5;
+  /* right: -110px;
+  top: 135px; */
   animation: spin infinite 20s linear;
+  z-index: 1;
 }
-.card_triangle_for_rtl {
+.card_triangle_holder_for_rtl {
   right: unset;
-  left: 0;
+  left: 100px;
+}
+.card_triangle2_holder {
+  position: absolute;
+  z-index: 1;
+  top: 450px;
 }
 .card_triangle2 {
   position: absolute;
   height: 100px;
-  left: 0px;
-  top: 50px;
-  opacity: 0.5;
+  /* left: 0px;
+  top: 50px; */
   animation: spin infinite 20s linear;
 }
-.card_triangle2_for_rtl {
+.card_triangle2_holder_for_rtl {
   right: -100px;
   left: unset;
+  top: 415px;
 }
 .card_button_holder {
   text-align: right;
@@ -906,6 +951,11 @@
 
 .section_style {
   margin: 80px 0px !important;
+  position: relative;
+}
+.upper_slide {
+  position: relative;
+  z-index: 10;
 }
 .section_style2 {
   margin: 150px 0px !important;
@@ -1400,6 +1450,9 @@
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
+  .image_style2 {
+    width: 60%;
+  }
   .home_circle_bg {
     /* background-image: url("../public/images/Splash.svg");
     background-repeat: no-repeat;
@@ -1531,7 +1584,7 @@
 
   .title_semibold_medium {
     /* changed */
-    text-align: center;
+    /* text-align: center; */
     /* font-weight: 700;
     font-size: 18px;
     line-height: 32px; */
@@ -1594,8 +1647,11 @@
   .message_form_input_style input,
   .message_form_textarea_style input,
   .message_form_textarea_style textarea {
-    text-align: center !important;
-    padding: 0px 16px 0px 16px !important;
+    /* text-align: center !important; */
+    padding: 0px 0px 0px 0px !important;
+  }
+  .message_form_input_style .MuiOutlinedInput-root {
+    padding: 20px !important;
   }
 
   .message_box_input_box_margin {

@@ -57,7 +57,8 @@
 }
 .mode_button {
   margin-right: 16px !important;
-  background: #113cfc !important;
+  border: 1px solid #113cfc !important;
+  /* background: #113cfc !important; */
 }
 .mode_button_dark_color {
   background: none !important;

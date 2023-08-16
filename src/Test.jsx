@@ -35,6 +35,8 @@ const Test = () => {
               width: "50px",
               background: "red",
               zIndex: 2,
+              // bottom:0
+              top:"25px"
             }}
           >
             1
@@ -51,9 +53,9 @@ const Test = () => {
             2
           </div>
         </div>
-        <div style={{ position: "relative", zIndex: 10, background: "yellow" }}>
+        {/* <div style={{ position: "relative", zIndex: 10, background: "yellow" }}>
           Test a sdfa sd asd as df as d as df sad
-        </div>
+        </div> */}
       </div>
     </>
   );
