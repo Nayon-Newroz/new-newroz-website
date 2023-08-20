@@ -2,15 +2,28 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Test from "../Test";
+import Company from "./Company";
 
-const Navigation = ({ translations, lang,darkMode }) => {
+const Navigation = ({ translations, lang, darkMode }) => {
   return (
-    <div >
+    <div>
       {" "}
       <Routes>
         <Route
           path="/"
-          element={<Home translations={translations} lang={lang}  darkMode={darkMode}/>}
+          element={
+            <Home translations={translations} lang={lang} darkMode={darkMode} />
+          }
+        />
+        <Route
+          path="/company"
+          element={
+            <Company
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
         />
 
         <Route path="/test" element={<Test />} />

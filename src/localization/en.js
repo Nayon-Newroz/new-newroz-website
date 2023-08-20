@@ -8,7 +8,7 @@ const en = {
     career: "Career",
     contact: "Contact",
     english: "ENGLISH",
-    kurdish: "Kurdish",
+    kurdish: "عربي",
     anyBusinessIdea: "ANY BUSYNESS IDEA",
   },
   footer: {
@@ -38,6 +38,7 @@ const en = {
     termsOfUse: "Terms of Use",
     allRightsReserved: "All Rights Reserved",
   },
+  // ---------------------home section start------------------
   homeTopSetion: {
     title: "Empowering",
     subtitle: "BUSINESSES WITH ADVANCED TECHNOLOGY",
@@ -173,6 +174,173 @@ const en = {
     formTextEmail: "Email",
     formTextPhone: "Phone",
     formTextYourMassage: "Your Massage",
+  },
+  // ---------------------home section end------------------
+// ---------------------company section start------------------
+  companyTopSection: {
+    title:
+      "NewrozTech enjoys connecting you and your Business with the immense potential power of technology. ",
+    details:
+      "At NewrozTech, we specialize in bridging the gap between organizational requirements and the expansive capabilities of technology. Our expertise lies in accepting challenges head-on, deftly molding your ideas into a robust framework of digital transformation. Our passion is leveraging the infinite potential of technology to turn your conceptual vision into a digitally transformed reality.",
+  },
+  companyWhoYouAreSection: {
+    title: "Who We Are",
+    subtitle:
+      "We, Newroz Technologies team like to work well together toward a common vision and goals.",
+    details1:
+      "Newroz Technologies, founded in 2020 in Dhaka, Bangladesh, is dedicated to turning brilliant ideas into successful technological products. Bridging the gap between organizational needs and technology's potential, they excel in digital transformation. Committed to exceptional customer experiences, they value client feedback as an opportunity to grow and improve.",
+    details2:
+      "With unwavering integrity and tailored services, they've earned word-of-mouth recommendations and global recognition. Their expertise includes IT consultancy, implementation, web-based app development, custom software, mobile apps, cloud consultancy, and AI solutions. They are driven by a passion for innovation and dynamic website design.",
+  },
+  companyWhatWeBelieve: {
+    title: "What We Believe",
+    subtitle:
+      "We, Newroz Technologies team like to work well together toward a common vision and goals.",
+    details:
+      "Team bonding among our people enhances our team potential which is the beauty & strength of our gradual success. We started our journey with only 10 people, today we are 70+ employee",
+    card1: {
+      title: "Customer Commitment",
+      details:
+        "We know, It takes years to build trust and only seconds to destroy it. And so, we care about our customer needs to deliver best solutions by continually improving our services.",
+    },
+    card2: {
+      title: "Quality",
+      details:
+        "We strive to delight our customers with the best quality services because we believe our future sustainability lies in the hands of our valued customers.",
+    },
+    card3: {
+      title: "Teamwork",
+      details:
+        "We Newroztech team like to work well together toward a common vision and goals. Team bonding among our people enhances our team potential which is the beauty & strength of our gradual success.",
+    },
+    card4: {
+      title: "Integrity",
+      details:
+        "Commitment without integrity is equal to Zero. We prefer to offer tailor-made and industry-specific services within your reach, your means and off course which is challenging but doable.",
+    },
+  },
+  companyCEOSection: {
+    title: "Sarkat A Junad",
+    subtitle: "Chairman, Newroz Technologies LTD",
+    details1:
+      "It is with great excitement that I announce Newroz Technologies Limited's foray into the dynamic sphere of Fintech. Guided by our relentless pursuit of innovation and excellence, we stand poised to revolutionize financial services, fostering an effortless and secure environment for all.",
+    details2:
+      "Your unwavering support, paired with our exceptional team's diligence, propels us toward a future rich with potential, where we can make a meaningful impact on the Fintech landscape. We are not just excited about the future, we are eager to shape it, together.",
+    details3:
+      "Thank you for embarking on this transformative journey with us. Let's continue to challenge the norm and redefine the realm of possibilities.",
+  },
+  compantBrainBehindNewrozSection: {
+    title: "Brain Behind Newroz",
+    subtitle: "We, Newroz Technologies team like to work well",
+  },
+  compantRoadmapSection: {
+    title: "Roadmap",
+    subtitle: "The complete journey map of newroz",
+    card1: {
+      year: "2017",
+      title: "Initial Growth & Expertise",
+      details:
+        "With a focus on assembling a skilled team of developers and industry professionals, we made strides in mastering key technologies & navigating industry trends. Our earlydays were characterized by the successful delivery of small to medium-sized projects, which served to refine our experience & expertise.",
+    },
+    card2: {
+      year: "2019",
+      title: "Expansion & Diversification",
+      details:
+        "As we witnessed significant growth, Newroz broadened its client base and made inroads into varied domains such as e-commerce, finance, and healthcare. This phase of our journey solidified our reputation for crafting innovative and reliable solutions.",
+    },
+    card3: {
+      year: "2022",
+      title: "Focus on Customer Centric Solutions",
+      details:
+        "Our emphasis shifted towards strengthening customer relationships and gaining a deeper understanding of their evolving needs. By adopting Agile methodologies, we streamlined our project deliveries. Additionally, we doubled down on customizing solutions to meet the unique requirements of each client.",
+    },
+    card4: {
+      year: "2023",
+      title: "Scaling New Heights",
+      details:
+        "In preparation for tackling larger and more complex projects, we scaled our team and infrastructure. We also ramped up our investments in research and development to spearhead cutting-edge solutions. As a result, Newroz established itself as a trusted technology partner for businesses around the globe.",
+    },
+  },
+  companyCustomersSpeakForUsSection: {
+    title: "Customers Speak For Us",
+    subtitle:
+      "We, Newroz Technologies team like to work well together toward a common vision and goals.",
+    card1: {
+      name: "Md Isfat Sharik",
+      designation: "CEO of VIT",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in pat ullamcorper amet adipiscing fermentum.aliquet accumsan porta lectus ridiculus in mattis",
+    },
+    card2: {
+      name: "Md Isfat Sharik",
+      designation: "CEO of VIT",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in pat ullamcorper amet adipiscing fermentum.aliquet accumsan porta lectus ridiculus in mattis",
+    },
+    card3: {
+      name: "Md Isfat Sharik",
+      designation: "CEO of VIT",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in pat ullamcorper amet adipiscing fermentum.aliquet accumsan porta lectus ridiculus in mattis",
+    },
+    card4: {
+      name: "Md Isfat Sharik",
+      designation: "CEO of VIT",
+      details:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in pat ullamcorper amet adipiscing fermentum.aliquet accumsan porta lectus ridiculus in mattis",
+    },
+  },
+  companyOurMissionAndOurVisionSection: {
+    title: "Our Mission & Our Vision",
+    subtitle:
+      "Empowering businesses with cutting-edge technology for transformative growth",
+    card1: {
+      title: "Mission",
+      details:
+        "Our mission is to act as the catalyst for businesses, aiding them in leveraging the power of technology to expedite their digital transformation journey. We aim to shape dreams into reality, turning visionary ideas into technological success stories.",
+    },
+    card2: {
+      title: "Vision",
+      details:
+        "Our vision is to pioneer the future of business transformation, continuously pushing the boundaries of what's possible with technology. We envision a world where businesses are empowered by digital innovation, accelerating their growth and driving profound impact on a global scale.",
+    },
+  },
+  companyAtAGlanceSection: {
+    title: "At a glance",
+    subtitle: "Achieved success throughout journey",
+    card1: {
+      number: "70+",
+      title: "Team members",
+    },
+    card2: {
+      number: "10+",
+      title: "Completed projects",
+    },
+    card3: {
+      number: "6+",
+      title: "Countries served",
+    },
+    card1: {
+      number: "8+",
+      title: "Clients",
+    },
+  },
+  companyTechnologiesWeUse: {
+    title: "Technologies we use",
+    subtitle: "we are legal members of well known associations",
+    details:
+      "Standard to demonstrate the ability to consistently provide products and services that meet customer and regulatory requirements.",
+  },
+  // ---------------------company section end------------------
+  pageTitles: {
+    HomepageTitle: "Home",
+    companypageTitle: "Our Company",
+    servicespageTitle: "Services",
+    caseStudiespageTitle: "Case Studies",
+    contactpageTitle: "Contact",
+    careerpageTitle: "career",
+    productspageTitle: "Products",
+    productDetailspageTitle: "Product Details",
   },
   buttonText: {
     discoverMoreText: "Discover More",

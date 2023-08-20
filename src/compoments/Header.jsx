@@ -38,7 +38,9 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
   const handleLanguageClose = () => {
     setAnchorEl(null);
   };
-  const [languageButtonValue, setLanguageButtonValue] = useState("English");
+  const [languageButtonValue, setLanguageButtonValue] = useState(
+    translations.header.english
+  );
 
   const checkServeOpen = () => {
     let serveMenus = ["/startup", "/smb", "/enterprise"];
@@ -162,7 +164,7 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                   onClick={() => {
                     handleLanguageClose();
                     setLang("en");
-                    setLanguageButtonValue("English");
+                    setLanguageButtonValue(translations.header.english);
                   }}
                 >
                   &nbsp;&nbsp;{translations.header.english} &nbsp; &nbsp;
@@ -171,7 +173,7 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                   onClick={() => {
                     handleLanguageClose();
                     setLang("kr");
-                    setLanguageButtonValue("Kurdish");
+                    setLanguageButtonValue(translations.header.kurdish);
                   }}
                 >
                   {" "}
@@ -420,7 +422,7 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                   onClick={() => {
                     handleLanguageClose();
                     setLang("en");
-                    setLanguageButtonValue("English");
+                    setLanguageButtonValue(translations.header.english);
                   }}
                 >
                   &nbsp;&nbsp;{translations.header.english} &nbsp; &nbsp;
@@ -429,7 +431,7 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                   onClick={() => {
                     handleLanguageClose();
                     setLang("kr");
-                    setLanguageButtonValue("Kurdish");
+                    setLanguageButtonValue(translations.header.kurdish);
                   }}
                 >
                   {" "}

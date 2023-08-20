@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "../App.css";
+// import "../App.css";
 import { Button, Container, Grid, TextField } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import MagicWand from "../svg-icons/MagicWand";
@@ -10,7 +10,7 @@ import Star from "../svg-icons/Star";
 import Cloud from "../svg-icons/Cloud";
 import Triangle from "../svg-icons/Triangle";
 import GlowBG from "../svg-icons/GlowBG";
-import { DarkMode, Transform } from "@mui/icons-material";
+import { Circle, DarkMode, Transform } from "@mui/icons-material";
 import BusinessIcon from "../svg-icons/BusinessIcon";
 import CommaIcon from "../svg-icons/CommaIcon";
 import SendIcon from "../svg-icons/SendIcon";
@@ -80,7 +80,7 @@ const Home = ({ translations, lang, darkMode }) => {
         >
           <Grid item xs={12} md={12} lg={8} xl={8}>
             <h2
-              className={`title_large mb12 centerForTabAndMobileViewOnly`}
+              className={`title_large mb12 centerForTabProAndMobileViewOnly`}
               style={{ position: "relative" }}
             >
               <Cloud
@@ -104,7 +104,7 @@ const Home = ({ translations, lang, darkMode }) => {
               {translations.homeTopSetion.title}
             </h2>
             <h3
-              className={`subtitle mb20 centerForTabAndMobileViewOnly ${
+              className={`subtitle mb20 centerForTabProAndMobileViewOnly ${
                 darkMode && "white"
               }`}
             >
@@ -112,7 +112,7 @@ const Home = ({ translations, lang, darkMode }) => {
             </h3>
 
             <p
-              className={`text_body_medium top_detail_text_container centerForTabAndMobileViewOnly ${
+              className={`text_body_medium top_detail_text_container centerForTabProAndMobileViewOnly ${
                 darkMode && "gray"
               }`}
             >
@@ -120,7 +120,7 @@ const Home = ({ translations, lang, darkMode }) => {
             </p>
             <div
               style={{ position: "relative" }}
-              className="centerForTabAndMobileViewOnly"
+              className="centerForTabProAndMobileViewOnly"
             >
               <Button
                 variant="contained"
@@ -275,12 +275,12 @@ const Home = ({ translations, lang, darkMode }) => {
           <div className="upper_slide">
             <div className="card_holder mb45">
               <div className="card1_style">
-                <p className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
+                <h3 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
                   {translations.homeService.card1.title}
-                </p>
-                <p className="text_body_small_regular mb8">
+                </h3>
+                <h4 className="text_body_small_regular mb8">
                   {translations.homeService.card1.subtitle}
-                </p>
+                </h4>
                 <p
                   className={`text_body_medium fw400 mb16 ${
                     darkMode && "white"
@@ -355,13 +355,13 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_left_padding_for_rtl"
                     }`}
                   >
-                    <p
+                    <h4
                       className={`text_body_medium fw500 mb8 ${
                         darkMode && "white"
                       }`}
                     >
                       {translations.homeService.card2.title}
-                    </p>
+                    </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
@@ -449,13 +449,13 @@ const Home = ({ translations, lang, darkMode }) => {
                     myClass="card_triangle hide_for_tab_and_smaller_view"
                     rtlClass="card_triangle_for_rtl"
                   /> */}
-                    <p
+                    <h4
                       className={`text_body_medium fw500 mb8 ${
                         darkMode && "white"
                       }`}
                     >
                       {translations.homeService.card3.title}
-                    </p>
+                    </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
@@ -515,13 +515,13 @@ const Home = ({ translations, lang, darkMode }) => {
                       myClass="card_triangle2 hide_for_tab_and_smaller_view"
                       rtlClass="card_triangle2_for_rtl"
                     /> */}
-                    <p
+                    <h4
                       className={`text_body_medium fw500 mb8 ${
                         darkMode && "white"
                       }`}
                     >
                       {translations.homeService.card4.title}
-                    </p>
+                    </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
@@ -576,13 +576,13 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_left_padding_for_rtl"
                     }`}
                   >
-                    <p
+                    <h4
                       className={`text_body_medium fw500 mb8 ${
                         darkMode && "white"
                       }`}
                     >
                       {translations.homeService.card5.title}
-                    </p>
+                    </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
@@ -637,13 +637,13 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_left_padding_for_rtl"
                     }`}
                   >
-                    <p
+                    <h4
                       className={`text_body_medium fw500 mb8 ${
                         darkMode && "white"
                       }`}
                     >
                       {translations.homeService.card6.title}
-                    </p>
+                    </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
@@ -805,252 +805,261 @@ const Home = ({ translations, lang, darkMode }) => {
           </Grid>
         </div>
         <div className="section_style">
-          <p className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
-            {translations.homeProduct.title}
-          </p>
-          <p className="text_body_small_regular center mb50">
-            {translations.homeProduct.subtitle}
-          </p>
-          <div className="card_holder mb45">
-            <div
-              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
-              // style={{ height: "245px" }}
+          <div className="upper_slide">
+            <h2
+              className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}
             >
-              <div className="card2_left">
-                <img
-                  src="/images/QRPay.png"
-                  alt="product image"
-                  // width="100%"
-                  // height="99%"
-                  className="card2_image_style"
-                />
-              </div>
-              <div className="card2_right">
-                <div>
+              {translations.homeProduct.title}
+            </h2>
+            <p className="text_body_small_regular center mb50">
+              {translations.homeProduct.subtitle}
+            </p>
+            <div className="card_holder mb45">
+              <div
+                className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+                // style={{ height: "245px" }}
+              >
+                <div className="card2_left">
+                  <img
+                    src="/images/QRPay.png"
+                    alt="product image"
+                    // width="100%"
+                    // height="99%"
+                    className="card2_image_style"
+                  />
+                </div>
+                <div className="card2_right">
+                  <div>
+                    <div
+                      className={`card_left_padding`}
+                      style={{ paddingLeft: "20px", paddingRight: "20px" }}
+                    >
+                      <h4
+                        className={`text_body_medium fw500 mb8 mt20 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.homeProduct.card1.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        style={{
+                          color: darkMode ? "#C7C7C7" : "#525252",
+                          borderTop: darkMode
+                            ? "1px solid #262626"
+                            : "1px Solid #fff ",
+                        }}
+                      >
+                        {translations.homeProduct.card1.details}
+                      </p>
+                    </div>
+                  </div>
                   <div
-                    className={`card_left_padding`}
-                    style={{ paddingLeft: "20px", paddingRight: "20px" }}
+                    className={`card_button_holder mt20  ${
+                      darkMode && "card_button_holder_dark"
+                    } ${lang === "kr" && "card_button_holder_rtl"}`}
                   >
-                    <p
-                      className={`text_body_medium fw500 mb8 mt20 ${
-                        darkMode && "white"
-                      }`}
+                    <Button
+                      className={`card_button ${
+                        darkMode && "card_button_dark"
+                      } ${lang === "kr" && "card_button_for_rtl"}`}
                     >
-                      {translations.homeProduct.card1.title}
-                    </p>
-                    <p
-                      className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
-                      style={{
-                        color: darkMode ? "#C7C7C7" : "#525252",
-                        borderTop: darkMode
-                          ? "1px solid #262626"
-                          : "1px Solid #fff ",
-                      }}
-                    >
-                      {translations.homeProduct.card1.details}
-                    </p>
+                      {translations.buttonText.visitNowText}
+                    </Button>
                   </div>
                 </div>
-                <div
-                  className={`card_button_holder mt20  ${
-                    darkMode && "card_button_holder_dark"
-                  } ${lang === "kr" && "card_button_holder_rtl"}`}
-                >
-                  <Button
-                    className={`card_button ${darkMode && "card_button_dark"} ${
-                      lang === "kr" && "card_button_for_rtl"
-                    }`}
+              </div>
+              <div
+                className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+                // style={{ height: "245px" }}
+              >
+                <div className="card2_left">
+                  <img
+                    src="/images/QRPay.png"
+                    alt="product image"
+                    // width="100%"
+                    // height="99%"
+                    className="card2_image_style"
+                  />
+                </div>
+                <div className="card2_right">
+                  <div>
+                    <div
+                      className={`card_left_padding`}
+                      style={{ paddingLeft: "20px", paddingRight: "20px" }}
+                    >
+                      <h4
+                        className={`text_body_medium fw500 mb8 mt20 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.homeProduct.card2.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        style={{
+                          color: darkMode ? "#C7C7C7" : "#525252",
+                          borderTop: darkMode
+                            ? "1px solid #262626"
+                            : "1px Solid #fff ",
+                        }}
+                      >
+                        {translations.homeProduct.card2.details}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={`card_button_holder mt20  ${
+                      darkMode && "card_button_holder_dark"
+                    } ${lang === "kr" && "card_button_holder_rtl"}`}
                   >
-                    {translations.buttonText.visitNowText}
-                  </Button>
+                    <Button
+                      className={`card_button ${
+                        darkMode && "card_button_dark"
+                      } ${lang === "kr" && "card_button_for_rtl"}`}
+                    >
+                      {translations.buttonText.visitNowText}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+                // style={{ height: "245px" }}
+              >
+                <div className="card2_left">
+                  <img
+                    src="/images/QRPay.png"
+                    alt="product image"
+                    // width="100%"
+                    // height="99%"
+                    className="card2_image_style"
+                  />
+                </div>
+                <div className="card2_right">
+                  <div>
+                    <div
+                      className={`card_left_padding`}
+                      style={{ paddingLeft: "20px", paddingRight: "20px" }}
+                    >
+                      <h4
+                        className={`text_body_medium fw500 mb8 mt20 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.homeProduct.card3.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        style={{
+                          color: darkMode ? "#C7C7C7" : "#525252",
+                          borderTop: darkMode
+                            ? "1px solid #262626"
+                            : "1px Solid #fff ",
+                        }}
+                      >
+                        {translations.homeProduct.card3.details}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={`card_button_holder mt20  ${
+                      darkMode && "card_button_holder_dark"
+                    } ${lang === "kr" && "card_button_holder_rtl"}`}
+                  >
+                    <Button
+                      className={`card_button ${
+                        darkMode && "card_button_dark"
+                      } ${lang === "kr" && "card_button_for_rtl"}`}
+                    >
+                      {translations.buttonText.visitNowText}
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
+                // style={{ height: "245px" }}
+              >
+                <div className="card2_left">
+                  <img
+                    src="/images/QRPay.png"
+                    alt="product image"
+                    // width="100%"
+                    // height="99%"
+                    className="card2_image_style"
+                  />
+                </div>
+                <div className="card2_right">
+                  <div>
+                    <div
+                      className={`card_left_padding`}
+                      style={{ paddingLeft: "20px", paddingRight: "20px" }}
+                    >
+                      <h4
+                        className={`text_body_medium fw500 mb8 mt20 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.homeProduct.card4.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        style={{
+                          color: darkMode ? "#C7C7C7" : "#525252",
+                          borderTop: darkMode
+                            ? "1px solid #262626"
+                            : "1px Solid #fff ",
+                        }}
+                      >
+                        {translations.homeProduct.card4.details}
+                      </p>
+                    </div>
+                  </div>
+                  <div
+                    className={`card_button_holder mt20  ${
+                      darkMode && "card_button_holder_dark"
+                    } ${lang === "kr" && "card_button_holder_rtl"}`}
+                  >
+                    <Button
+                      className={`card_button ${
+                        darkMode && "card_button_dark"
+                      } ${lang === "kr" && "card_button_for_rtl"}`}
+                    >
+                      {translations.buttonText.visitNowText}
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div
-              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
-              // style={{ height: "245px" }}
-            >
-              <div className="card2_left">
-                <img
-                  src="/images/QRPay.png"
-                  alt="product image"
-                  // width="100%"
-                  // height="99%"
-                  className="card2_image_style"
-                />
-              </div>
-              <div className="card2_right">
-                <div>
-                  <div
-                    className={`card_left_padding`}
-                    style={{ paddingLeft: "20px", paddingRight: "20px" }}
-                  >
-                    <p
-                      className={`text_body_medium fw500 mb8 mt20 ${
-                        darkMode && "white"
-                      }`}
-                    >
-                      {translations.homeProduct.card2.title}
-                    </p>
-                    <p
-                      className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
-                      style={{
-                        color: darkMode ? "#C7C7C7" : "#525252",
-                        borderTop: darkMode
-                          ? "1px solid #262626"
-                          : "1px Solid #fff ",
-                      }}
-                    >
-                      {translations.homeProduct.card2.details}
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className={`card_button_holder mt20  ${
-                    darkMode && "card_button_holder_dark"
-                  } ${lang === "kr" && "card_button_holder_rtl"}`}
-                >
-                  <Button
-                    className={`card_button ${darkMode && "card_button_dark"} ${
-                      lang === "kr" && "card_button_for_rtl"
-                    }`}
-                  >
-                    {translations.buttonText.visitNowText}
-                  </Button>
-                </div>
-              </div>
+            <div style={{ textAlign: "center" }}>
+              <Button
+                variant="contained"
+                color="primary"
+                startIcon={
+                  <MagicWand
+                    lang={lang}
+                    color={darkMode && "#1C1C1C"}
+                    myClass="Magicwand"
+                    rtlClass="Magicwand_for_rtl"
+                  />
+                }
+                className={`top_contained_buttton ${darkMode && "black"}`}
+                disableElevation
+              >
+                {translations.buttonText.discoverMoreText}
+              </Button>
             </div>
-            <div
-              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
-              // style={{ height: "245px" }}
-            >
-              <div className="card2_left">
-                <img
-                  src="/images/QRPay.png"
-                  alt="product image"
-                  // width="100%"
-                  // height="99%"
-                  className="card2_image_style"
-                />
-              </div>
-              <div className="card2_right">
-                <div>
-                  <div
-                    className={`card_left_padding`}
-                    style={{ paddingLeft: "20px", paddingRight: "20px" }}
-                  >
-                    <p
-                      className={`text_body_medium fw500 mb8 mt20 ${
-                        darkMode && "white"
-                      }`}
-                    >
-                      {translations.homeProduct.card3.title}
-                    </p>
-                    <p
-                      className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
-                      style={{
-                        color: darkMode ? "#C7C7C7" : "#525252",
-                        borderTop: darkMode
-                          ? "1px solid #262626"
-                          : "1px Solid #fff ",
-                      }}
-                    >
-                      {translations.homeProduct.card3.details}
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className={`card_button_holder mt20  ${
-                    darkMode && "card_button_holder_dark"
-                  } ${lang === "kr" && "card_button_holder_rtl"}`}
-                >
-                  <Button
-                    className={`card_button ${darkMode && "card_button_dark"} ${
-                      lang === "kr" && "card_button_for_rtl"
-                    }`}
-                  >
-                    {translations.buttonText.visitNowText}
-                  </Button>
-                </div>
-              </div>
-            </div>
-            <div
-              className={`card2_style  ${darkMode && "card1_style_for_dark"}`}
-              // style={{ height: "245px" }}
-            >
-              <div className="card2_left">
-                <img
-                  src="/images/QRPay.png"
-                  alt="product image"
-                  // width="100%"
-                  // height="99%"
-                  className="card2_image_style"
-                />
-              </div>
-              <div className="card2_right">
-                <div>
-                  <div
-                    className={`card_left_padding`}
-                    style={{ paddingLeft: "20px", paddingRight: "20px" }}
-                  >
-                    <p
-                      className={`text_body_medium fw500 mb8 mt20 ${
-                        darkMode && "white"
-                      }`}
-                    >
-                      {translations.homeProduct.card4.title}
-                    </p>
-                    <p
-                      className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
-                      style={{
-                        color: darkMode ? "#C7C7C7" : "#525252",
-                        borderTop: darkMode
-                          ? "1px solid #262626"
-                          : "1px Solid #fff ",
-                      }}
-                    >
-                      {translations.homeProduct.card4.details}
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className={`card_button_holder mt20  ${
-                    darkMode && "card_button_holder_dark"
-                  } ${lang === "kr" && "card_button_holder_rtl"}`}
-                >
-                  <Button
-                    className={`card_button ${darkMode && "card_button_dark"} ${
-                      lang === "kr" && "card_button_for_rtl"
-                    }`}
-                  >
-                    {translations.buttonText.visitNowText}
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style={{ textAlign: "center" }}>
-            <Button
-              variant="contained"
-              color="primary"
-              startIcon={
-                <MagicWand
-                  lang={lang}
-                  color={darkMode && "#1C1C1C"}
-                  myClass="Magicwand"
-                  rtlClass="Magicwand_for_rtl"
-                />
-              }
-              className={`top_contained_buttton ${darkMode && "black"}`}
-              disableElevation
-            >
-              {translations.buttonText.discoverMoreText}
-            </Button>
           </div>
         </div>
         <div className="section_style">
           <Grid container alignItems="center">
-            <Grid item xs={12} sm={6} className="centerForTabAndMobileViewOnly">
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              className="centerForTabProAndMobileViewOnly"
+            >
               <p className={`title_large2 ${darkMode && "lightBlue"}`}>
                 {translations.homeAccreditation.title1}
               </p>
@@ -1249,9 +1258,9 @@ const Home = ({ translations, lang, darkMode }) => {
           </Grid>
         </div>
         <div className="section_style">
-          <p className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
+          <h2 className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
             {translations.homeCaseStudies.title}
-          </p>
+          </h2>
           <p className="text_body_small_regular center mb50">
             {translations.homeCaseStudies.subtitle}
           </p>
@@ -1268,13 +1277,13 @@ const Home = ({ translations, lang, darkMode }) => {
               />
 
               <div style={{ padding: "14px 24px" }}>
-                <p
+                <h4
                   className={`text_body_medium fw500 mb8 ${
                     darkMode && "white"
                   }`}
                 >
                   {translations.homeCaseStudies.card1.title}
-                </p>
+                </h4>
                 <p
                   className="text_body_small_regular text_overflow_ellipsis_line4"
                   style={{
@@ -1311,13 +1320,13 @@ const Home = ({ translations, lang, darkMode }) => {
               />
 
               <div style={{ padding: "14px 24px" }}>
-                <p
+                <h4
                   className={`text_body_medium fw500 mb8 ${
                     darkMode && "white"
                   }`}
                 >
                   {translations.homeCaseStudies.card2.title}
-                </p>
+                </h4>
                 <p
                   className="text_body_small_regular text_overflow_ellipsis_line4"
                   style={{
@@ -1354,13 +1363,13 @@ const Home = ({ translations, lang, darkMode }) => {
               />
 
               <div style={{ padding: "14px 24px" }}>
-                <p
+                <h4
                   className={`text_body_medium fw500 mb8 ${
                     darkMode && "white"
                   }`}
                 >
                   {translations.homeCaseStudies.card3.title}
-                </p>
+                </h4>
                 <p
                   className="text_body_small_regular text_overflow_ellipsis_line4"
                   style={{
@@ -1397,13 +1406,13 @@ const Home = ({ translations, lang, darkMode }) => {
               />
 
               <div style={{ padding: "14px 24px" }}>
-                <p
+                <h4
                   className={`text_body_medium fw500 mb8 ${
                     darkMode && "white"
                   }`}
                 >
                   {translations.homeCaseStudies.card4.title}
-                </p>
+                </h4>
                 <p
                   className="text_body_small_regular text_overflow_ellipsis_line4"
                   style={{
@@ -1449,9 +1458,9 @@ const Home = ({ translations, lang, darkMode }) => {
           </div>
         </div>
         <div className="section_style">
-          <p className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
+          <h2 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
             {translations.homeContact.title}
-          </p>
+          </h2>
 
           <p
             className={`text_body_medium fw400 mb40 text_width ${
