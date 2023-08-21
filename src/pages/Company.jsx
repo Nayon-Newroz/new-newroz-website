@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 // import "../App.css";
 import { Button, Container, Grid, TextField } from "@mui/material";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -21,8 +21,162 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-
+const techs = [
+  {
+    img: "/images/Codeigniter.png",
+    techId: "Backend",
+    title: "Codeigniter",
+  },
+  {
+    img: "/images/Figma.png",
+    techId: "Design",
+    title: "Figma",
+  },
+  {
+    img: "/images/Cassandra.png",
+    techId: "Backend",
+    title: "Cassandra",
+  },
+  {
+    img: "/images/Postgre_SQL.png",
+    techId: "Database",
+    title: "Postgre SQL",
+  },
+  {
+    img: "/images/MySQL.png",
+    techId: "Database",
+    title: "MySQL",
+  },
+  {
+    img: "/images/Protopie.png",
+    techId: "Design",
+    title: "Protopie",
+  },
+  {
+    img: "/images/React.png",
+    techId: "Frontend",
+    title: "React",
+  },
+  {
+    img: "/images/Balsamiq.png",
+    techId: "Design",
+    title: "Balsamiq",
+  },
+  {
+    img: "/images/Next_Js.png",
+    techId: "Frontend",
+    title: "Next Js",
+  },
+  {
+    img: "/images/Amazon_web_service.png",
+    techId: "Cloud",
+    title: "Amazon web service",
+  },
+  {
+    img: "/images/PHP_Cupcake.png",
+    techId: "Backend",
+    title: "PHP Cupcake",
+  },
+  {
+    img: "/images/Selenium.png",
+    techId: "Testing",
+    title: "Selenium",
+  },
+  {
+    img: "/images/Appium.png",
+    techId: "Testing",
+    title: "Appium",
+  },
+  {
+    img: "/images/JMeter_Apache.png",
+    techId: "Testing",
+    title: "JMeter Apache",
+  },
+  {
+    img: "/images/Docker.png",
+    techId: "Cloud",
+    title: "Docker",
+  },
+  {
+    img: "/images/Jenkins.png",
+    techId: "Devops",
+    title: "Jenkins",
+  },
+  {
+    img: "/images/Kubernetes.png",
+    techId: "Cloud",
+    title: "Kubernetes",
+  },
+  {
+    img: "/images/Java.png",
+    techId: "Backend",
+    title: "Java",
+  },
+  {
+    img: "/images/Spring.png",
+    techId: "Backend",
+    title: "Spring",
+  },
+  {
+    img: "/images/Laravel.png",
+    techId: "Backend",
+    title: "Laravel",
+  },
+  {
+    img: "/images/Python.png",
+    techId: "Backend",
+    title: "Python",
+  },
+  {
+    img: "/images/PHP.png",
+    techId: "Backend",
+    title: "PHP",
+  },
+  {
+    img: "/images/Symfony.png",
+    techId: "Backend",
+    title: "Symfony",
+  },
+  {
+    img: "/images/Photoshop.png",
+    techId: "Design",
+    title: "Photoshop",
+  },
+  {
+    img: "/images/Illustrator.png",
+    techId: "Design",
+    title: "Illustrator",
+  },
+  {
+    img: "/images/Flutter.png",
+    techId: "Mobile App",
+    title: "Flutter",
+  },
+  {
+    img: "/images/Material_UI.png",
+    techId: "Frontend",
+    title: "Material UI",
+  },
+  {
+    img: "/images/Swift.png",
+    techId: "Mobile App",
+    title: "Swift",
+  },
+];
 const Company = ({ translations, lang, darkMode }) => {
+  const [active, setActive] = useState(
+    translations.companyTechnologiesWeUse.all
+  );
+  const [techList, setTechList] = useState(techs);
+  const handleTech = (id) => {
+    if (id === "All") {
+      setTechList(techs);
+    } else {
+      setTechList(techs.filter((res) => res.techId === id));
+    }
+    setActive(id);
+  };
+
   return (
     <div>
       <Container maxWidth="xl">
@@ -170,7 +324,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 <div
                   className={`card3_style  ${
                     darkMode && "card3_style_for_dark"
-                  } ${lang === "kr" && "card6_for_rtl"}`}
+                  } `}
                 >
                   <div>
                     <img
@@ -204,7 +358,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 <div
                   className={`card3_style  ${
                     darkMode && "card3_style_for_dark"
-                  } ${lang === "kr" && "card6_for_rtl"}`}
+                  } `}
                 >
                   <div>
                     <img
@@ -238,7 +392,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 <div
                   className={`card3_style  ${
                     darkMode && "card3_style_for_dark"
-                  } ${lang === "kr" && "card6_for_rtl"}`}
+                  } `}
                 >
                   <div>
                     <img
@@ -272,7 +426,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 <div
                   className={`card3_style  ${
                     darkMode && "card3_style_for_dark"
-                  } ${lang === "kr" && "card6_for_rtl"}`}
+                  } `}
                 >
                   <div>
                     <img
@@ -388,120 +542,611 @@ const Company = ({ translations, lang, darkMode }) => {
               {translations.compantRoadmapSection.subtitle}
             </p>
 
+            <Grid container justifyContent="center">
+              <Grid item xs={12} sm={6} md={6} lg={3}>
+                <div
+                  className={`card4_style  ${
+                    darkMode && "card3_style_for_dark"
+                  } `}
+                >
+                  <img src="/images/link.png" className="join_style" />
+                  <div
+                    className={`card4_text_holder orange  ${
+                      darkMode && "card3_style_for_dark"
+                    } `}
+                  >
+                    {translations.compantRoadmapSection.card1.year}
+                  </div>
+                  <div>
+                    <h4
+                      className={`text_body_medium fw500 mb8 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.compantRoadmapSection.card1.title}
+                    </h4>
+                    <p
+                      className="text_body_small_regular"
+                      style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
+                    >
+                      {translations.compantRoadmapSection.card1.details}
+                    </p>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={3}>
+                <div
+                  className={`card4_style card2_margin ${
+                    darkMode && "card3_style_for_dark"
+                  } `}
+                >
+                  <img src="/images/link.png" className="join_style" />
+                  <div
+                    className={`card4_text_holder deepBlue  ${
+                      darkMode && "card3_style_for_dark lightBlue"
+                    } `}
+                  >
+                    {translations.compantRoadmapSection.card2.year}
+                  </div>
+                  <div>
+                    <h4
+                      className={`text_body_medium fw500 mb8 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.compantRoadmapSection.card2.title}
+                    </h4>
+                    <p
+                      className="text_body_small_regular"
+                      style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
+                    >
+                      {translations.compantRoadmapSection.card2.details}
+                    </p>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={3}>
+                <div
+                  className={`card4_style card3_margin ${
+                    darkMode && "card3_style_for_dark"
+                  } `}
+                >
+                  <img src="/images/link.png" className="join_style" />
+                  <div
+                    className={`card4_text_holder orange  ${
+                      darkMode && "card3_style_for_dark"
+                    } `}
+                  >
+                    {translations.compantRoadmapSection.card3.year}
+                  </div>
+                  <div>
+                    <h4
+                      className={`text_body_medium fw500 mb8 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.compantRoadmapSection.card3.title}
+                    </h4>
+                    <p
+                      className="text_body_small_regular"
+                      style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
+                    >
+                      {translations.compantRoadmapSection.card3.details}
+                    </p>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={3}>
+                <div
+                  className={`card4_style card4_margin ${
+                    darkMode && "card3_style_for_dark"
+                  } `}
+                >
+                  <div
+                    className={`card4_text_holder deepBlue  ${
+                      darkMode && "card3_style_for_dark lightBlue"
+                    } `}
+                  >
+                    {translations.compantRoadmapSection.card4.year}
+                  </div>
+                  <div>
+                    <h4
+                      className={`text_body_medium fw500 mb8 ${
+                        darkMode && "white"
+                      }`}
+                    >
+                      {translations.compantRoadmapSection.card4.title}
+                    </h4>
+                    <p
+                      className="text_body_small_regular"
+                      style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
+                    >
+                      {translations.compantRoadmapSection.card4.details}
+                    </p>
+                  </div>
+                </div>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
+        <div className="section_style">
+          <div className="upper_slide">
+            <h2
+              className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}
+            >
+              {translations.companyOurMissionAndOurVisionSection.title}
+            </h2>
+            <p className="text_body_small_regular center mb50">
+              {translations.companyOurMissionAndOurVisionSection.subtitle}
+            </p>
+
+            <Grid container alignItems="center">
+              <Grid item sm={12} md={6} lg={6}>
+                <img
+                  src={
+                    darkMode
+                      ? "/images/Target_Dark.png"
+                      : "/images/Target_Light.png"
+                  }
+                  alt="ceo"
+                  className={`left_image_style ${
+                    lang === "kr" && "right_image_style"
+                  }`}
+                />
+              </Grid>
+              <Grid item sm={12} md={6} lg={6} className="mobile_view_center">
+                <div
+                  className={`card5_style mb24 ${
+                    darkMode && "card3_style_for_dark"
+                  } `}
+                >
+                  <span className={`card5_text_holder ${darkMode && "white"} `}>
+                    {
+                      translations.companyOurMissionAndOurVisionSection.card1
+                        .title
+                    }
+                  </span>
+                  <p
+                    className={`text_body_medium fw400 mt10 ${
+                      darkMode && "white"
+                    }`}
+                  >
+                    {
+                      translations.companyOurMissionAndOurVisionSection.card1
+                        .details
+                    }
+                  </p>
+                </div>
+                <div
+                  className={`card5_style ${
+                    darkMode && "card3_style_for_dark"
+                  } `}
+                >
+                  <span
+                    className={`card5_text_holder ${darkMode && "white"} `}
+                    style={{
+                      border: darkMode
+                        ? "1px solid #113CFC"
+                        : "1px solid #1597E5",
+                    }}
+                  >
+                    {
+                      translations.companyOurMissionAndOurVisionSection.card2
+                        .title
+                    }
+                  </span>
+                  <p
+                    className={`text_body_medium fw400 mt10 ${
+                      darkMode && "white"
+                    }`}
+                  >
+                    {
+                      translations.companyOurMissionAndOurVisionSection.card2
+                        .details
+                    }
+                  </p>
+                </div>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
+        <div className="section_style">
+          <div className="upper_slide">
+            <h2
+              className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}
+            >
+              {translations.companyAtAGlanceSection.title}
+            </h2>
+            <p className="text_body_small_regular center mb50">
+              {translations.companyAtAGlanceSection.subtitle}
+            </p>
+
             <div className="card_holder">
               <div
-                className={`card4_style  ${
+                className={`card6_style  ${
                   darkMode && "card3_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{ position: "absolute", top: 0, left: 0 }}
+                />
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    transform: "rotate(180deg)",
+                  }}
+                />
                 <div
-                  className={`card4_text_holder orange  ${
-                    darkMode && "card3_style_for_dark"
-                  } `}
+                  className={`circle_img_holder ${
+                    darkMode && "circle_img_holder_for_dark"
+                  }`}
                 >
-                  {translations.compantRoadmapSection.card1.year}
+                  <img src="/images/Team_members.svg" alt="Team members" />
                 </div>
-                <div>
-                  <h4
-                    className={`text_body_medium fw500 mb8 ${
-                      darkMode && "white"
-                    }`}
-                  >
-                    {translations.compantRoadmapSection.card1.title}
-                  </h4>
-                  <p
-                    className="text_body_small_regular"
-                    style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
-                  >
-                    {translations.compantRoadmapSection.card1.details}
-                  </p>
-                </div>
+                <p
+                  className={`card_no center deepBlue ${
+                    darkMode && "lightBlue"
+                  }`}
+                >
+                  {" "}
+                  {translations.companyAtAGlanceSection.card1.number}
+                </p>
+                <h4
+                  className={`text_body_medium center fw400  ${
+                    darkMode && "white"
+                  }`}
+                >
+                  {translations.companyAtAGlanceSection.card1.title}
+                </h4>
               </div>
               <div
-                className={`card4_style  ${
+                className={`card6_style  ${
                   darkMode && "card3_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{ position: "absolute", top: 0, left: 0 }}
+                />
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    transform: "rotate(180deg)",
+                  }}
+                />
                 <div
-                  className={`card4_text_holder deepBlue  ${
-                    darkMode && "card3_style_for_dark lightBlue"
-                  } `}
+                  className={`circle_img_holder ${
+                    darkMode && "circle_img_holder_for_dark"
+                  }`}
                 >
-                  {translations.compantRoadmapSection.card2.year}
+                  <img
+                    src="/images/Completed_projects.svg"
+                    alt="Completed projects"
+                  />
                 </div>
-                <div>
-                  <h4
-                    className={`text_body_medium fw500 mb8 ${
-                      darkMode && "white"
-                    }`}
-                  >
-                    {translations.compantRoadmapSection.card2.title}
-                  </h4>
-                  <p
-                    className="text_body_small_regular"
-                    style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
-                  >
-                    {translations.compantRoadmapSection.card2.details}
-                  </p>
-                </div>
+                <p
+                  className={`card_no center deepBlue ${
+                    darkMode && "lightBlue"
+                  }`}
+                >
+                  {" "}
+                  {translations.companyAtAGlanceSection.card2.number}
+                </p>
+                <h4
+                  className={`text_body_medium center fw400  ${
+                    darkMode && "white"
+                  }`}
+                >
+                  {translations.companyAtAGlanceSection.card2.title}
+                </h4>
               </div>
               <div
-                className={`card4_style  ${
+                className={`card6_style  ${
                   darkMode && "card3_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{ position: "absolute", top: 0, left: 0 }}
+                />
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    transform: "rotate(180deg)",
+                  }}
+                />
                 <div
-                  className={`card4_text_holder orange  ${
-                    darkMode && "card3_style_for_dark"
-                  } `}
+                  className={`circle_img_holder ${
+                    darkMode && "circle_img_holder_for_dark"
+                  }`}
                 >
-                  {translations.compantRoadmapSection.card3.year}
+                  <img
+                    src="/images/Countries_served.svg"
+                    alt="Countries served"
+                  />
                 </div>
-                <div>
-                  <h4
-                    className={`text_body_medium fw500 mb8 ${
-                      darkMode && "white"
-                    }`}
-                  >
-                    {translations.compantRoadmapSection.card3.title}
-                  </h4>
-                  <p
-                    className="text_body_small_regular"
-                    style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
-                  >
-                    {translations.compantRoadmapSection.card3.details}
-                  </p>
-                </div>
+                <p
+                  className={`card_no center deepBlue ${
+                    darkMode && "lightBlue"
+                  }`}
+                >
+                  {" "}
+                  {translations.companyAtAGlanceSection.card3.number}
+                </p>
+                <h4
+                  className={`text_body_medium center fw400  ${
+                    darkMode && "white"
+                  }`}
+                >
+                  {translations.companyAtAGlanceSection.card3.title}
+                </h4>
               </div>
               <div
-                className={`card4_style  ${
+                className={`card6_style  ${
                   darkMode && "card3_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{ position: "absolute", top: 0, left: 0 }}
+                />
+                <img
+                  src="/images/world.png"
+                  alt="world icon"
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    transform: "rotate(180deg)",
+                  }}
+                />
                 <div
-                  className={`card4_text_holder deepBlue  ${
-                    darkMode && "card3_style_for_dark lightBlue"
-                  } `}
+                  className={`circle_img_holder ${
+                    darkMode && "circle_img_holder_for_dark"
+                  }`}
                 >
-                  {translations.compantRoadmapSection.card4.year}
+                  <img src="/images/Clients.svg" alt="Clients" />
                 </div>
-                <div>
-                  <h4
-                    className={`text_body_medium fw500 mb8 ${
-                      darkMode && "white"
-                    }`}
-                  >
-                    {translations.compantRoadmapSection.card4.title}
-                  </h4>
-                  <p
-                    className="text_body_small_regular"
-                    style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
-                  >
-                    {translations.compantRoadmapSection.card4.details}
-                  </p>
-                </div>
+                <p
+                  className={`card_no center deepBlue ${
+                    darkMode && "lightBlue"
+                  }`}
+                >
+                  {" "}
+                  {translations.companyAtAGlanceSection.card4.number}
+                </p>
+                <h4
+                  className={`text_body_medium center fw400  ${
+                    darkMode && "white"
+                  }`}
+                >
+                  {translations.companyAtAGlanceSection.card4.title}
+                </h4>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="section_style">
+          <div className="upper_slide">
+            <h2
+              className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}
+            >
+              {translations.companyTechnologiesWeUse.title}
+            </h2>
+            <p className="text_body_small_regular center mb8">
+              {translations.companyTechnologiesWeUse.subtitle}
+            </p>
+            <p
+              className={`text_body_small_regular center mb50 black2 ${
+                darkMode && "white"
+              }`}
+            >
+              {translations.companyTechnologiesWeUse.details}
+            </p>
+
+            <Grid
+              container
+              justifyContent={{ xs: "center", sm: "center" }}
+              className="mb45"
+            >
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "All" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "All" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("All")}
+              >
+                {translations.companyTechnologiesWeUse.all}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Backend" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Backend" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Backend")}
+              >
+                {translations.companyTechnologiesWeUse.backend}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Frontend" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Frontend" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Frontend")}
+              >
+                {translations.companyTechnologiesWeUse.frontend}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Database" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Database" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Database")}
+              >
+                {translations.companyTechnologiesWeUse.database}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Cloud" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Cloud" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Cloud")}
+              >
+                {translations.companyTechnologiesWeUse.cloud}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Testing" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Testing" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Testing")}
+              >
+                {translations.companyTechnologiesWeUse.testing}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Devops" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Devops" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Devops")}
+              >
+                {translations.companyTechnologiesWeUse.devops}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Design" && "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Design" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Design")}
+              >
+                {translations.companyTechnologiesWeUse.design}
+              </Grid>
+              <Grid
+                item
+                className={
+                  darkMode
+                    ? `technology_button white ${
+                        active === "Mobile App" &&
+                        "technology_button_dark_active"
+                      }`
+                    : `technology_button ${
+                        active === "Mobile App" && "technology_button_active"
+                      }`
+                }
+                onClick={() => handleTech("Mobile App")}
+              >
+                {translations.companyTechnologiesWeUse.mobileApp}
+              </Grid>
+            </Grid>
+            {/* <div style={{ height: "500px", width: "500px" }}>
+              <div class="octagon">
+                <div class="inner">125463</div>
+              </div>
+            </div> */}
+            <Grid
+              container
+              alignItems="center"
+              justifyContent="center"
+              spacing={3}
+            >
+              {techList.map((item, i) => (
+                <Grid item xs={6} sm={4} md={2}>
+                  <div
+                    className={`card5_style  ${
+                      darkMode && "card3_style_for_dark"
+                    } `}
+                    style={{
+                      // background: "#fff",
+                      height: "200px",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div>
+                      <img
+                        src={item.img}
+                        alt={item.title}
+                        className="mb16"
+                        style={{ display: "block", margin: "auto" }}
+                      />
+                      <h4
+                        className={`text_body_medium center fw400  ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.companyAtAGlanceSection.card1.title}
+                      </h4>
+                    </div>
+                  </div>
+                </Grid>
+              ))}
+            </Grid>
           </div>
         </div>
       </Container>

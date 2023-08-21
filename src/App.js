@@ -189,7 +189,7 @@ function App(props) {
               setDarkMode={setDarkMode}
             />{" "}
           </div>
-          <ScrollTop {...props}>
+          {/* <ScrollTop {...props}>
             <Fab
               // color="primary"
               size="small"
@@ -198,7 +198,7 @@ function App(props) {
             >
               <VerticalAlignTopIcon onClick={scrollToTop} color="#25316" />
             </Fab>
-          </ScrollTop>
+          </ScrollTop> */}
         </div>
       </ThemeProvider>
     </div>

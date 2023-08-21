@@ -176,7 +176,7 @@ const en = {
     formTextYourMassage: "Your Massage",
   },
   // ---------------------home section end------------------
-// ---------------------company section start------------------
+  // ---------------------company section start------------------
   companyTopSection: {
     title:
       "NewrozTech enjoys connecting you and your Business with the immense potential power of technology. ",
@@ -320,7 +320,7 @@ const en = {
       number: "6+",
       title: "Countries served",
     },
-    card1: {
+    card4: {
       number: "8+",
       title: "Clients",
     },
@@ -330,6 +330,15 @@ const en = {
     subtitle: "we are legal members of well known associations",
     details:
       "Standard to demonstrate the ability to consistently provide products and services that meet customer and regulatory requirements.",
+    all: "All",
+    backend: "Backend",
+    frontend: "Frontend",
+    database: "Database",
+    cloud: "Cloud",
+    testing: "Testing",
+    devops: "Devops",
+    design: "Design",
+    mobileApp: "Mobile App", 
   },
   // ---------------------company section end------------------
   pageTitles: {

@@ -306,9 +306,7 @@ const Home = ({ translations, lang, darkMode }) => {
                 </Button>
               </div>
               <div
-                className={`card1_style  ${
-                  darkMode && "card1_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                className={`card1_style  ${darkMode && "card1_style_for_dark"}`}
               >
                 <div>
                   <div
@@ -387,7 +385,7 @@ const Home = ({ translations, lang, darkMode }) => {
               <div
                 className={`card1_style  ${
                   darkMode && "card1_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
                 <div>
                   <div
@@ -481,7 +479,7 @@ const Home = ({ translations, lang, darkMode }) => {
               <div
                 className={`card1_style  ${
                   darkMode && "card1_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
                 <div>
                   <div
@@ -547,7 +545,7 @@ const Home = ({ translations, lang, darkMode }) => {
               <div
                 className={`card1_style  ${
                   darkMode && "card1_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
                 <div>
                   <div
@@ -608,7 +606,7 @@ const Home = ({ translations, lang, darkMode }) => {
               <div
                 className={`card1_style  ${
                   darkMode && "card1_style_for_dark"
-                } ${lang === "kr" && "card6_for_rtl"}`}
+                } `}
               >
                 <div>
                   <div
