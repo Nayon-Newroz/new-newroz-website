@@ -274,19 +274,28 @@ const Home = ({ translations, lang, darkMode }) => {
           </div>
           <div className="upper_slide">
             <div className="card_holder mb45">
-              <div className="card1_style">
+              <div
+                className="card1_style"
+                style={{
+                  borderTop: "none",
+                  borderLeft: "none",
+                  background: "none",
+                  boxShadow: "none",
+                  display: "block",
+                }}
+              >
                 <h3 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
-                  {translations.homeService.card1.title}
+                  {translations.homeService.title}
                 </h3>
                 <h4 className="text_body_small_regular mb8">
-                  {translations.homeService.card1.subtitle}
+                  {translations.homeService.subtitle}
                 </h4>
                 <p
                   className={`text_body_medium fw400 mb16 ${
                     darkMode && "white"
                   }`}
                 >
-                  {translations.homeService.card1.details}
+                  {translations.homeService.details}
                 </p>
                 <Button
                   variant="contained"
@@ -358,13 +367,13 @@ const Home = ({ translations, lang, darkMode }) => {
                         darkMode && "white"
                       }`}
                     >
-                      {translations.homeService.card2.title}
+                      {translations.homeService.card1.title}
                     </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
-                      {translations.homeService.card2.details}
+                      {translations.homeService.card1.details}
                     </p>
                   </div>
                 </div>
@@ -377,6 +386,8 @@ const Home = ({ translations, lang, darkMode }) => {
                     className={`card_button ${darkMode && "card_button_dark"} ${
                       lang === "kr" && "card_button_for_rtl"
                     }`}
+                    component={Link}
+                    to={"/services/details"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -452,13 +463,13 @@ const Home = ({ translations, lang, darkMode }) => {
                         darkMode && "white"
                       }`}
                     >
-                      {translations.homeService.card3.title}
+                      {translations.homeService.card2.title}
                     </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
-                      {translations.homeService.card3.details}
+                      {translations.homeService.card2.details}
                     </p>
                   </div>
                 </div>
@@ -471,6 +482,8 @@ const Home = ({ translations, lang, darkMode }) => {
                     className={`card_button ${darkMode && "card_button_dark"} ${
                       lang === "kr" && "card_button_for_rtl"
                     }`}
+                    component={Link}
+                    to={"/services/details"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -518,13 +531,13 @@ const Home = ({ translations, lang, darkMode }) => {
                         darkMode && "white"
                       }`}
                     >
-                      {translations.homeService.card4.title}
+                      {translations.homeService.card3.title}
                     </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
-                      {translations.homeService.card4.details}
+                      {translations.homeService.card3.details}
                     </p>
                   </div>
                 </div>
@@ -537,6 +550,8 @@ const Home = ({ translations, lang, darkMode }) => {
                     className={`card_button ${darkMode && "card_button_dark"} ${
                       lang === "kr" && "card_button_for_rtl"
                     }`}
+                    component={Link}
+                    to={"/services/details"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -579,13 +594,13 @@ const Home = ({ translations, lang, darkMode }) => {
                         darkMode && "white"
                       }`}
                     >
-                      {translations.homeService.card5.title}
+                      {translations.homeService.card4.title}
                     </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
-                      {translations.homeService.card5.details}
+                      {translations.homeService.card4.details}
                     </p>
                   </div>
                 </div>
@@ -598,6 +613,8 @@ const Home = ({ translations, lang, darkMode }) => {
                     className={`card_button ${darkMode && "card_button_dark"} ${
                       lang === "kr" && "card_button_for_rtl"
                     }`}
+                    component={Link}
+                    to={"/services/details"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -640,13 +657,13 @@ const Home = ({ translations, lang, darkMode }) => {
                         darkMode && "white"
                       }`}
                     >
-                      {translations.homeService.card6.title}
+                      {translations.homeService.card5.title}
                     </h4>
                     <p
                       className="text_body_small_regular text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
-                      {translations.homeService.card6.details}
+                      {translations.homeService.card5.details}
                     </p>
                   </div>
                 </div>
@@ -659,6 +676,8 @@ const Home = ({ translations, lang, darkMode }) => {
                     className={`card_button  ${
                       darkMode && "card_button_dark"
                     } ${lang === "kr" && "card_button_for_rtl"}`}
+                    component={Link}
+                    to={"/services/details"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>

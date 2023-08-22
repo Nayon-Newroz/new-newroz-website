@@ -184,7 +184,7 @@ const Company = ({ translations, lang, darkMode }) => {
           container
           justifyContent="space-between"
           alignItems="center"
-          style={{ borderBottom: "1px solid #fff", paddingBottom: "5px" }}
+          className="journey_holder"
         >
           <Grid item sm={12} md={4} className="hideForTabAndMobileViewOnly">
             <h3 className={`subtitle mb20 ${darkMode && "white"}`}>
@@ -204,7 +204,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 component={Link}
                 to={"/"}
               >
-                HOME
+                {translations.pageTitles.HomepageTitle}
               </Grid>
               <Grid item xs="auto">
                 &nbsp; &nbsp;{" "}
@@ -214,7 +214,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 &nbsp; &nbsp;
               </Grid>
               <Grid item xs="auto" className="journeyText">
-                COMPANY
+                {translations.pageTitles.companypageTitle}
               </Grid>
             </Grid>
           </Grid>
@@ -953,13 +953,15 @@ const Company = ({ translations, lang, darkMode }) => {
             <p className="text_body_small_regular center mb8">
               {translations.companyTechnologiesWeUse.subtitle}
             </p>
-            <p
-              className={`text_body_small_regular center mb50 black2 ${
-                darkMode && "white"
-              }`}
-            >
-              {translations.companyTechnologiesWeUse.details}
-            </p>
+            <div className="detail_text_container">
+              <p
+                className={`text_body_small_regular center mb50  black2 ${
+                  darkMode && "white"
+                }`}
+              >
+                {translations.companyTechnologiesWeUse.details}
+              </p>
+            </div>
 
             <Grid
               container

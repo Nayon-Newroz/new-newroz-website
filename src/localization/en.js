@@ -49,34 +49,55 @@ const en = {
     animationText: "We are here to help you achieve your success.",
   },
   homeService: {
+    title: "Services",
+    subtitle: "Choose The Best IT Service Company",
+    details:
+      "When designing a solution, we make solving problems our utmost priority while also keeping an equal emphasis on aesthetics.",
+
     card1: {
-      title: "Services",
-      subtitle: "Choose The Best IT Service Company",
+      title: "Mobile Application Development",
       details:
-        "When designing a solution, we make solving problems our utmost priority while also keeping an equal emphasis on aesthetics.",
-      buttonText: "Discover More",
+        "Adhering to a mobile-first philosophy, we conceptualize, design, and deploy innovative mobile applications across various platforms. Our aim is to provide seamless user experiences, extending your business's reach in the increasingly mobile-driven market.",
     },
     card2: {
-      title: "Mobile Application Development",
-      details: "Bulid Mobile apps for adaptingmobile centric world.",
+      title: "Custom Software Development",
+      details:
+        "Recognizing the unique nature of each business, we excel in devising bespoke software solutions. Our offerings are not just aligned with your processes and objectives, but are designed to provide a distinct competitive advantage in your respective industry.",
     },
     card3: {
-      title: "Software Development",
-      details: "Build software for adapting mobile centric world.",
-    },
-    card4: {
       title: "Devops services",
       details:
         "Our DevOps services streamline software delivery and deployment, enabling efficient collaboration and operations teams.",
     },
-    card5: {
+    card4: {
       title: "Blockchain",
       details:
         "Our blockchain service offers secure, transparent, and decentralized transactions that enable trust and efficiency in various industries worldwide.",
     },
-    card6: {
+    card5: {
       title: "Software Testing Services",
-      details: "We offer Test Automation and Load Testing.",
+      details:
+        "Quality and reliability form the bedrock of our software offerings. Our adept testing team leverages rigorous testing methodologies to spot and rectify issues, ensuring the delivery of robust, flawless applications.",
+    },
+    card6: {
+      title: "Web Application Development",
+      details:
+        "With a team of seasoned developers at our disposal, we construct robust, user-friendly web applications, meticulously designed to align with your business needs. From minimalist websites to intricate web portals, our solutions serve as catalysts for growth and efficiency.",
+    },
+    card7: {
+      title: "UI/UX Design",
+      details:
+        "Our team of innovative UI/UX designers focuses on creating visually captivating and user-centric interfaces. These are tailored to not only enhance user satisfaction but also boost user adoption, cultivating exceptional digital experiences.",
+    },
+    card8: {
+      title: "E-KYC Verification Services",
+      details:
+        "In an era where regulatory compliance is crucial, our E-KYC verification services provide a streamlined and effective approach to identity verification. This helps meet stringent compliance standards and safeguards your business against potential risks.",
+    },
+    card9: {
+      title: "Cloud Consultancy",
+      details:
+        "We harness the transformative power of cloud technologies to give businesses an edge. Our experts guide you through every step of the process, from migration and architecture design to security optimization, ensuring you benefit from scalable, secure cloud solutions.",
     },
   },
   homeIdea: {
@@ -338,18 +359,87 @@ const en = {
     testing: "Testing",
     devops: "Devops",
     design: "Design",
-    mobileApp: "Mobile App", 
+    mobileApp: "Mobile App",
+  },
+  services: {
+    title: "Find out our Services",
+    subtitle: "Choose The Best IT Service Company",
+    details:
+      "When designing a solution, we make solving problems our utmost priority while also keeping an equal emphasis on aesthetics.",
+  },
+  servicesDetails: {
+    title: "Mobile solutions to suit your needs",
+    subtitle: "Choose The Best mobile solutions",
+    details:
+      "Adhering to a mobile-first philosophy, we conceptualize, design, and deploy innovative mobile applications across various platforms. Our aim is to provide seamless user experiences, extending your business's reach in the increasingly mobile-driven market.",
+    cardSection1: {
+      title: "What we do?",
+      card1: {
+        title: "iOS App Development",
+        details:
+          "Our skilled developers craft feature-rich and user-centric apps, utilizing the latest iOS capabilities. Whether it's creating a new app from scratch or enhancing an existing one, we ensure a seamless user experience, adherence to design guidelines, and integration with device features.",
+      },
+      card2: {
+        title: "Android App Development",
+        details:
+          "We specialize in Android App Development that transforms your concepts into dynamic and engaging mobile experiences. Our expert team leverages the Android platform's versatility to design and develop apps tailored to your business needs.            ",
+      },
+      card3: {
+        title: "Cross-Platform App Development",
+        details:
+          "We excel in Cross-Platform App Development, harnessing the power of technology to create versatile apps that work seamlessly across multiple platforms. Our skilled developers use cutting-edge tools and frameworks to build apps that deliver a consistent user experience on both iOS and Android devices.",
+      },
+      card4: {
+        title: "Flutter Mobile App Development",
+        details:
+          "We use Flutter to create apps that work seamlessly across iOS and Android devices, ensuring consistent performance and engaging user experiences. From concept to deployment, we prioritize innovation, design aesthetics, and efficient functionality to deliver apps that stand out in the competitive mobile landscape.",
+      },
+
+      card5: {
+        title: "Mobile App Consulting",
+        details:
+          "Mobile App Consulting at our company is your pathway to successful app development. Our seasoned consultants provide valuable insights, strategies, and technical guidance to shape your mobile app idea into a winning solution.",
+      },
+      card6: {
+        title: "React Native App Development",
+        details:
+          "we adhere React Native App Development, delivering versatile and efficient solutions that bridge the gap between native performance and cross-platform capabilities. From idea conceptualization to deployment, our React Native app development services prioritize performance, responsiveness, and user engagement.",
+      },
+    },
+    cardSection2: {
+      title: "Mobile app design process",
+      card1: {
+        title: "Strategy",
+      },
+      card2: {
+        title: "Analysis & Planning",
+      },
+      card3: {
+        title: "UI/UX Design",
+      },
+      card4: {
+        title: "App Development",
+      },
+      card5: {
+        title: "Testing",
+      },
+      card6: {
+        title: "Deployment & Support",
+      },
+    },
   },
   // ---------------------company section end------------------
   pageTitles: {
     HomepageTitle: "Home",
-    companypageTitle: "Our Company",
+    companypageTitle: "Company",
     servicespageTitle: "Services",
     caseStudiespageTitle: "Case Studies",
     contactpageTitle: "Contact",
     careerpageTitle: "career",
     productspageTitle: "Products",
     productDetailspageTitle: "Product Details",
+    serviceDetails: "Service Details",
+    details: "Details",
   },
   buttonText: {
     discoverMoreText: "Discover More",
