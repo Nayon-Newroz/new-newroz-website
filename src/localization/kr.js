@@ -430,6 +430,32 @@ const kr = {
       },
     },
   },
+  contactFindUs: {
+    title: "Find Us",
+    subtitle: "Innovative Solutions For A Digital World",
+    card1: {
+      title: "Erbil, Kurdistan",
+      address: "Iraq",
+      phone: "Phone: +964 (75) 00785710",
+    },
+    card2: {
+      title: "Dubai Silicon Oasis",
+      address: "Dubai - United Arab Emirates",
+      phone: "Phone: +971 (56) 626 6825",
+    },
+    card3: {
+      title: "Mirpur DOHS, Dhaka",
+      address: "Bangladesh",
+      phone: "Phone: +88 (017) 1327 3847",
+    },
+  },
+  contactFollowUs: {
+    title: "Follow Us",
+    subtitle: "contact@newroztech.com",
+    followUs :"Follow Us",
+    letsConnect:"Let’s Connect",
+    subscribe:"Subscribe",
+  },
   // ---------------------company section end------------------
   pageTitles: {
     HomepageTitle: "Home",

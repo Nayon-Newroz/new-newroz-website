@@ -270,7 +270,7 @@ const Company = ({ translations, lang, darkMode }) => {
               <h3 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
                 {translations.companyWhoYouAreSection.title}
               </h3>
-              <h4 className="text_body_small_regular mb8">
+              <h4 className="text_body_small_regular fw400 mb8">
                 {translations.companyWhoYouAreSection.subtitle}
               </h4>
               <p
@@ -292,7 +292,7 @@ const Company = ({ translations, lang, darkMode }) => {
               <h3 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
                 {translations.companyWhatWeBelieve.title}
               </h3>
-              <h4 className="text_body_small_regular mb8">
+              <h4 className="text_body_small_regular fw400 mb8">
                 {translations.companyWhatWeBelieve.subtitle}
               </h4>
               <p
@@ -348,7 +348,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.companyWhatWeBelieve.card1.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.companyWhatWeBelieve.card1.details}
@@ -382,7 +382,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.companyWhatWeBelieve.card2.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.companyWhatWeBelieve.card2.details}
@@ -416,7 +416,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.companyWhatWeBelieve.card3.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.companyWhatWeBelieve.card3.details}
@@ -450,7 +450,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.companyWhatWeBelieve.card4.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.companyWhatWeBelieve.card4.details}
@@ -484,7 +484,7 @@ const Company = ({ translations, lang, darkMode }) => {
                 />
                 {translations.companyCEOSection.title}
               </h3>
-              <h4 className="text_body_small_regular mb8">
+              <h4 className="text_body_small_regular fw400 mb8">
                 {translations.companyCEOSection.subtitle}
               </h4>
               <p
@@ -518,7 +518,7 @@ const Company = ({ translations, lang, darkMode }) => {
             >
               {translations.compantBrainBehindNewrozSection.title}
             </h2>
-            <p className="text_body_small_regular center mb50">
+            <p className="text_body_small_regular fw400 center mb50">
               {translations.compantBrainBehindNewrozSection.subtitle}
             </p>
 
@@ -538,7 +538,7 @@ const Company = ({ translations, lang, darkMode }) => {
             >
               {translations.compantRoadmapSection.title}
             </h2>
-            <p className="text_body_small_regular center mb50">
+            <p className="text_body_small_regular fw400 center mb50">
               {translations.compantRoadmapSection.subtitle}
             </p>
 
@@ -566,7 +566,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.compantRoadmapSection.card1.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.compantRoadmapSection.card1.details}
@@ -597,7 +597,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.compantRoadmapSection.card2.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.compantRoadmapSection.card2.details}
@@ -628,7 +628,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.compantRoadmapSection.card3.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.compantRoadmapSection.card3.details}
@@ -658,7 +658,7 @@ const Company = ({ translations, lang, darkMode }) => {
                       {translations.compantRoadmapSection.card4.title}
                     </h4>
                     <p
-                      className="text_body_small_regular"
+                      className="text_body_small_regular fw400"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.compantRoadmapSection.card4.details}
@@ -676,7 +676,7 @@ const Company = ({ translations, lang, darkMode }) => {
             >
               {translations.companyOurMissionAndOurVisionSection.title}
             </h2>
-            <p className="text_body_small_regular center mb50">
+            <p className="text_body_small_regular fw400 center mb50">
               {translations.companyOurMissionAndOurVisionSection.subtitle}
             </p>
 
@@ -757,7 +757,7 @@ const Company = ({ translations, lang, darkMode }) => {
             >
               {translations.companyAtAGlanceSection.title}
             </h2>
-            <p className="text_body_small_regular center mb50">
+            <p className="text_body_small_regular fw400 center mb50">
               {translations.companyAtAGlanceSection.subtitle}
             </p>
 
@@ -950,12 +950,12 @@ const Company = ({ translations, lang, darkMode }) => {
             >
               {translations.companyTechnologiesWeUse.title}
             </h2>
-            <p className="text_body_small_regular center mb8">
+            <p className="text_body_small_regular fw400 center mb8">
               {translations.companyTechnologiesWeUse.subtitle}
             </p>
             <div className="detail_text_container">
               <p
-                className={`text_body_small_regular center mb50  black2 ${
+                className={`text_body_small_regular fw400 center mb50  black2 ${
                   darkMode && "white"
                 }`}
               >

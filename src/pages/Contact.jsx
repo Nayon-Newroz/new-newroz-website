@@ -163,7 +163,7 @@ const techs = [
     title: "Swift",
   },
 ];
-const Services = ({ translations, lang, darkMode }) => {
+const Contact = ({ translations, lang, darkMode }) => {
   const [active, setActive] = useState(
     translations.companyTechnologiesWeUse.all
   );
@@ -188,7 +188,7 @@ const Services = ({ translations, lang, darkMode }) => {
         >
           <Grid item sm={12} md={4} className="hideForTabAndMobileViewOnly">
             <h3 className={`subtitle mb20 ${darkMode && "white"}`}>
-              {translations.pageTitles.servicespageTitle}
+              {translations.pageTitles.contactpageTitle}
             </h3>
           </Grid>
           <Grid item sm={12} md={8}>
@@ -213,28 +213,278 @@ const Services = ({ translations, lang, darkMode }) => {
                 />{" "}
                 &nbsp; &nbsp;
               </Grid>
+
               <Grid item xs="auto" className="journeyText">
-                {translations.pageTitles.servicespageTitle}
+                {translations.pageTitles.contactpageTitle}
               </Grid>
             </Grid>
           </Grid>
         </Grid>
-        <div className="section_style">
-          <h2 className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
-            {translations.services.title}
-          </h2>
-          <p className="text_body_small_regular fw400 center mb8">
-            {translations.services.subtitle}
-          </p>
-          <div className="detail_text_container">
+        <div className="section_style ">
+          <div className="contact_form_container">
+            <h2
+              className={`title_large2 center mb5 ${darkMode && "lightBlue"}`}
+            >
+              {translations.homeContact.title}
+            </h2>
+
             <p
-              className={`text_body_small_regular fw400 center mb50  black2 ${
+              className={`text_body_medium fw400 mb40 center ${
                 darkMode && "white"
               }`}
             >
-              {translations.services.details}
+              {translations.homeContact.details}
             </p>
+
+            <Grid
+              container
+              spacing={3}
+              className="message_box_input_box_margin"
+            >
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  placeholder={translations.homeContact.formTextYourName}
+                  size="small"
+                  id="outlined-basic"
+                  variant="outlined"
+                  // className="message_form_input_style"
+                  className={`message_form_input_style ${
+                    darkMode && "message_form_input_style_dark"
+                  }`}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  placeholder={translations.homeContact.formTextEmail}
+                  size="small"
+                  id="outlined-basic"
+                  variant="outlined"
+                  className={`message_form_input_style ${
+                    darkMode && "message_form_input_style_dark"
+                  }`}
+                />
+              </Grid>
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  placeholder={translations.homeContact.formTextPhone}
+                  size="small"
+                  id="outlined-basic"
+                  variant="outlined"
+                  className={`message_form_input_style ${
+                    darkMode && "message_form_input_style_dark"
+                  }`}
+                />
+              </Grid>
+
+              <Grid item xs={12}>
+                <TextField
+                  fullWidth
+                  placeholder={translations.homeContact.formTextYourMassage}
+                  size="small"
+                  id="outlined-basic"
+                  variant="outlined"
+                  className={`message_form_input_style ${
+                    darkMode && "message_form_input_style_dark"
+                  }`}
+                  multiline
+                  rows={4}
+                />
+              </Grid>
+              <Grid item xs={12} className="center">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  startIcon={
+                    <SendIcon
+                      lang={lang}
+                      color={darkMode && "#1C1C1C"}
+                      // myClass="Magicwand"
+                      rtlClass="send_icon_for_rtl"
+                    />
+                  }
+                  className={`top_contained_buttton ${darkMode && "black"}`}
+                  disableElevation
+                >
+                  {translations.buttonText.submitNow}
+                </Button>
+              </Grid>
+            </Grid>
           </div>
+        </div>
+        <div className="section_style">
+          <h2 className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
+            {translations.contactFindUs.title}
+          </h2>
+          <p className="text_body_small_regular fw400 center mb8">
+            {translations.contactFindUs.subtitle}
+          </p>
+
+          <div
+            className={`card_triangle_holder ${
+              lang === "kr" && "card_triangle_holder_for_rtl"
+            }`}
+          >
+            <Triangle
+              lang={lang}
+              color={darkMode ? "#4790E4" : "#ABCCFE"}
+              myClass="card_triangle hide_for_tab_and_smaller_view"
+              // rtlClass="card_triangle_for_rtl"
+            />
+          </div>
+          <div className="upper_slide">
+            <div
+              style={{
+                minHeight: "550px",
+                // background: "red",
+                backgroundImage: "url(/images/Map_Light.png)",
+                height: "100%",
+
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                display: "flex",
+                alignItems: "flex-end",
+              }}
+            >
+              <div
+                className="card_holder mb45"
+                style={{ width: "100%", justifyContent: "center" }}
+              >
+                <div
+                  className={`card7_style  ${
+                    darkMode && "card7_style_for_dark"
+                  }`}
+                >
+                  <Grid container alignItems="center" columnSpacing={2}>
+                    <Grid item xs="auto">
+                      <img
+                        src={
+                          darkMode
+                            ? "/images/kurdistan_flag_dark.png"
+                            : "/images/kurdistan_flag_light.png"
+                        }
+                        alt="flag"
+                        width="100px"
+                      />
+                    </Grid>
+                    <Grid item xs="auto">
+                      <h4
+                        className={`text_body_medium fw500 mb8 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.contactFindUs.card1.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular fw500 mb8"
+                        style={{ color: darkMode ? "#fff" : "#2B2B2B" }}
+                      >
+                        {translations.contactFindUs.card1.address}
+                      </p>
+                      <p
+                        className="text_body_small_regular fw500"
+                        style={{ color: darkMode ? "#fff" : "#2B2B2B" }}
+                      >
+                        {translations.contactFindUs.card1.phone}
+                      </p>
+                    </Grid>
+                  </Grid>
+                </div>
+                <div
+                  className={`card7_style  ${
+                    darkMode && "card7_style_for_dark"
+                  }`}
+                >
+                  <Grid container alignItems="center" columnSpacing={2}>
+                    <Grid item xs="auto">
+                      <img
+                        src={
+                          darkMode
+                            ? "/images/uae_flag_dark.png"
+                            : "/images/uae_flag_light.png"
+                        }
+                        alt="flag"
+                        width="100px"
+                      />
+                    </Grid>
+                    <Grid item xs="auto">
+                      <h4
+                        className={`text_body_medium fw500 mb8 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.contactFindUs.card2.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular fw500 mb8"
+                        style={{ color: darkMode ? "#fff" : "#2B2B2B" }}
+                      >
+                        {translations.contactFindUs.card2.address}
+                      </p>
+                      <p
+                        className="text_body_small_regular fw500"
+                        style={{ color: darkMode ? "#fff" : "#2B2B2B" }}
+                      >
+                        {translations.contactFindUs.card2.phone}
+                      </p>
+                    </Grid>
+                  </Grid>
+                </div>
+                <div
+                  className={`card7_style  ${
+                    darkMode && "card7_style_for_dark"
+                  }`}
+                >
+                  <Grid container alignItems="center" columnSpacing={2}>
+                    <Grid item xs="auto">
+                      <img
+                        src={
+                          darkMode
+                            ? "/images/bangladesh_flag_dark.png"
+                            : "/images/bangladesh_flag_light.png"
+                        }
+                        alt="flag"
+                        width="100px"
+                      />
+                    </Grid>
+                    <Grid item xs="auto">
+                      <h4
+                        className={`text_body_medium fw500 mb8 ${
+                          darkMode && "white"
+                        }`}
+                      >
+                        {translations.contactFindUs.card3.title}
+                      </h4>
+                      <p
+                        className="text_body_small_regular fw500 mb8"
+                        style={{ color: darkMode ? "#fff" : "#2B2B2B" }}
+                      >
+                        {translations.contactFindUs.card3.address}
+                      </p>
+                      <p
+                        className="text_body_small_regular fw500"
+                        style={{ color: darkMode ? "#fff" : "#2B2B2B" }}
+                      >
+                        {translations.contactFindUs.card3.phone}
+                      </p>
+                    </Grid>
+                  </Grid>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="section_style">
+          <h2 className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
+            {translations.contactFindUs.title}
+          </h2>
+          <p className="text_body_small_regular fw400 fw400 center mb8">
+            {translations.contactFindUs.subtitle}
+          </p>
+
           <div
             className={`card_triangle_holder ${
               lang === "kr" && "card_triangle_holder_for_rtl"
@@ -317,7 +567,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card1.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card1.details}
@@ -399,7 +649,6 @@ const Services = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_left_padding_for_rtl"
                     }`}
                   >
-                   
                     <h4
                       className={`text_body_medium fw500 mb8 ${
                         darkMode && "white"
@@ -408,7 +657,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card2.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card2.details}
@@ -476,7 +725,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card3.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card3.details}
@@ -539,7 +788,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card4.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card4.details}
@@ -602,7 +851,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card5.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card5.details}
@@ -727,7 +976,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card6.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card6.details}
@@ -790,7 +1039,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card7.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card7.details}
@@ -864,7 +1113,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card8.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card8.details}
@@ -932,7 +1181,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card9.title}
                     </h4>
                     <p
-                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card9.details}
@@ -952,7 +1201,6 @@ const Services = ({ translations, lang, darkMode }) => {
                     to={"/services/details"}
                   >
                     {translations.buttonText.visitNowText}
-                    
                   </Button>
                 </div>
               </div>
@@ -964,4 +1212,4 @@ const Services = ({ translations, lang, darkMode }) => {
   );
 };
 
-export default Services;
+export default Contact;

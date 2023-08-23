@@ -386,7 +386,11 @@
   max-width: 70%;
 }
 .detail_text_container {
-  max-width: 50%;
+  max-width: 60%;
+  margin: auto;
+}
+.contact_form_container {
+  max-width: 75%;
   margin: auto;
 }
 
@@ -399,7 +403,7 @@
   margin: 0 !important;
   color: #ff7539;
   font-style: normal !important;
-  font-weight: 400 !important;
+  /* font-weight: 400 !important; */
   font-size: 16px !important;
 }
 .text_body_small_regular li {
@@ -682,6 +686,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.card7_style {
+  flex: 0 0 calc(33% - 17px);
+  padding: 10px;
+  border-radius: 200px;
+  box-sizing: border-box;
+  border: 1px solid rgba(70, 144, 255, 1);
+  background: rgba(70, 144, 255, 0.2);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card7_style_for_dark {
+  border: 1px solid #011e51;
+  background: rgba(1, 52, 130, 0.2);
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+}
 .card3_style {
   flex: 0 0 calc(50% - 15px);
   border-radius: 10px;
@@ -963,8 +986,8 @@
 }
 
 .circle_img_holder {
-  width: 114px;
-  height: 114px;
+  width: 80px;
+  height: 80px;
   background: #ffffff;
   border-radius: 200px;
   margin: auto;
@@ -1432,6 +1455,9 @@
   color: #d23f00 !important;
 }
 @media screen and (max-width: 1536px) {
+  .card7_style {
+    flex: 0 0 calc(50% - 15px);
+  }
   .card4_style {
     width: 300px;
   }
@@ -1672,7 +1698,7 @@
     line-height: 22px !important;
   }
   .text_body_small_regular {
-    font-weight: 400 !important;
+    /* font-weight: 400 !important; */
     font-size: 14px !important;
     line-height: 21px !important;
   }
@@ -1724,7 +1750,8 @@
   .card4 {
     background-size: 200px;
   }
-  .card1_style {
+  .card1_style,
+  .card7_style {
     flex: 0 0 calc(50% - 15px);
   }
   .card7 {
@@ -1773,8 +1800,14 @@
     margin-left: auto;
     width: 40%;
   }
+  .card7_style {
+    flex: 0 0 100%;
+  }
 }
 @media screen and (max-width: 600px) {
+  .hideForTabViewOnly {
+    display: none !important;
+  }
   .card4_style {
     width: 300px;
     height: 450px;
@@ -1832,7 +1865,7 @@
   .top_detail_text_container {
     max-width: 100%;
   }
-  .detail_text_container {
+  .detail_text_container .contact_form_container {
     max-width: 100%;
   }
   .contained_buttton {
@@ -1883,7 +1916,7 @@
   }
   .text_body_small_regular {
     /* text-align: center; */
-    font-weight: 400 !important;
+    /* font-weight: 400 !important; */
     font-size: 14px !important;
     line-height: 21px !important;
   }
@@ -1966,6 +1999,7 @@
   .card1_style:first-child {
     text-align: center;
   }
+
   .mobile_view_center {
     text-align: center !important;
   }

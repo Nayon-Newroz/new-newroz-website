@@ -287,7 +287,7 @@ const Home = ({ translations, lang, darkMode }) => {
                 <h3 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
                   {translations.homeService.title}
                 </h3>
-                <h4 className="text_body_small_regular mb8">
+                <h4 className="text_body_small_regular fw400 mb8">
                   {translations.homeService.subtitle}
                 </h4>
                 <p
@@ -370,7 +370,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card1.title}
                     </h4>
                     <p
-                      className="text_body_small_regular text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card1.details}
@@ -466,7 +466,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card2.title}
                     </h4>
                     <p
-                      className="text_body_small_regular text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card2.details}
@@ -534,7 +534,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card3.title}
                     </h4>
                     <p
-                      className="text_body_small_regular text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card3.details}
@@ -597,7 +597,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card4.title}
                     </h4>
                     <p
-                      className="text_body_small_regular text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card4.details}
@@ -660,7 +660,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       {translations.homeService.card5.title}
                     </h4>
                     <p
-                      className="text_body_small_regular text_overflow_ellipsis_line3"
+                      className="text_body_small_regular fw400 text_overflow_ellipsis_line3"
                       style={{ color: darkMode ? "#C7C7C7" : "#525252" }}
                     >
                       {translations.homeService.card5.details}
@@ -759,7 +759,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   rtlClass="comma_right_for_rtl"
                 />
               </p>
-              <p className="text_body_small_regular mb5">
+              <p className="text_body_small_regular fw400 mb5">
                 {translations.homeIdea.subtitle}
               </p>
               <p
@@ -828,7 +828,7 @@ const Home = ({ translations, lang, darkMode }) => {
             >
               {translations.homeProduct.title}
             </h2>
-            <p className="text_body_small_regular center mb50">
+            <p className="text_body_small_regular fw400 center mb50">
               {translations.homeProduct.subtitle}
             </p>
             <div className="card_holder mb45">
@@ -859,7 +859,7 @@ const Home = ({ translations, lang, darkMode }) => {
                         {translations.homeProduct.card1.title}
                       </h4>
                       <p
-                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        className="text_body_small_regular fw400 pt8 text_overflow_ellipsis_line4"
                         style={{
                           color: darkMode ? "#C7C7C7" : "#525252",
                           borderTop: darkMode
@@ -913,7 +913,7 @@ const Home = ({ translations, lang, darkMode }) => {
                         {translations.homeProduct.card2.title}
                       </h4>
                       <p
-                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        className="text_body_small_regular fw400 pt8 text_overflow_ellipsis_line4"
                         style={{
                           color: darkMode ? "#C7C7C7" : "#525252",
                           borderTop: darkMode
@@ -967,7 +967,7 @@ const Home = ({ translations, lang, darkMode }) => {
                         {translations.homeProduct.card3.title}
                       </h4>
                       <p
-                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        className="text_body_small_regular fw400 pt8 text_overflow_ellipsis_line4"
                         style={{
                           color: darkMode ? "#C7C7C7" : "#525252",
                           borderTop: darkMode
@@ -1021,7 +1021,7 @@ const Home = ({ translations, lang, darkMode }) => {
                         {translations.homeProduct.card4.title}
                       </h4>
                       <p
-                        className="text_body_small_regular pt8 text_overflow_ellipsis_line4"
+                        className="text_body_small_regular fw400 pt8 text_overflow_ellipsis_line4"
                         style={{
                           color: darkMode ? "#C7C7C7" : "#525252",
                           borderTop: darkMode
@@ -1083,7 +1083,7 @@ const Home = ({ translations, lang, darkMode }) => {
               <p className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
                 {translations.homeAccreditation.title2}{" "}
               </p>
-              <p className="text_body_small_regular mb5">
+              <p className="text_body_small_regular fw400 mb5">
                 {translations.homeAccreditation.subtitle}
               </p>
               <p
@@ -1111,7 +1111,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     />
 
                     <p
-                      className={`text_body_small_regular center`}
+                      className={`text_body_small_regular fw400 center`}
                       style={{
                         color: darkMode ? "#C7C7C7" : "#2B2B2B",
                       }}
@@ -1134,7 +1134,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     />
 
                     <p
-                      className={`text_body_small_regular center`}
+                      className={`text_body_small_regular fw400 center`}
                       style={{
                         color: darkMode ? "#C7C7C7" : "#2B2B2B",
                       }}
@@ -1156,7 +1156,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     />
 
                     <p
-                      className={`text_body_small_regular center`}
+                      className={`text_body_small_regular fw400 center`}
                       style={{
                         color: darkMode ? "#C7C7C7" : "#2B2B2B",
                       }}
@@ -1193,7 +1193,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     />
 
                     <p
-                      className={`text_body_small_regular center`}
+                      className={`text_body_small_regular fw400 center`}
                       style={{
                         color: darkMode ? "#C7C7C7" : "#2B2B2B",
                       }}
@@ -1227,7 +1227,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     />
 
                     <p
-                      className={`text_body_small_regular center`}
+                      className={`text_body_small_regular fw400 center`}
                       style={{
                         color: darkMode ? "#C7C7C7" : "#2B2B2B",
                       }}
@@ -1261,7 +1261,7 @@ const Home = ({ translations, lang, darkMode }) => {
                     />
 
                     <p
-                      className={`text_body_small_regular center`}
+                      className={`text_body_small_regular fw400 center`}
                       style={{
                         color: darkMode ? "#C7C7C7" : "#2B2B2B",
                       }}
@@ -1278,7 +1278,7 @@ const Home = ({ translations, lang, darkMode }) => {
           <h2 className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
             {translations.homeCaseStudies.title}
           </h2>
-          <p className="text_body_small_regular center mb50">
+          <p className="text_body_small_regular fw400 center mb50">
             {translations.homeCaseStudies.subtitle}
           </p>
           <div className="card_holder mb45">
@@ -1302,7 +1302,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   {translations.homeCaseStudies.card1.title}
                 </h4>
                 <p
-                  className="text_body_small_regular text_overflow_ellipsis_line4"
+                  className="text_body_small_regular fw400 text_overflow_ellipsis_line4"
                   style={{
                     color: darkMode ? "#C7C7C7" : "#525252",
                   }}
@@ -1345,7 +1345,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   {translations.homeCaseStudies.card2.title}
                 </h4>
                 <p
-                  className="text_body_small_regular text_overflow_ellipsis_line4"
+                  className="text_body_small_regular fw400 text_overflow_ellipsis_line4"
                   style={{
                     color: darkMode ? "#C7C7C7" : "#525252",
                   }}
@@ -1388,7 +1388,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   {translations.homeCaseStudies.card3.title}
                 </h4>
                 <p
-                  className="text_body_small_regular text_overflow_ellipsis_line4"
+                  className="text_body_small_regular fw400 text_overflow_ellipsis_line4"
                   style={{
                     color: darkMode ? "#C7C7C7" : "#525252",
                   }}
@@ -1431,7 +1431,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   {translations.homeCaseStudies.card4.title}
                 </h4>
                 <p
-                  className="text_body_small_regular text_overflow_ellipsis_line4"
+                  className="text_body_small_regular fw400 text_overflow_ellipsis_line4"
                   style={{
                     color: darkMode ? "#C7C7C7" : "#525252",
                   }}
