@@ -6,6 +6,7 @@ import Company from "./Company";
 import Services from "./Services";
 import ServicesDetails from "./ServicesDetails";
 import Contact from "./Contact";
+import Career from "./Career";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -52,6 +53,16 @@ const Navigation = ({ translations, lang, darkMode }) => {
           path="/contact"
           element={
             <Contact
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/career"
+          element={
+            <Career
               translations={translations}
               lang={lang}
               darkMode={darkMode}

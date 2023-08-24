@@ -143,7 +143,13 @@ const Footer = ({ translations, lang, darkMode }) => {
               </li>
 
               <li>{translations.footer.blog}</li>
-              <li>{translations.footer.careers}</li>
+              <li>
+                 <Link to="/career" className="link_style">
+                
+                {translations.footer.careers}
+                    </Link>
+                
+                </li>
               <li>{translations.footer.jobs}</li>
               <li>{translations.footer.Portfolio}</li>
             </ul>

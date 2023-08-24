@@ -450,18 +450,88 @@ const en = {
   contactFollowUs: {
     title: "Follow Us",
     subtitle: "contact@newroztech.com",
-    followUs :"Follow Us",
-    letsConnect:"Let’s Connect",
-    subscribe:"Subscribe",
+    followUs: "Follow Us",
+    letsConnect: "Let’s Connect",
+    subscribe: "Subscribe",
+  },
+  contactFollowUs: {
+    title: "Follow Us",
+    subtitle: "contact@newroztech.com",
+    followUs: "Follow Us",
+    letsConnect: "Let’s Connect",
+    subscribe: "Subscribe",
   },
   // ---------------------company section end------------------
+  // ---------------------career section start------------------
+  careerTopSection: {
+    title: "Be a Part of Newroz Growing Team. ",
+    subtitle: "Make an impact doing what you love.",
+    card1: {
+      title: "UI Designer job",
+      details:
+        "We are looking for an experienced and talented UI designer to design and shape unique, user-centric products and experiences. The ideal candidate will have experience working in agile teams, with developers, UX designers and copywriters.  You will be able to make deliberate design decisions and to translate any given user-experience journey into a smooth and intuitive interaction.",
+    },
+    paginationText: "1 - 6 out of 13 Products",
+  },
+  careerJobTypeSection: {
+    type1: "All",
+    type2: "Engineering (6)",
+    type3: "Design (2)",
+    type4: "FinTech (3)",
+    type5: "Testing (1)",
+    type6: "DevOps",
+    type7: "frontend developer",
+  },
+  careerLocationSection: {
+    type1: "Dhaka",
+    type1: "Kurdistan",
+    type1: "Dubai",
+  },
+  careerHowToApply: {
+    title: "HOW TO APPLY",
+    subtitle:
+      "Ready to embark on an exciting journey with Newroz Technologies Limited? Here's how you can apply to join our team:",
+    details1:
+      "Browse our open positions on our recruitment portal and identify the role that best matches your skills, experience, and career aspirations.",
+    details2:
+      "Prepare your resume, ensuring it highlights your relevant expertise and accomplishments.",
+    details3:
+      "Write a compelling cover letter that demonstrates your passion for technology and explains why you're the perfect fit for the role.",
+    details4:
+      "Submit your application through our online portal, and be sure to include your resume, cover letter, and any additional documentation requested in the job posting.",
+  },
+  careerTheRecruitmentProcess: {
+    title: "THE RECRUITMENT PROCESS",
+    subtitle:
+      "At Newroz Technologies Limited, we pride ourselves on our thorough recruitment process, designed to identify top talent and ensure a good fit for both the candidate and our company. Here's what you can expect when you apply:",
+    details1:
+      "Application Review: Our HR team will carefully review your application, assessing your skills, experience, and suitability for the role.",
+    details2:
+      "Phone Screening: If your application meets our requirements, you'll be invited to participate in a phone screening. This is an opportunity for us to learn more about you and for you to ask any questions you may have about the role or our company.",
+    details3:
+      "Technical Assessment: Depending on the position, you may be asked to complete a technical assessment to demonstrate your proficiency in specific skills or technologies.",
+    details4:
+      "In-Person or Video Interviews Shortlisted candidates will be invited for in-person or video interviews, where you'll meet with members of our team to discuss your experience, skills, and career goals in more detail.",
+    details5:
+      "Reference Checks: If you progress to the final stages of the recruitment process, we will conduct reference checks to verify your employment history and obtain feedback from your previous managers or colleagues.",
+    details6:
+      "Offer and Onboarding: Successful candidates will receive a formal offer, outlining the terms and conditions of employment. Upon acceptance, you'll be welcomed to our team and begin the onboarding process, where you'll learn more about our company culture, values, and expectations.",
+  },
+  careerEmbraceTheFuture: {
+    title: "Embrace the Future at Newroz Technologies Limited",
+    details1:
+      "At Newroz Technologies Limited, we are committed to creating an inclusive, supportive, and challenging work environment that empowers our team members to reach their full potential. If you're a motivated, talented individual who is passionate about shaping the future of technology, we invite you to apply for one of our open positions and embark on an exciting career journey with us.",
+    details2:
+      "Don't miss this opportunity to join a team of dedicated professionals working at the forefront of innovation. Apply now and discover how you can contribute to the success of Newroz Technologies Limited, and together, we can build a brighter future for our customers, our company, and the world of technology.",
+  },
+  // ---------------------career section end------------------
   pageTitles: {
     HomepageTitle: "Home",
     companypageTitle: "Company",
     servicespageTitle: "Services",
     caseStudiespageTitle: "Case Studies",
     contactpageTitle: "Contact",
-    careerpageTitle: "career",
+    careerpageTitle: "Career",
     productspageTitle: "Products",
     productDetailspageTitle: "Product Details",
     serviceDetails: "Service Details",

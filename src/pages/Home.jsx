@@ -275,7 +275,7 @@ const Home = ({ translations, lang, darkMode }) => {
           <div className="upper_slide">
             <div className="card_holder mb45">
               <div
-                className="card1_style"
+                className="card1_style mobile_view_center"
                 style={{
                   borderTop: "none",
                   borderLeft: "none",
@@ -490,7 +490,7 @@ const Home = ({ translations, lang, darkMode }) => {
                 </div>
               </div>
               <div
-                className={`card1_style  ${
+                className={`card1_style   ${
                   darkMode && "card1_style_for_dark"
                 } `}
               >
