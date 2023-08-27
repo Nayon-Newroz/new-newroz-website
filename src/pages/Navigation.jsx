@@ -7,6 +7,8 @@ import Services from "./Services";
 import ServicesDetails from "./ServicesDetails";
 import Contact from "./Contact";
 import Career from "./Career";
+import CareerDetails from "./CareerDetails";
+import ApplyForm from "./ApplyForm";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -69,7 +71,27 @@ const Navigation = ({ translations, lang, darkMode }) => {
             />
           }
         />
+        <Route
+          path="/career/details"
+          element={
+            <CareerDetails
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
 
+        <Route
+          path="/apply"
+          element={
+            <ApplyForm
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
         <Route path="/test" element={<Test />} />
       </Routes>
     </div>

@@ -31,12 +31,22 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import EastIcon from "@mui/icons-material/East";
 import WestIcon from "@mui/icons-material/West";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Career = ({ translations, lang, darkMode }) => {
   const [typeOpen, setTypeOpen] = useState(true);
   const [selectedType, setSelectedType] = useState("All");
   const [selectedLocation, setSelectedLocation] = useState("All");
   const [locationOpen, setLocationOpen] = useState(true);
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("lg"));
+  useEffect(() => {
+    if (matches) {
+      setTypeOpen(false);
+      setLocationOpen(false);
+    }
+  }, []);
 
   return (
     <div>
@@ -299,7 +309,7 @@ const Career = ({ translations, lang, darkMode }) => {
                           darkMode && "card_button_dark"
                         } ${lang === "kr" && "card_button_for_rtl"}`}
                         component={Link}
-                        to={"/services/details"}
+                        to={"/career/details"}
                       >
                         {translations.buttonText.checkDetails}
                       </Button>
@@ -314,16 +324,28 @@ const Career = ({ translations, lang, darkMode }) => {
               }`}
             >
               {translations.careerTopSection.paginationText} &nbsp; &nbsp;
-              <Button color="primary" variant="contained">
+              <Button
+                color="primary"
+                variant="contained"
+                style={{ padding: "16px  24px" }}
+              >
                 <WestIcon />
               </Button>
               &nbsp; &nbsp;
-              <Button color="primary" variant="contained">
+              <Button
+                color="primary"
+                variant="contained"
+                style={{ padding: "16px  24px" }}
+              >
                 <EastIcon />
               </Button>
             </p>
           </div>
-          <p className={`title_semibold_small mb8 ${darkMode && "lightBlue"}`}>
+          <p
+            className={`title_semibold_small fw500 mb8 ${
+              darkMode && "lightBlue"
+            }`}
+          >
             {translations.careerHowToApply.title}
           </p>
           <p
@@ -340,7 +362,11 @@ const Career = ({ translations, lang, darkMode }) => {
             <li>{translations.careerHowToApply.details3}</li>
             <li>{translations.careerHowToApply.details4}</li>
           </ol>
-          <p className={`title_semibold_small mb8 ${darkMode && "lightBlue"}`}>
+          <p
+            className={`title_semibold_small fw500 mb8 ${
+              darkMode && "lightBlue"
+            }`}
+          >
             {translations.careerTheRecruitmentProcess.title}
           </p>
           <p
@@ -359,7 +385,11 @@ const Career = ({ translations, lang, darkMode }) => {
             <li>{translations.careerTheRecruitmentProcess.details5}</li>
             <li>{translations.careerTheRecruitmentProcess.details6}</li>
           </ol>
-          <p className={`title_semibold_small mb16 ${darkMode && "lightBlue"}`}>
+          <p
+            className={`title_semibold_small fw500 mb16 ${
+              darkMode && "lightBlue"
+            }`}
+          >
             {translations.careerEmbraceTheFuture.title}
           </p>
           <p

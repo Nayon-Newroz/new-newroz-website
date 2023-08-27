@@ -524,7 +524,53 @@ const en = {
     details2:
       "Don't miss this opportunity to join a team of dedicated professionals working at the forefront of innovation. Apply now and discover how you can contribute to the success of Newroz Technologies Limited, and together, we can build a brighter future for our customers, our company, and the world of technology.",
   },
+  careerDetails: {
+    title: "Jr. UI Designer job",
+    subtitle: "Working experience 3-5 years",
+  },
+  careerJobBrief: {
+    title: "Job brief",
+    subtitle:
+      "We are looking for a talented UI Designer to create amazing user experiences. The ideal candidate should have an eye for clean and artful design, possess superior UI skills and be able to translate high-level requirements into interaction flows and artifacts, and transform them into beautiful, intuitive, and functional user interfaces.",
+  },
+  careerResponsibilities: {
+    title: "Responsibilities",
+    details1:
+      "Collaborate with product management and engineering to define and implement innovative solutions for the product direction, visuals and experience",
+    details2:
+      "Execute all visual design stages from concept to final hand-off to engineering",
+    details3:
+      "Conceptualize original ideas that bring simplicity and user friendliness to complex design roadblocks",
+    details4:
+      "Create wireframes, storyboards, user flows, process flows and site maps to effectively communicate interaction and design ideas",
+    details5:
+      "Present and defend designs and key milestone deliverables to peers and executive level stakeholders",
+    details6: "Conduct user research and evaluate user feedback",
+    details7:
+      "Establish and promote design guidelines, best practices and standards",
+  },
+  careerRequirementsAndSkills: {
+    title: "Requirements and skills",
+    details1: "Proven UI experience",
+    details2: "Demonstrable UI design skills with a strong portfolio",
+    details3:
+      "Solid experience in creating wireframes, storyboards, user flows, process flows and site maps",
+    details4:
+      "Proficiency in Photoshop, Illustrator, OmniGraffle, or other visual design and wire-framing tools",
+    details5: "Proficiency in HTML, CSS, and JavaScript for rapid prototyping.",
+    details6:
+      "Excellent visual design skills with sensitivity to user-system interaction",
+    details7:
+      "Ability to present your designs and sell your solutions to various stakeholders.",
+    details8: "Ability to solve problems creatively and effectively",
+    details9:
+      "Up-to-date with the latest UI trends, techniques, and technologies",
+    details10:
+      "BS/MS in Human-Computer Interaction, Interaction Design, or related",
+    details11: "Experience working in an Agile/Scrum development process",
+  },
   // ---------------------career section end------------------
+
   pageTitles: {
     HomepageTitle: "Home",
     companypageTitle: "Company",
@@ -544,6 +590,7 @@ const en = {
     learnMore: "LARN MORE",
     checkDetails: "Check Details",
     submitNow: "SUBMIT NOW",
+    applyNow: "APPLY NOW",
   },
 };
 
