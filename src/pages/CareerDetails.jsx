@@ -34,20 +34,24 @@ import WestIcon from "@mui/icons-material/West";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import OkIcon from "../svg-icons/OkIcon";
-
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Slide from "@mui/material/Slide";
+import ApplyForm from "./ApplyForm";
+import ClearIcon from "@mui/icons-material/Clear";
 const CareerDetails = ({ translations, lang, darkMode }) => {
-  const [typeOpen, setTypeOpen] = useState(true);
-  const [selectedType, setSelectedType] = useState("All");
-  const [selectedLocation, setSelectedLocation] = useState("All");
-  const [locationOpen, setLocationOpen] = useState(true);
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("lg"));
-  useEffect(() => {
-    if (matches) {
-      setTypeOpen(false);
-      setLocationOpen(false);
-    }
-  }, []);
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   return (
     <div>
@@ -207,6 +211,7 @@ const CareerDetails = ({ translations, lang, darkMode }) => {
               }
               className={`top_contained_buttton mb16 ${darkMode && "black"}`}
               disableElevation
+              onClick={handleClickOpen}
             >
               {translations.buttonText.applyNow}
             </Button>
@@ -298,6 +303,34 @@ const CareerDetails = ({ translations, lang, darkMode }) => {
           </div>
         </div>
       </Container>
+      <Dialog
+        open={open}
+        keepMounted
+        onClose={handleClose}
+        aria-describedby="alert-dialog-slide-description"
+        maxWidth="lg"
+      >
+        {/* <DialogTitle>{"Use Google's location service?"}</DialogTitle> */}
+        <DialogContent>
+          <IconButton
+            onClick={handleClose}
+            style={{ display: "block", marginLeft: "auto" }}
+          >
+            <ClearIcon />
+          </IconButton>
+          <DialogContentText
+            id="alert-dialog-slide-description"
+            className="apply_form_padding"
+            
+          >
+            <ApplyForm open={open}/>
+          </DialogContentText>
+        </DialogContent>
+        {/* <DialogActions>
+          <Button onClick={handleClose}>Disagree</Button>
+          <Button onClick={handleClose}>Agree</Button>
+        </DialogActions> */}
+      </Dialog>
     </div>
   );
 };

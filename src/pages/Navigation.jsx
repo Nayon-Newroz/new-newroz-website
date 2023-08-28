@@ -9,6 +9,8 @@ import Contact from "./Contact";
 import Career from "./Career";
 import CareerDetails from "./CareerDetails";
 import ApplyForm from "./ApplyForm";
+import CaseStudies from "./CaseStudies";
+import Products from "./Products";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -81,8 +83,28 @@ const Navigation = ({ translations, lang, darkMode }) => {
             />
           }
         />
-
         <Route
+          path="/case-studies"
+          element={
+            <CaseStudies
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/products"
+          element={
+            <Products
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+
+        {/* <Route
           path="/apply"
           element={
             <ApplyForm
@@ -91,7 +113,7 @@ const Navigation = ({ translations, lang, darkMode }) => {
               darkMode={darkMode}
             />
           }
-        />
+        /> */}
         <Route path="/test" element={<Test />} />
       </Routes>
     </div>

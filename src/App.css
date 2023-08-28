@@ -428,9 +428,9 @@
   margin-bottom: 50px !important;
   max-width: 70%;
 }
-.prev_button {
-}
+
 .next_button {
+  padding: 16px 24px !important;
 }
 .detail_text_container {
   max-width: 60%;
@@ -440,7 +440,10 @@
   max-width: 75%;
   margin: auto;
 }
-
+.apply_form_padding {
+  padding-left: 70px !important;
+  padding-right: 70px !important;
+}
 .text_body_medium li,
 .title_semibold_small li {
   text-align: left !important;
@@ -980,7 +983,7 @@
   backdrop-filter: blur(5px) !important;
 }
 .apply_form_input_style .MuiOutlinedInput-root {
-  padding: 8px 0px 8px 16px !important;
+  padding: 8px 0px 8px 5px !important;
   border: 1px solid #fff !important;
   background: #eff4fe !important;
   border-radius: 10px !important;
@@ -1470,6 +1473,9 @@
 .mt20 {
   margin-top: 20px !important;
 }
+.mt40 {
+  margin-top: 40px !important;
+}
 .mb5 {
   margin-bottom: 5px !important;
 }
@@ -1671,6 +1677,10 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .apply_form_padding {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
   .detail_text_container {
     max-width: 75%;
   }
@@ -1888,6 +1898,17 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .next_button {
+    padding: 4px 6px !important;
+    min-width: 0px !important;
+  }
+  .upload_button {
+    padding: 5px 10px !important;
+  }
+  .apply_form_padding {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
   .hideForTabViewOnly {
     display: none !important;
   }

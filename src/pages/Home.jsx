@@ -297,7 +297,7 @@ const Home = ({ translations, lang, darkMode }) => {
                 >
                   {translations.homeService.details}
                 </p>
-                <Button
+                {/* <Button
                   variant="contained"
                   color="primary"
                   startIcon={
@@ -312,7 +312,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   disableElevation
                 >
                   {translations.buttonText.discoverMoreText}
-                </Button>
+                </Button> */}
               </div>
               <div
                 className={`card1_style  ${darkMode && "card1_style_for_dark"}`}
@@ -698,6 +698,8 @@ const Home = ({ translations, lang, darkMode }) => {
                 }
                 className={`top_contained_buttton ${darkMode && "black"}`}
                 disableElevation
+                component={Link}
+                to="/services"
               >
                 {translations.buttonText.discoverMoreText}
               </Button>
@@ -838,7 +840,7 @@ const Home = ({ translations, lang, darkMode }) => {
               >
                 <div className="card2_left">
                   <img
-                    src="/images/QRPay.png"
+                    src="/images/FastPay.png"
                     alt="product image"
                     // width="100%"
                     // height="99%"
@@ -892,7 +894,7 @@ const Home = ({ translations, lang, darkMode }) => {
               >
                 <div className="card2_left">
                   <img
-                    src="/images/QRPay.png"
+                    src="/images/Dalkurd.png"
                     alt="product image"
                     // width="100%"
                     // height="99%"
@@ -946,7 +948,7 @@ const Home = ({ translations, lang, darkMode }) => {
               >
                 <div className="card2_left">
                   <img
-                    src="/images/QRPay.png"
+                    src="/images/Fast_Connect.png"
                     alt="product image"
                     // width="100%"
                     // height="99%"
@@ -1000,7 +1002,7 @@ const Home = ({ translations, lang, darkMode }) => {
               >
                 <div className="card2_left">
                   <img
-                    src="/images/QRPay.png"
+                    src="/images/eKYC.png"
                     alt="product image"
                     // width="100%"
                     // height="99%"
@@ -1061,6 +1063,8 @@ const Home = ({ translations, lang, darkMode }) => {
                     rtlClass="Magicwand_for_rtl"
                   />
                 }
+                component={Link}
+                to="/products"
                 className={`top_contained_buttton ${darkMode && "black"}`}
                 disableElevation
               >

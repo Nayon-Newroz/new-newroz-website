@@ -327,7 +327,7 @@ const Career = ({ translations, lang, darkMode }) => {
               <Button
                 color="primary"
                 variant="contained"
-                style={{ padding: "16px  24px" }}
+                className="next_button"
               >
                 <WestIcon />
               </Button>
@@ -335,7 +335,7 @@ const Career = ({ translations, lang, darkMode }) => {
               <Button
                 color="primary"
                 variant="contained"
-                style={{ padding: "16px  24px" }}
+                className="next_button"
               >
                 <EastIcon />
               </Button>

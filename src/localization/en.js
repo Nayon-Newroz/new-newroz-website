@@ -122,22 +122,115 @@ const en = {
     card1: {
       title: "FastPay e-Wallet",
       details:
-        "Stay ahead of the evolution of digital payments with NewrozTech e-Wallet development services. We offer feature-rich and fully-secured e-Wallet App Development Services for Android, iPhone as well as for Web Browser. Take advantage of our expertise and get your fully protected and easy-to-use e-Wallet app with superior UI/UX designs.",
+        "We offer state-of-the-art e-Wallet development services across Android, iPhone, and Web Browser platforms. Our secure, feature-packed, and user-friendly apps, enriched with superior UI/UX designs, propel you to the forefront of the digital payments",
+      info: {
+        title: "FastPay e-Wallet",
+        subtitle: "evolution of digital payments",
+        details:
+          "We offer state-of-the-art e-Wallet development services across Android, iPhone, and Web Browser platforms. Our secure, feature-packed, and user-friendly apps, enriched with superior UI/UX designs, propel you to the forefront of the digital payments revolution.",
+        features: [
+          "Registration & Login",
+          "Transaction History",
+          "Sync Accounts",
+          "Backup Facility",
+          "Balance Replenishment",
+          "Wallet-to-Bank Transfer",
+          "Online Payments",
+          "Check Wallet Balance",
+          "Banners",
+        ],
+        ProblemStatements: [
+          {
+            textBold: "Inefficient User Interface (UI):",
+            text: "The current UI of the FastPay e-Wallet mobile application is clunky and difficult to navigate, resulting in a poor user experience and potential user frustration.",
+          },
+          {
+            textBold: "Slow Performance:",
+            text: "The application suffers from slow performance, causing delays in transaction processing and overall responsiveness, leading to user dissatisfaction.",
+          },
+          {
+            textBold: "Lack of Security Measures:",
+            text: "The FastPay e-Wallet application lacks robust security measures, leaving users vulnerable to potential data breaches and unauthorized access to their sensitive financial information.",
+          },
+          {
+            textBold: "Lack of Customer Support:",
+            text: "Users face difficulties in obtaining timely and effective customer support when encountering issues or needing assistance with the application, resulting in a poor user experience.",
+          },
+          {
+            textBold: "Compatibility Issues:",
+            text: "The FastPay e-Wallet mobile application faces compatibility issues with certain mobile devices and operating systems, preventing some users from accessing and using the application.",
+          },
+        ],
+        solutions: [
+          {
+            textBold: "User Interface (UI) Redesign:",
+            text: "Invest in a user interface overhaul, focusing on user-friendly design principles and intuitive navigation to enhance the overall user experience.",
+          },
+          {
+            textBold: "Performance Optimization:",
+            text: "Conduct thorough performance testing and implement necessary optimizations to ensure the application operates smoothly and efficiently.",
+          },
+          {
+            textBold: "Strengthen Security Measures:",
+            text: "Implement robust security protocols, including encryption and two-factor authentication, to safeguard users' financial data and enhance overall application security.",
+          },
+          {
+            textBold: "Improve Customer Support:",
+            text: "Establish a responsive customer support system, including live chat, email, and a dedicated helpline, to promptly address user queries and concerns.",
+          },
+          {
+            textBold: "Ensure Compatibility:",
+            text: "Conduct extensive compatibility testing to ensure the application works seamlessly across various devices and operating systems.",
+          },
+        ],
+        productScreens: [
+          {
+            title: "Login",
+            details:
+              "To access the app, users can easily log in using their mobile number and password. Simply enter your registered mobile number and the corresponding password to securely access your account and enjoy a seamless payment experience.",
+          },
+          {
+            title: "Home Screen",
+            details:
+              "Displays your available balance prominently, providing a quick view of your funds. Additionally, you have transaction options available, allowing you to easily send money, make payments, check transaction history, and manage your account all in one place.",
+          },
+          {
+            title: "List",
+            details:
+              "There is a convenient screen that displays lists of agents and their locations. This feature allows you to easily locate nearby agents for your payment needs, making transactions hassle-free and accessible.",
+          },
+          {
+            title: "History",
+            details:
+              "This screen provides users with a comprehensive list of their past transactions, allowing them to track their payment activities in one place. Additionally, users can view a summarized overview of their recent transactions.",
+          },
+        ],
+      },
     },
     card2: {
-      title: "Online Shop",
+      title: "Dalkurd Football Association",
       details:
-        "There are no lines to wait in or shop assistants to wait on to help you with your purchases, and you can do your shopping in minutes. Online shops give us the opportunity to shop 24/7, and also reward us with a ‘no pollution’ shopping experience. Our experienced developers build sophisticated platform by using high-degree of technologies to streamline your online business. With our eCommerce solutions, we make it easy to build and run your online business.",
+        "We worked with Dalkurd FF, a Swedish football club that competes in the Superettan league and represents the cultural bonds within Kurdish diaspora in Borlänge, Dalarna. The club, founded in 2004, symbolizes unity and the power of sport.",
     },
     card3: {
-      title: "Qrious - Face Rekognition",
+      title: "Fast Connect (POS)",
       details:
-        "Our Artificial Intelligence Practice has been in existence since AI’s rapid growth started a few years ago and has focused, mostly, on developing Face Recognition apps. Over this time, we have done an incredible amount of Face Recognition-related R&D to become a full-blown provider of custom Facial Recognition software. As a full-cycle custom software and Face Recognition provider with a Business Analysis Department consisting of experts with 3-10 years of Business Analysis experience, we are uniquely positioned to develop Face Recognition software for you in full compliance with your business needs.",
+        "With our Point of Sale software, businesses can streamline their operations. Features such as transaction history review, payment receipt reprint, and QR Scan payment capabilities provide seamless experiences to customers.",
     },
     card4: {
-      title: "Dalkurd FF - Mobile App",
+      title: "e-KYC solution",
       details:
-        "Dalkurd Fotbollsförening, commonly known as Dalkurd FF or simply Dalkurd is a Swedish football club based in Uppsala. The club plays in the Superettan, which is the second top tier of football in the country. On 26 September 2004, the club was originally founded by members of the Kurdish diaspora in Borlänge, Dalarna.",
+        "Our advanced e-KYC solution streamlines customer verification with cutting-edge technology. It offers secure, remote, and efficient identity verification, ensuring compliance while enhancing your customer onboarding process.",
+    },
+    card5: {
+      title: "Cryptocurrencies - IQDX",
+      details:
+        "IQD-X, a leading cryptocurrency exchange, based in Iraq, offers easy access to the dynamic world of digital assets. Designed to incorporate the best features of industry leaders like Binance, OKX, and Bybit, IQDX pro",
+    },
+    card6: {
+      title: "Face Recognition",
+      details:
+        "Our AI team has spent years specializing in custom Face Recognition software development. Backed by extensive research and experienced analysts, we deliver tailored full-cycle solutions that perfectly align with your business needs.",
     },
   },
   homeAccreditation: {

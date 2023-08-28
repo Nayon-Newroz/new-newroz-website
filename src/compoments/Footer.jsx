@@ -6,6 +6,7 @@ import MySlider from "./MySlider";
 import MessageForm from "./MessageForm";
 import Triangle from "../svg-icons/Triangle";
 import Cloud from "../svg-icons/Cloud";
+
 // console.log("year", new Date().getFullYear());
 const Footer = ({ translations, lang, darkMode }) => {
   return (
@@ -144,12 +145,10 @@ const Footer = ({ translations, lang, darkMode }) => {
 
               <li>{translations.footer.blog}</li>
               <li>
-                 <Link to="/career" className="link_style">
-                
-                {translations.footer.careers}
-                    </Link>
-                
-                </li>
+                <Link to="/career" className="link_style">
+                  {translations.footer.careers}
+                </Link>
+              </li>
               <li>{translations.footer.jobs}</li>
               <li>{translations.footer.Portfolio}</li>
             </ul>
@@ -208,13 +207,13 @@ const Footer = ({ translations, lang, darkMode }) => {
                   className={`footer_item ${darkMode && "white"}`}
                   style={{ margin: "0 40px 0 0" }}
                 >
-                  Sitemap {translations.footer.sitemap}
+                  {translations.footer.sitemap}
                 </p>
                 <p
                   className={`footer_item ${darkMode && "white"}`}
                   style={{ margin: "0 40px 0 0" }}
                 >
-                  Terms of Use {translations.footer.termsOfUse}
+                  {translations.footer.termsOfUse}
                 </p>
               </Grid>
             </Grid>
