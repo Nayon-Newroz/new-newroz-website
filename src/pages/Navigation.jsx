@@ -11,6 +11,7 @@ import CareerDetails from "./CareerDetails";
 import ApplyForm from "./ApplyForm";
 import CaseStudies from "./CaseStudies";
 import Products from "./Products";
+import FastPayEwallet from "./FastPayEwallet";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -97,6 +98,16 @@ const Navigation = ({ translations, lang, darkMode }) => {
           path="/products"
           element={
             <Products
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/product/fastpay-ewallet"
+          element={
+            <FastPayEwallet
               translations={translations}
               lang={lang}
               darkMode={darkMode}

@@ -209,7 +209,30 @@
   right: -300px;
   left: unset;
 }
-
+.section_top_GlowBG1 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  filter: blur(280px);
+  /* opacity: 0.5; */
+  /* z-index: -1; */
+  bottom: 50px;
+  left: -200px;
+  z-index: 1;
+}
+.section_top_GlowBG2 {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 100%;
+  filter: blur(280px);
+  /* opacity: 0.5; */
+  /* z-index: -1; */
+  bottom: 120px;
+  right: -80px;
+  z-index: 1;
+}
 .top_GlowBG3 {
   position: absolute;
   width: 320px;
@@ -272,6 +295,13 @@
   display: block;
   margin: auto;
   width: 70%;
+}
+.product_Screens_image_style {
+  display: block;
+  margin: auto;
+  width: 35%;
+  box-shadow: rgba(171, 204, 254, 0.16) 0px 0px 55px 3px,
+    rgba(171, 204, 254, 0.06) 0px 0px 23px 1px;
 }
 .right_image_style {
   display: block;
@@ -398,14 +428,13 @@
 .table_subtitle_bold {
   font-family: "Poppins", sans-serif !important;
   margin: 0 !important;
-  color: #303030 !important;
+  color: #2b2b2b !important;
   font-style: normal !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   font-size: 18px !important;
   line-height: 32px !important;
   background: #cfe3ff;
-  padding: 16px;
-  border-radius: 8px !important;
+  /* padding: 16px; */
 }
 .text_body_medium {
   font-family: "Poppins", sans-serif !important;
@@ -780,6 +809,19 @@
   padding: 20px;
   display: flex;
 }
+.card9_style {
+  flex: 0 0 calc(33% - 17px);
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: -2px -2px 0px 0px #c2d0e5 inset;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px 16px;
+  box-sizing: border-box;
+}
 .card4_style {
   /* flex: 0 0 calc(25% - 30px); */
   /* flex: 0 0 25%; */
@@ -947,6 +989,9 @@
 .card_padding {
   padding-left: 50px;
 }
+.card_padding2 {
+  padding: 24px 30px !important;
+}
 
 /* ------------------------------form and inputs --------------------------------- */
 .demo_form_title {
@@ -1053,19 +1098,26 @@
 }
 /* -------------------accrodian------------------------ */
 .accrodian_style {
-  background: #e2eeff !important;
+  border-radius: 10px !important;
+  border: 1px solid #fff !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: -2px -2px 0px 0px #c2d0e5 inset !important;
+  backdrop-filter: blur(10px) !important;
+}
+.accrodian_style::before {
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .accrodian_style .MuiAccordionSummary-root {
-  padding: 24px !important;
+  padding: 16px !important;
 }
 .accrodian_style .MuiAccordionSummary-content {
   margin: 0px !important;
 }
 .accrodian_style .MuiAccordionDetails-root {
-  padding: 0px 24px 16px !important;
+  padding: 0px 12px 12px !important;
 }
 .accrodian_style svg {
-  color: #25316d !important;
+  color: #c7c7c7 !important;
   font-size: 28px !important;
 }
 
@@ -1523,6 +1575,7 @@
 .black2 {
   color: #525252 !important;
 }
+
 .deepBlue {
   color: #113cfc !important;
 }
@@ -1542,7 +1595,8 @@
   color: #d23f00 !important;
 }
 @media screen and (max-width: 1536px) {
-  .card7_style {
+  .card7_style,
+  .card9_style {
     flex: 0 0 calc(50% - 15px);
   }
   .card4_style {
@@ -1677,6 +1731,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .product_Screens_image_style {
+    width: 45%;
+  }
   .apply_form_padding {
     padding-left: 40px !important;
     padding-right: 40px !important;
@@ -1817,6 +1874,9 @@
   }
 }
 @media screen and (min-width: 601px) and (max-width: 900px) {
+  .product_Screens_image_style {
+    width: 25%;
+  }
   .right_order_maintain {
     order: 1;
   }
@@ -1844,7 +1904,8 @@
     background-size: 200px;
   }
   .card1_style,
-  .card7_style {
+  .card7_style,
+  .card9_style {
     flex: 0 0 calc(50% - 15px);
   }
   .card7 {
@@ -1893,11 +1954,15 @@
     margin-left: auto;
     width: 40%;
   }
-  .card7_style {
+  .card7_style,
+  .card9_style {
     flex: 0 0 100%;
   }
 }
 @media screen and (max-width: 600px) {
+  .product_Screens_image_style {
+    width: 25%;
+  }
   .next_button {
     padding: 4px 6px !important;
     min-width: 0px !important;

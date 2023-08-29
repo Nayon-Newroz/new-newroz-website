@@ -18,7 +18,7 @@ const en = {
     titleAbout: "About",
     titleSoftwareEngineering: "Software Engineering",
     titleCentersofExcellence: "Centers of Excellence",
-    aboutUs: "About us",
+    aboutUs: "Company",
     blog: "Blog",
     careers: "Careers",
     jobs: "Jobs",
@@ -128,6 +128,7 @@ const en = {
         subtitle: "evolution of digital payments",
         details:
           "We offer state-of-the-art e-Wallet development services across Android, iPhone, and Web Browser platforms. Our secure, feature-packed, and user-friendly apps, enriched with superior UI/UX designs, propel you to the forefront of the digital payments revolution.",
+        featuresTitle: "Features",
         features: [
           "Registration & Login",
           "Transaction History",
@@ -139,7 +140,8 @@ const en = {
           "Check Wallet Balance",
           "Banners",
         ],
-        ProblemStatements: [
+        problemStatementsTitle: "Problem Statements:",
+        problemStatements: [
           {
             textBold: "Inefficient User Interface (UI):",
             text: "The current UI of the FastPay e-Wallet mobile application is clunky and difficult to navigate, resulting in a poor user experience and potential user frustration.",
@@ -161,6 +163,7 @@ const en = {
             text: "The FastPay e-Wallet mobile application faces compatibility issues with certain mobile devices and operating systems, preventing some users from accessing and using the application.",
           },
         ],
+        solutionsTitle: "Solutions:",
         solutions: [
           {
             textBold: "User Interface (UI) Redesign:",
@@ -183,28 +186,36 @@ const en = {
             text: "Conduct extensive compatibility testing to ensure the application works seamlessly across various devices and operating systems.",
           },
         ],
+        productScreensTitle: "Product Screens:",
         productScreens: [
           {
+            img: "/images/Ewallet_login.png",
             title: "Login",
             details:
               "To access the app, users can easily log in using their mobile number and password. Simply enter your registered mobile number and the corresponding password to securely access your account and enjoy a seamless payment experience.",
           },
           {
+            img: "/images/Ewallet_home_screen.png",
             title: "Home Screen",
             details:
               "Displays your available balance prominently, providing a quick view of your funds. Additionally, you have transaction options available, allowing you to easily send money, make payments, check transaction history, and manage your account all in one place.",
           },
           {
+            img: "/images/Ewallet_list.png",
             title: "List",
             details:
               "There is a convenient screen that displays lists of agents and their locations. This feature allows you to easily locate nearby agents for your payment needs, making transactions hassle-free and accessible.",
           },
           {
+            img: "/images/Ewallet_history.png",
             title: "History",
             details:
               "This screen provides users with a comprehensive list of their past transactions, allowing them to track their payment activities in one place. Additionally, users can view a summarized overview of their recent transactions.",
           },
         ],
+        technologiesUsedTitle: "Technologies Used",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "Available On",
       },
     },
     card2: {

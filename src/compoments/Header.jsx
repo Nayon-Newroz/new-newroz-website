@@ -345,7 +345,7 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
               >
                 {translations.header.products}
               </Button>
-              <Button
+              {/* <Button
                 component={Link}
                 to="/case-studies"
                 className={
@@ -359,7 +359,7 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                 }
               >
                 {translations.header.caseStudies}
-              </Button>
+              </Button> */}
               <Button
                 component={Link}
                 to="/company"

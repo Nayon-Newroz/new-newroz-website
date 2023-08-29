@@ -138,9 +138,9 @@ const Footer = ({ translations, lang, darkMode }) => {
             </p>
             <ul className={`footer_list ${darkMode && "footer_list_dark"}`}>
               <li>
-                {/* <Link to="/platform" className="link_style"> */}
-                {translations.footer.aboutUs}
-                {/* </Link> */}
+                <Link to="/company" className="link_style">
+                  {translations.footer.aboutUs}
+                </Link>
               </li>
 
               <li>{translations.footer.blog}</li>
@@ -184,7 +184,7 @@ const Footer = ({ translations, lang, darkMode }) => {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={8} md={8}>
               <Grid container>
-                <p
+                {/* <p
                   className={`footer_item ${darkMode && "white"}`}
                   style={{ margin: "0 40px 0 0" }}
                 >
@@ -196,7 +196,7 @@ const Footer = ({ translations, lang, darkMode }) => {
                   style={{ margin: "0 40px 0 0" }}
                 >
                   {translations.footer.contact}
-                </p>
+                </p> */}
                 <p
                   className={`footer_item ${darkMode && "white"}`}
                   style={{ margin: "0 40px 0 0" }}

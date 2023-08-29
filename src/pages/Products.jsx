@@ -172,6 +172,8 @@ const Products = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/fastpay-ewallet"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>

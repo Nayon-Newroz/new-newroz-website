@@ -128,6 +128,100 @@ const kr = {
       title: "محفظة FastPay الإلكترونية",
       details:
         "نحن نقدم أحدث خدمات تطوير المحفظة الإلكترونية عبر Android وiPhone و منصات متصفح الويب. تطبيقاتنا الآمنة، المليئة بالميزات، وسهلة الاستخدام، مُثرية مع تصميمات UI/UX المتميزة، ستدفعك إلى طليعة المدفوعات الرقمية ثورة.",
+      info: {
+        title: "محفظة FastPay الإلكترونية",
+        subtitle: "تطور المدفوعات الرقمية",
+        details:
+          "We offer state-of-the-art e-Wallet development services across Android, iPhone, and Web Browser platforms. Our secure, feature-packed, and user-friendly apps, enriched with superior UI/UX designs, propel you to the forefront of the digital payments revolution.",
+        featuresTitle: "سمات",
+        features: [
+          "مزامنة الحسابات",
+          "تاريخ المعاملات",
+          "التسجيل وتسجيل الدخول",
+          "التحويل من المحفظة إلى البنك",
+          "تجديد الرصيد",
+          "مرفق النسخ الاحتياطي",
+          "لافتات",
+          "التحقق من رصيد المحفظة",
+          "المدفوعات عبر الإنترنت",
+        ],
+        problemStatementsTitle: "بيانات المشكلة:",
+        problemStatements: [
+          {
+            textBold: "واجهة المستخدم غير الفعالة (UI):",
+            text: "واجهة المستخدم الحالية لتطبيق الهاتف المحمول FastPay e-Wallet غير فعالة ويصعب التنقل فيها، مما يؤدي إلى تجربة مستخدم سيئة وإحباط محتمل للمستخدم.",
+          },
+          {
+            textBold: "بطء الأداء:",
+            text: "يعاني التطبيق من بطء الأداء، مما يتسبب في تأخير معالجة المعاملات والاستجابة العامة، مما يؤدي إلى عدم رضا المستخدم.",
+          },
+          {
+            textBold: "الافتقار إلى التدابير الأمنية:",
+            text: "يفتقر تطبيق المحفظة الإلكترونية FastPay إلى التدابير الأمنية القوية، مما يجعل المستخدمين عرضة لانتهاكات البيانات المحتملة والوصول غير المصرح به إلى معلوماتهم المالية الحساسة.",
+          },
+          {
+            textBold: "نقص دعم العملاء:",
+            text: "يواجه المستخدمون صعوبات في الحصول على دعم العملاء الفعال وفي الوقت المناسب عند مواجهة مشكلات أو الحاجة إلى المساعدة في التطبيق، مما يؤدي إلى تجربة مستخدم سيئة.",
+          },
+          {
+            textBold: "مشكلات التوافق:",
+            text: "يواجه تطبيق الهاتف المحمول FastPay e-Wallet مشكلات التوافق مع بعض الأجهزة المحمولة وأنظمة التشغيل، مما يمنع بعض المستخدمين من الوصول إلى التطبيق واستخدامه.",
+          },
+        ],
+        solutionsTitle: "حلول:",
+        solutions: [
+          {
+            textBold: "إعادة تصميم واجهة المستخدم (UI):",
+            text: "استثمر في إصلاح واجهة المستخدم، مع التركيز على مبادئ التصميم سهلة الاستخدام والتنقل البديهي لتعزيز تجربة المستخدم الشاملة.",
+          },
+          {
+            textBold: "تحسين الأداء:",
+            text: "إجراء اختبار شامل للأداء وتنفيذ التحسينات اللازمة لضمان عمل التطبيق بسلاسة وكفاءة.",
+          },
+          {
+            textBold: "تعزيز التدابير الأمنية::",
+            text: "تنفيذ بروتوكولات أمنية قوية، بما في ذلك التشفير والمصادقة الثنائية، لحماية البيانات المالية للمستخدمين وتعزيز أمان التطبيقات بشكل عام.",
+          },
+          {
+            textBold: "تحسين دعم العملاء:",
+            text: "إنشاء نظام دعم عملاء سريع الاستجابة، بما في ذلك الدردشة المباشرة والبريد الإلكتروني وخط المساعدة المخصص، لمعالجة استفسارات المستخدمين ",
+          },
+          {
+            textBold: "ضمان التوافق:",
+            text: "قم بإجراء اختبارات توافق واسعة النطاق للتأكد من أن التطبيق يعمل بسلاسة عبر الأجهزة وأنظمة التشغيل المختلفة.",
+          },
+        ],
+        productScreensTitle: "شاشات المنتج:",
+        productScreens: [
+          {
+            img: "/images/Ewallet_login.png",
+            title: "تسجيل الدخول",
+            details:
+              "To access the app, users can easily log in using their mobile number and password. Simply enter your registered mobile number and the corresponding password to securely access your account and enjoy a seamless payment experience.",
+          },
+          {
+            img: "/images/Ewallet_home_screen.png",
+            title: "الشاشة الرئيسية",
+            details:
+              "Displays your available balance prominently, providing a quick view of your funds. Additionally, you have transaction options available, allowing you to easily send money, make payments, check transaction history, and manage your account all in one place.",
+          },
+          {
+            img: "/images/Ewallet_list.png",
+            title: "قائمة",
+            details:
+              "There is a convenient screen that displays lists of agents and their locations. This feature allows you to easily locate nearby agents for your payment needs, making transactions hassle-free and accessible.",
+          },
+          {
+            img: "/images/Ewallet_history.png",
+            title: "تاريخ",
+            details:
+              "This screen provides users with a comprehensive list of their past transactions, allowing them to track their payment activities in one place. Additionally, users can view a summarized overview of their recent transactions.",
+          },
+        ],
+        technologiesUsedTitle: "التقنيات المستخدمة",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "متاح على",
+      },
     },
     card2: {
       title: "اتحاد دالكرد لكرة القدم",
