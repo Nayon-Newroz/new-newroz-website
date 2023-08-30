@@ -209,6 +209,8 @@
   right: -300px;
   left: unset;
 }
+
+/* ---------------------triangles,bgs and other------------------------- */
 .section_top_GlowBG1 {
   position: absolute;
   width: 320px;
@@ -219,7 +221,7 @@
   /* z-index: -1; */
   bottom: 50px;
   left: -200px;
-  z-index: 1;
+  z-index: 2;
 }
 .section_top_GlowBG2 {
   position: absolute;
@@ -231,7 +233,93 @@
   /* z-index: -1; */
   bottom: 120px;
   right: -80px;
+  z-index: 2;
+}
+.top_section_cloud1 {
+  position: absolute;
+  width: 97px;
+  height: 46px;
+  top: -5%;
+  right: 5%;
   z-index: 1;
+}
+.top_section_cloud2 {
+  position: absolute;
+  width: 97px;
+  height: 46px;
+  top: 10%;
+  right: 35%;
+  z-index: 1;
+}
+.top_section_cloud3 {
+  position: absolute;
+  width: 56px;
+  height: 46px;
+  top: 0;
+  right: 50%;
+  z-index: 1;
+}
+.top_section_triangle1 {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  bottom: 35%;
+  left: 0%;
+  z-index: 2;
+  animation: spin infinite 20s linear;
+}
+.triangle3 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 35%;
+  left: 0%;
+  animation: spin infinite 20s linear;
+}
+.triangle4 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: -50%;
+  right: 0%;
+  animation: spin infinite 20s linear;
+}
+.newcircle3 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 20%;
+  right: -3%;
+}
+.newcircle4 {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 0%;
+  left: -3%;
+}
+.square3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0%;
+  right: -2%;
+  transform: rotate(30deg);
+}
+.square4 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: -2%;
+  transform: rotate(30deg);
+}
+.three_square3 {
+  position: absolute;
+  width: 314px;
+  height: 256px;
+  top: 10%;
+  left: -10%;
 }
 .top_GlowBG3 {
   position: absolute;
@@ -1103,6 +1191,14 @@
   background: rgba(255, 255, 255, 0.2) !important;
   box-shadow: -2px -2px 0px 0px #c2d0e5 inset !important;
   backdrop-filter: blur(10px) !important;
+}
+/* 111 */
+.accrodian_style_dark {
+  border-radius: 10px !important;
+  border: 1px solid rgba(34, 34, 34, 1) !important;
+  /* background: rgba(255, 255, 255, 0.2) !important; */
+  background: rgba(34, 34, 34, 0.2) !important;
+  box-shadow: none !important;
 }
 .accrodian_style::before {
   background-color: rgba(0, 0, 0, 0) !important;

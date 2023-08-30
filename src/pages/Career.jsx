@@ -46,6 +46,11 @@ const Career = ({ translations, lang, darkMode }) => {
       setTypeOpen(false);
       setLocationOpen(false);
     }
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
   }, []);
 
   return (

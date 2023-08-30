@@ -22,6 +22,7 @@ const en = {
     blog: "Blog",
     careers: "Careers",
     jobs: "Jobs",
+    services: "Services",
     Portfolio: "Portfolio",
     webAppDevelopment: "Web App Development",
     mobileAppDevelopment: "Mobile App Development",
@@ -222,16 +223,305 @@ const en = {
       title: "Dalkurd Football Association",
       details:
         "We worked with Dalkurd FF, a Swedish football club that competes in the Superettan league and represents the cultural bonds within Kurdish diaspora in Borlänge, Dalarna. The club, founded in 2004, symbolizes unity and the power of sport.",
+      info: {
+        title: "Dalkurd Football Association",
+        subtitle: "Digital sports platform for football fans",
+        details:
+          "We worked with Dalkurd FF, a Swedish football club that competes in the Superettan league and represents the cultural bonds within Kurdish diaspora in Borlänge, Dalarna. The club, founded in 2004, symbolizes unity and the power of sport.",
+        featuresTitle: "Features",
+        features: [
+          "Incorporating Search Feature",
+          "Incorporate Social Media Integration",
+          "Use of Responsive App Design",
+          "Simplicity in Design with Uncluttered Elements",
+          "Compliance with GDPR Standards",
+          "Incorporate Machine Learning Attributes",
+          "Using augmented reality in variety of systems",
+          "Extensive Cross-platform Coverage",
+          "Robust Security Matters",
+          "Integration with Stronger, Robust Ecosystems",
+          "Mobile Screen Touch Features Galore",
+          "Integrate Provisions for User Feedback",
+        ],
+        problemStatementsTitle: "Problem Statements:",
+        problemStatements: [
+          {
+            textBold: "Limited Fan Engagement:",
+            text: "The current mobile application lacks interactive features, resulting in minimal fan engagement and reduced user retention.",
+          },
+          {
+            textBold: "Incomplete Match Information:",
+            text: "Users often struggle to access comprehensive real-time match updates, including live scores, player statistics, and match commentary.",
+          },
+          {
+            textBold: "Navigation Complexity:",
+            text: "Users find it challenging to navigate the app, leading to a disjointed user experience and difficulty in accessing desired information.",
+          },
+          {
+            textBold: "Inadequate Ticketing System:",
+            text: "The existing ticketing system lacks user-friendliness and fails to provide a seamless ticket purchasing experience for fans.",
+          },
+          {
+            textBold: "Limited Personalization:",
+            text: "Users are unable to personalize their app experience according to their preferences, reducing overall user satisfaction.",
+          },
+        ],
+        solutionsTitle: "Solutions:",
+        solutions: [
+          {
+            textBold: "Enhanced Fan Engagement:",
+            text: "Develop interactive features such as polls, quizzes, and fan forums to boost engagement and create a sense of community among fans.",
+          },
+          {
+            textBold: "Real-time Match Updates:",
+            text: "Implement a robust live match tracker providing users with up-to-date scores, player stats, and match commentary for an immersive experience.",
+          },
+          {
+            textBold: "Streamlined Navigation:",
+            text: "Redesign the app's user interface with intuitive navigation paths, ensuring easy access to news, schedules, and player profiles.",
+          },
+          {
+            textBold: "Improved Ticketing System:",
+            text: "Revamp the ticketing system with a user-friendly interface, secure payment options, and streamlined ticket purchasing processes.",
+          },
+          {
+            textBold: "Personalization Options:",
+            text: "Introduce customization features, allowing users to personalize content preferences, notifications, and app themes for a tailored experience. ",
+          },
+        ],
+        productScreensTitle: "Product Screens:",
+        productScreens: [
+          {
+            img: "/images/Dalkurd_HomePage.png",
+            title: "Home Page",
+            details:
+              "Welcome to the heart of Dalkurd's mobile app, your gateway to the latest match updates, team news, and exciting fan interactions, all in one place.",
+          },
+          {
+            img: "/images/Dalkurd_News.png",
+            title: "News",
+            details:
+              "Stay informed with the latest happenings in the world of Dalkurd FF through our comprehensive news section, delivering exclusive stories, interviews, and insights.",
+          },
+          {
+            img: "/images/Dalkurd_TV.png",
+            title: "TV",
+            details:
+              "Immerse yourself in the world of Dalkurd through our multimedia experience, offering exclusive videos, highlights, and behind-the-scenes glimpses into the team's journey.",
+          },
+          {
+            img: "/images/Dalkurd_Membership.png",
+            title: "Membership",
+            details:
+              "Discover and appreciate the valued partners who support Dalkurd's journey, with a dedicated section showcasing our esteemed sponsors and their contributions.",
+          },
+          {
+            img: "/images/Dalkurd_Support.png",
+            title: "Support",
+            details:
+              "Join the Dalkurd family by becoming a member, and in case of any queries or assistance, our customer support is just a tap away, ensuring a seamless and enjoyable app experience.",
+          },
+        ],
+        technologiesUsedTitle: "Technologies Used",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "Available On",
+      },
     },
     card3: {
       title: "Fast Connect (POS)",
       details:
         "With our Point of Sale software, businesses can streamline their operations. Features such as transaction history review, payment receipt reprint, and QR Scan payment capabilities provide seamless experiences to customers.",
+      info: {
+        title: "Fast Connect (POS)",
+        subtitle: "Advanced electronic know your customer",
+        details:
+          "With our Point of Sale software, businesses can streamline their operations. Features such as transaction history review, payment receipt reprint, and QR Scan payment capabilities provide seamless experiences to customers.",
+        featuresTitle: "Features",
+        features: [
+          "Intuitive User Interface",
+          "QR Scan Payment",
+          "Payment Receipt Reprint",
+          "Inventory Management",
+          "Sales Analytics",
+          "Customizable Receipts",
+          "Multiple Payment Options",
+          "User Roles and Permissions",
+          "Transaction History Review",
+        ],
+        problemStatementsTitle: "Problem Statements:",
+        problemStatements: [
+          {
+            textBold: "Operational Inefficiencies:",
+            text: "Businesses face challenges in managing their operations effectively, resulting in delays, errors, and customer dissatisfaction.",
+          },
+          {
+            textBold: "Lack of Transaction Transparency:",
+            text: "Businesses struggle to provide customers with transparent transaction history and easy access to payment receipts.",
+          },
+          {
+            textBold: "Complex Payment Processes:",
+            text: "Complicated payment procedures hinder smooth customer experiences and may deter potential sales.",
+          },
+        ],
+        solutionsTitle: "Solutions:",
+        solutions: [
+          {
+            textBold: "Streamlined Operations:",
+            text: "'Fast Connect' enables businesses to streamline their operations by providing intuitive tools for inventory management, sales tracking, and reporting.",
+          },
+          {
+            textBold: "Seamless Payment Options:",
+            text: "Integrate QR Scan payment capabilities to offer customers a convenient and fast payment method, enhancing their overall shopping experience.",
+          },
+          {
+            textBold: "Receipt Management:",
+            text: "Offer the ability to easily reprint payment receipts, resolving customer inquiries and ensuring accountability.",
+          },
+          {
+            textBold: "Multi-Platform Compatibility:",
+            text: "Ensure compatibility across different devices and platforms, enabling businesses to cater to various customer preferences.",
+          },
+          {
+            textBold: "Data Security:",
+            text: "Implement robust security measures to protect customer data and payment information, fostering trust and compliance. ",
+          },
+        ],
+        productScreensTitle: "Product Screens:",
+        productScreens: [
+          {
+            img: "/images/FastConnect_HomePage.png",
+            title: "Home Page",
+            details:
+              "The central hub of Fast Connect POS, the Home Page offers a quick overview of sales, inventory, and daily insights, empowering businesses to make informed decisions.",
+          },
+          {
+            img: "/images/FastConnect_ScanQR.png",
+            title: "Scan QR",
+            details:
+              "Revolutionize customer transactions with the Scan QR to Pay feature, allowing seamless and contactless payments through quick QR code scanning, enhancing convenience and safety.",
+          },
+          {
+            img: "/images/FastConnect_PaymentHistory.png",
+            title: "Payment History",
+            details:
+              "Easily access and review a comprehensive record of all transactions processed, providing businesses with a real-time snapshot of their financial activities.",
+          },
+          {
+            img: "/images/FastConnect_TransactionSummary.png",
+            title: "Transaction Summary",
+            details:
+              "Dive into detailed transaction histories to analyze purchase trends, peak hours, and customer preferences, helping businesses optimize their offerings and strategies.",
+          },
+          {
+            img: "/images/FastConnect_Notification.png",
+            title: "Notification",
+            details:
+              "Stay in the loop with a robust notification system that keeps businesses informed about low stock levels, new orders, and important updates, ensuring timely responses and smooth operations.",
+          },
+        ],
+        technologiesUsedTitle: "Technologies Used",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "Available On",
+      },
     },
     card4: {
       title: "e-KYC solution",
       details:
         "Our advanced e-KYC solution streamlines customer verification with cutting-edge technology. It offers secure, remote, and efficient identity verification, ensuring compliance while enhancing your customer onboarding process.",
+      info: {
+        title: "e-KYC Solution",
+        subtitle: "Advanced electronic know your customer",
+        details:
+          "Our advanced e-KYC solution streamlines customer verification with cutting-edge technology. It offers secure, remote, and efficient identity verification, ensuring compliance while enhancing your customer onboarding process.",
+        featuresTitle: "Features",
+        features: [
+          "Document Scanning",
+          "Address Verification",
+          "Real-time Validation",
+          "Digital Signature",
+          "Secure Data Encryption",
+          "Customizable Workflows",
+          "User Dashboard",
+          "Compliance Reporting",
+          "Customer Support Integration",
+        ],
+        problemStatementsTitle: "Problem Statements:",
+        problemStatements: [
+          {
+            textBold: "Manual Verification Bottlenecks:",
+            text: "Traditional manual verification processes lead to bottlenecks, delays, and frustration for both customers and businesses during onboarding.",
+          },
+          {
+            textBold: "Security Concerns:",
+            text: "Lack of a secure and standardized verification method exposes sensitive customer data to potential breaches and fraud risks.",
+          },
+          {
+            textBold: "Inconsistent User Experience:",
+            text: "Customers often face a disjointed and confusing user journey while attempting to verify their identity, affecting user satisfaction.",
+          },
+          {
+            textBold: "Compliance Challenges:",
+            text: " Meeting evolving regulatory requirements for identity verification poses challenges, leading to potential legal and operational issues.",
+          },
+          {
+            textBold: "Remote Verification Complexity:",
+            text: "Remote customers find it difficult to verify their identity, leading to drop-offs and incomplete onboarding processes.",
+          },
+        ],
+        solutionsTitle: "Solutions:",
+        solutions: [
+          {
+            textBold: "Automated Verification Process:",
+            text: " Implement an automated e-KYC solution that reduces manual intervention, accelerating the onboarding process and minimizing bottlenecks.",
+          },
+          {
+            textBold: "Advanced Security Measures:",
+            text: "Integrate robust encryption, biometric authentication, and AI-driven fraud detection to ensure a highly secure identity verification process.",
+          },
+          {
+            textBold: "Seamless User Experience:",
+            text: "Design an intuitive and user-friendly interface with clear instructions and visual cues to guide customers through a smooth verification journey.",
+          },
+          {
+            textBold: "Regulatory Compliance Framework:",
+            text: "Develop a comprehensive compliance framework that adapts to changing regulations, ensuring legal adherence and preventing operational disruptions.",
+          },
+          {
+            textBold: "Remote-Friendly Interface:",
+            text: "Optimize the mobile app for remote identity verification, offering step-by-step guidance and support to customers, regardless of their location.",
+          },
+        ],
+        productScreensTitle: "Product Screens:",
+        productScreens: [
+          {
+            img: "/images/KYC_ScanID.png",
+            title: "Scan ID",
+            details:
+              "Capture and validate your identity seamlessly by scanning your official ID document using our e-KYC mobile app, ensuring secure and efficient verification.",
+          },
+          {
+            img: "/images/KYC_UploadAddress.png",
+            title: "Upload Address",
+            details:
+              "Simplify the verification process further by uploading your address card, allowing us to verify your residence details swiftly and accurately.",
+          },
+          {
+            img: "/images/KYC_FaceAuthentication.png",
+            title: "Face Authentication",
+            details:
+              "Experience cutting-edge security through face authentication, where your unique facial features provide a secure and convenient method of identity verification.",
+          },
+          {
+            img: "/images/KYC_Signature.png",
+            title: "Signature",
+            details:
+              "Complete the verification process with a digital signature, adding an extra layer of authenticity and ensuring a comprehensive and secure e-KYC experience. ",
+          },
+        ],
+        technologiesUsedTitle: "Technologies Used",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "Available On",
+      },
     },
     card5: {
       title: "Cryptocurrencies - IQDX",
@@ -242,6 +532,67 @@ const en = {
       title: "Face Recognition",
       details:
         "Our AI team has spent years specializing in custom Face Recognition software development. Backed by extensive research and experienced analysts, we deliver tailored full-cycle solutions that perfectly align with your business needs.",
+      info: {
+        title: "Face Recognition",
+        subtitle: "Advanced electronic know your customer",
+        details:
+          "Our AI team has spent years specializing in custom Face Recognition software development. Backed by extensive research and experienced analysts, we deliver tailored full-cycle solutions that perfectly align with your business needs.",
+        featuresTitle: "Features",
+        features: [
+          "High Accuracy Verification",
+          "Real-time Processing",
+          "User-friendly Interface",
+          "Scalability",
+          "Cross-platform Compatibility",
+          "Contactless Authentication",
+        ],
+        problemStatementsTitle: "Problem Statements:",
+        problemStatements: [
+          {
+            textBold: "Inaccurate Verifications:",
+            text: "Existing face recognition systems often exhibit inaccuracies, leading to false positives or false negatives during identity verification.",
+          },
+          {
+            textBold: "Hardware Limitations:",
+            text: "Certain face recognition solutions may require specialized hardware, limiting their usability and accessibility across different devices.",
+          },
+          {
+            textBold: "Privacy Concerns:",
+            text: "Users may have reservations about their biometric data being stored and used for verification, raising concerns about privacy and data protection.",
+          },
+        ],
+        solutionsTitle: "Solutions:",
+        solutions: [
+          {
+            textBold: "Advanced Algorithms:",
+            text: "Employ cutting-edge facial recognition algorithms that undergo continuous improvement and training to enhance accuracy.",
+          },
+          {
+            textBold: "Mobile Integration:",
+            text: "Develop mobile-friendly face recognition solutions that leverage built-in device cameras, making it accessible to a wider user base.",
+          },
+          {
+            textBold: "Regular Updates:",
+            text: "Provide regular software updates to improve performance, security, and adapt to evolving threats.",
+          },
+          {
+            textBold: "Continuous Monitoring:",
+            text: "Implement real-time monitoring and alerts to detect any anomalies or suspicious activities within the face recognition system.",
+          },
+        ],
+        productScreensTitle: "Product Screens:",
+        productScreens: [
+          {
+            img: "/images/FaceRecognition_AccurateIdentityVerification.png",
+            title: "Accurate Identity Verification",
+            details:
+              "Our advanced Face Recognition system employs cutting-edge algorithms to deliver precise and reliable identity verification, ensuring accuracy in every authentication. Experience the convenience of touchless verification with our Face Recognition technology, allowing users to authenticate themselves effortlessly and safely.",
+          },
+        ],
+        technologiesUsedTitle: "Technologies Used",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "Available On",
+      },
     },
   },
   homeAccreditation: {

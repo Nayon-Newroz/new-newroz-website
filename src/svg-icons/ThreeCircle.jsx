@@ -4,8 +4,8 @@ const ThreeCircle = ({ lang, color, myClass, rtlClass }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="314"
-      height="256"
+      // width="314"
+      // height="256"
       viewBox="0 0 314 256"
       fill="none"
       className={`${myClass} ${lang === "kr" && rtlClass}`}

@@ -22,6 +22,7 @@ const kr = {
     blog: "مدونة",
     careers: "وظائف",
     jobs: "وظائف",
+    services: "خدمات",
     Portfolio: "ورقة الملف الشخصي",
     webAppDevelopment: "تطوير تطبيقات الويب ",
     mobileAppDevelopment: "تطوير تطبيقات الجوال",
@@ -132,7 +133,7 @@ const kr = {
         title: "محفظة FastPay الإلكترونية",
         subtitle: "تطور المدفوعات الرقمية",
         details:
-          "We offer state-of-the-art e-Wallet development services across Android, iPhone, and Web Browser platforms. Our secure, feature-packed, and user-friendly apps, enriched with superior UI/UX designs, propel you to the forefront of the digital payments revolution.",
+          "نحن نقدم أحدث خدمات تطوير المحفظة الإلكترونية عبر Android وiPhone و منصات متصفح الويب. تطبيقاتنا الآمنة، المليئة بالميزات، وسهلة الاستخدام، مُثرية مع تصميمات UI/UX المتميزة، ستدفعك إلى طليعة المدفوعات الرقمية ثورة.",
         featuresTitle: "سمات",
         features: [
           "مزامنة الحسابات",
@@ -197,25 +198,25 @@ const kr = {
             img: "/images/Ewallet_login.png",
             title: "تسجيل الدخول",
             details:
-              "To access the app, users can easily log in using their mobile number and password. Simply enter your registered mobile number and the corresponding password to securely access your account and enjoy a seamless payment experience.",
+              "للوصول إلى التطبيق، يمكن للمستخدمين تسجيل الدخول بسهولة باستخدام رقم الهاتف المحمول وكلمة المرور الخاصة بهم. ما عليك سوى إدخال رقم هاتفك المحمول المسجل وكلمة المرور المقابلة للوصول إلى حسابك بشكل آمن والاستمتاع بتجربة دفع سلسة.",
           },
           {
             img: "/images/Ewallet_home_screen.png",
             title: "الشاشة الرئيسية",
             details:
-              "Displays your available balance prominently, providing a quick view of your funds. Additionally, you have transaction options available, allowing you to easily send money, make payments, check transaction history, and manage your account all in one place.",
+              "يعرض رصيدك المتاح بشكل بارز، مما يوفر نظرة سريعة على أموالك. بالإضافة إلى ذلك، لديك خيارات المعاملات المتاحة، مما يسمح لك بإرسال الأموال بسهولة، وإجراء الدفعات، والتحقق من سجل المعاملات، وإدارة حسابك، كل ذلك في مكان واحد.",
           },
           {
             img: "/images/Ewallet_list.png",
             title: "قائمة",
             details:
-              "There is a convenient screen that displays lists of agents and their locations. This feature allows you to easily locate nearby agents for your payment needs, making transactions hassle-free and accessible.",
+              "توجد شاشة ملائمة تعرض قوائم الوكلاء ومواقعهم. تتيح لك هذه الميزة تحديد موقع الوكلاء القريبين بسهولة لتلبية احتياجات الدفع الخاصة بك، مما يجعل المعاملات خالية من المتاعب ويمكن الوصول إليها.",
           },
           {
             img: "/images/Ewallet_history.png",
             title: "تاريخ",
             details:
-              "This screen provides users with a comprehensive list of their past transactions, allowing them to track their payment activities in one place. Additionally, users can view a summarized overview of their recent transactions.",
+              "توفر هذه الشاشة للمستخدمين قائمة شاملة بمعاملاتهم السابقة، مما يسمح لهم بتتبع أنشطة الدفع الخاصة بهم في مكان واحد. بالإضافة إلى ذلك، يمكن للمستخدمين عرض نظرة عامة مختصرة على معاملاتهم الأخيرة.",
           },
         ],
         technologiesUsedTitle: "التقنيات المستخدمة",
@@ -227,6 +228,109 @@ const kr = {
       title: "اتحاد دالكرد لكرة القدم",
       details:
         "لقد عملنا مع Dalkurd FF، وهو نادي كرة قدم سويدي يتنافس في بطولة Superettan الدوري ويمثل الروابط الثقافية داخل الشتات الكردي في بورلنج، دالارنا. النادي، الذي تأسس عام 2004، يرمز إلى الوحدة وقوة الرياضة.",
+      info: {
+        title: "اتحاد دالكرد لكرة القدم",
+        subtitle: "منصة رياضية رقمية لعشاق كرة القدم",
+        details:
+          "لقد عملنا مع Dalkurd FF، وهو نادي كرة قدم سويدي يتنافس في بطولة Superettan الدوري ويمثل الروابط الثقافية داخل الشتات الكردي في بورلنج، دالارنا. النادي، الذي تأسس عام 2004، يرمز إلى الوحدة وقوة الرياضة.",
+        featuresTitle: "سمات",
+        features: [
+          "استخدام تصميم التطبيقات المستجيبة",
+          "دمج التكامل وسائل الاعلام الاجتماعية",
+          "دمج ميزة البحث",
+          "دمج سمات التعلم الآلي",
+          "الامتثال لمعايير اللائحة العامة لحماية البيانات",
+          "البساطة في التصميم مع عناصر مرتبة",
+          "مسائل أمنية قوية",
+          "تغطية واسعة النطاق عبر منصة",
+          "استخدام الواقع المعزز في أنظمة متنوعة",
+          "دمج الأحكام الخاصة بتعليقات المستخدم",
+          "ميزات اللمس على شاشة الهاتف المحمول وافرة",
+          "التكامل مع النظم البيئية الأقوى والأكثر قوة",
+        ],
+        problemStatementsTitle: "بيانات المشكلة:",
+        problemStatements: [
+          {
+            textBold: "مشاركة محدودة للمعجبين:",
+            text: "يفتقر تطبيق الهاتف المحمول الحالي إلى الميزات التفاعلية، مما يؤدي إلى الحد الأدنى من مشاركة المعجبين وتقليل الاحتفاظ بالمستخدمين.",
+          },
+          {
+            textBold: "معلومات المباراة غير المكتملة:",
+            text: "غالبًا ما يواجه المستخدمون صعوبة في الوصول إلى تحديثات المباراة الشاملة في الوقت الفعلي، بما في ذلك النتائج المباشرة وإحصائيات اللاعبين وتعليقات المباراة.",
+          },
+          {
+            textBold: "تعقيد التنقل:",
+            text: "يجد المستخدمون صعوبة في التنقل في التطبيق، مما يؤدي إلى تجربة مستخدم مفككة وصعوبة في الوصول إلى المعلومات المطلوبة.",
+          },
+          {
+            textBold: "نظام التذاكر غير الملائم:",
+            text: "يفتقر نظام التذاكر الحالي إلى سهولة الاستخدام ويفشل في توفير تجربة شراء تذاكر سلسة للجماهير.",
+          },
+          {
+            textBold: "التخصيص المحدود:",
+            text: "لا يستطيع المستخدمون تخصيص تجربة التطبيق الخاصة بهم وفقًا لتفضيلاتهم، مما يقلل من رضا المستخدم بشكل عام.",
+          },
+        ],
+        solutionsTitle: "حلول:",
+        solutions: [
+          {
+            textBold: "تعزيز مشاركة المعجبين:",
+            text: "قم بتطوير ميزات تفاعلية مثل استطلاعات الرأي والاختبارات ومنتديات المعجبين لتعزيز المشاركة وخلق شعور بالمجتمع بين المعجبين.",
+          },
+          {
+            textBold: "تحديثات المباريات في الوقت الفعلي:",
+            text: "قم بتنفيذ أداة تعقب قوية للمباريات المباشرة لتزويد المستخدمين بنتائج محدثة وإحصائيات اللاعبين وتعليقات المباراة للحصول على تجربة غامرة.",
+          },
+          {
+            textBold: "التنقل المبسط:",
+            text: "أعد تصميم واجهة مستخدم التطبيق باستخدام مسارات التنقل البديهية، مما يضمن سهولة الوصول إلى الأخبار والجداول الزمنية وملفات تعريف اللاعبين.",
+          },
+          {
+            textBold: "نظام التذاكر المحسّن:",
+            text: "قم بتجديد نظام التذاكر من خلال واجهة سهلة الاستخدام وخيارات دفع آمنة وعمليات شراء التذاكر المبسطة.",
+          },
+          {
+            textBold: "خيارات التخصيص:",
+            text: "تقديم ميزات التخصيص، مما يسمح للمستخدمين بتخصيص تفضيلات المحتوى والإشعارات وموضوعات التطبيق للحصول على تجربة مخصصة.",
+          },
+        ],
+        productScreensTitle: "شاشات المنتج:",
+        productScreens: [
+          {
+            img: "/images/Dalkurd_HomePage.png",
+            title: "الصفحة الرئيسية",
+            details:
+              "مرحبًا بك في قلب تطبيق Dalkurd للهاتف المحمول، بوابتك إلى آخر تحديثات المباريات وأخبار الفريق وتفاعلات المعجبين المثيرة، كل ذلك في مكان واحد.",
+          },
+          {
+            img: "/images/Dalkurd_News.png",
+            title: "أخبار",
+            details:
+              "انغمس في عالم Dalkurd من خلال تجربة الوسائط المتعددة لدينا، حيث نقدم مقاطع فيديو حصرية وأبرز اللقطات ولمحات من وراء الكواليس في رحلة الفريق.",
+          },
+          {
+            img: "/images/Dalkurd_TV.png",
+            title: "تلفزيون",
+            details:
+              "اكتشف وتقدير الشركاء الكرام الذين يدعمون رحلة Dalkurd، من خلال قسم مخصص يعرض الرعاة الكرام ومساهماتهم.",
+          },
+          {
+            img: "/images/Dalkurd_Membership.png",
+            title: "عضوية",
+            details:
+              "انضم إلى عائلة Dalkurd من خلال أن تصبح عضوًا، وفي حالة وجود أي استفسارات أو مساعدة، فإن دعم العملاء لدينا هو مجرد نقرة واحدة، مما يضمن تجربة تطبيق سلسة وممتعة.",
+          },
+          {
+            img: "/images/Dalkurd_Support.png",
+            title: "يدعم",
+            details:
+              "انضم إلى عائلة Dalkurd من خلال أن تصبح عضوًا، وفي حالة وجود أي استفسارات أو مساعدة، فإن دعم العملاء لدينا هو مجرد نقرة واحدة، مما يضمن تجربة تطبيق سلسة وممتعة.",
+          },
+        ],
+        technologiesUsedTitle: "Technologies Used",
+        technologies: ["Java", "Objective C", "PHP", "MySQL", "React JS "],
+        availableOnTitle: "Available On",
+      },
     },
     card3: {
       title: "الاتصال السريع (نقاط البيع)",

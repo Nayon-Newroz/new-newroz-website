@@ -47,18 +47,16 @@ import Circle2 from "../svg-icons/Circle2";
 import Square2 from "../svg-icons/Square2";
 import ThreeCircle from "../svg-icons/ThreeCircle";
 
-const FastPayEwallet = ({ translations, lang, darkMode }) => {
-  const firstImage = "/images/Ewallet_login.png";
+const FaceRecognition = ({ translations, lang, darkMode }) => {
+  const firstImage = "/images/FaceRecognition_AccurateIdentityVerification.png";
 
   const [expanded, setExpanded] = useState("");
   const [activeImage, setActiveImage] = useState(firstImage);
 
   const handleChange = (panel, img) => (event, newExpanded) => {
-   
     setExpanded(newExpanded ? panel : false);
     setActiveImage(img);
   };
-  
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -171,19 +169,19 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                 className="mobile_view_center right_order_maintain"
               >
                 <h2 className={`title_large2 ${darkMode && "lightBlue"}`}>
-                  {translations.homeProduct.card1.info.title}
+                  {translations.homeProduct.card6.info.title}
                 </h2>
                 <p className="text_body_small_regular fw400 mb24">
-                  {translations.homeProduct.card1.info.subtitle}
+                  {translations.homeProduct.card6.info.subtitle}
                 </p>
 
                 <p className={`text_body_medium  mb6 ${darkMode && "white"}`}>
-                  {translations.homeProduct.card1.info.details}
+                  {translations.homeProduct.card6.info.details}
                 </p>
               </Grid>
               <Grid item sm={12} md={6} lg={6} className="left_order_maintain">
                 <img
-                  src="/images/fastpay_ewallet.png"
+                  src="/images/Face.png"
                   alt="our company"
                   className={`right_image_style ${
                     lang === "kr" && "left_image_style"
@@ -224,10 +222,10 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                 darkMode ? "white" : "black"
               }`}
             >
-              {translations.homeProduct.card1.info.featuresTitle}
+              {translations.homeProduct.card6.info.featuresTitle}
             </h4>
             <div className="card_holder">
-              {translations.homeProduct.card1.info?.features?.map((item, i) => (
+              {translations.homeProduct.card6.info?.features?.map((item, i) => (
                 <div
                   key={i}
                   className={`card9_style  ${
@@ -316,10 +314,10 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                   darkMode ? "white" : "black"
                 }`}
               >
-                {translations.homeProduct.card1.info.problemStatementsTitle}
+                {translations.homeProduct.card6.info.problemStatementsTitle}
               </h4>
               <ol className={`ol_Style fw400 ${darkMode && "ol_Style_dark"}`}>
-                {translations.homeProduct.card1.info?.problemStatements?.map(
+                {translations.homeProduct.card6.info?.problemStatements?.map(
                   (item, i) => (
                     <li key={i}>
                       <b>{item.textBold}&nbsp;</b>
@@ -339,10 +337,10 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                   darkMode ? "white" : "black"
                 }`}
               >
-                {translations.homeProduct.card1.info.solutionsTitle}
+                {translations.homeProduct.card6.info.solutionsTitle}
               </p>
               <ol className={`ol_Style fw400 ${darkMode && "ol_Style_dark"}`}>
-                {translations.homeProduct.card1.info?.solutions?.map(
+                {translations.homeProduct.card6.info?.solutions?.map(
                   (item, i) => (
                     <li key={i}>
                       <b>{item.textBold}&nbsp;</b>
@@ -386,7 +384,7 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                 darkMode ? "white" : "black"
               }`}
             >
-              {translations.homeProduct.card1.info.productScreensTitle}
+              {translations.homeProduct.card6.info.productScreensTitle}
             </h4>
             <Grid container alignItems="center" spacing={3}>
               <Grid
@@ -397,7 +395,7 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                 lg={6}
                 className="mobile_view_center right_order_maintain"
               >
-                {translations.homeProduct.card1.info?.productScreens?.map(
+                {translations.homeProduct.card6.info?.productScreens?.map(
                   (item, i) => (
                     <Accordion
                       key={i}
@@ -481,7 +479,7 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                     darkMode ? "white" : "deepBlue"
                   }`}
                 >
-                  {translations.homeProduct.card1.info.technologiesUsedTitle}
+                  {translations.homeProduct.card6.info.technologiesUsedTitle}
                 </h4>
 
                 <Grid
@@ -492,7 +490,7 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                   }}
                   style={{ gap: "14px" }}
                 >
-                  {translations.homeProduct.card1.info?.technologies?.map(
+                  {translations.homeProduct.card6.info?.technologies?.map(
                     (item, i) => (
                       <div
                         key={i}
@@ -519,7 +517,7 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
                     darkMode ? "white" : "deepBlue"
                   }`}
                 >
-                  {translations.homeProduct.card1.info.availableOnTitle}
+                  {translations.homeProduct.card6.info.availableOnTitle}
                 </h4>
                 <img src="/images/play_store.png" alt="play store" />{" "}
                 &nbsp;&nbsp;
@@ -533,4 +531,4 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
   );
 };
 
-export default FastPayEwallet;
+export default FaceRecognition;

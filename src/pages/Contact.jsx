@@ -176,7 +176,13 @@ const Contact = ({ translations, lang, darkMode }) => {
     }
     setActive(id);
   };
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       <Container maxWidth="xl">

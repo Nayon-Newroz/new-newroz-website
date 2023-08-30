@@ -176,7 +176,13 @@ const ServicesDetails = ({ translations, lang, darkMode }) => {
     }
     setActive(id);
   };
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       <Container maxWidth="xl">
@@ -440,7 +446,11 @@ const ServicesDetails = ({ translations, lang, darkMode }) => {
             >
               {translations.servicesDetails.cardSection2.title}
             </h3>
-            <Grid container alignItems="center" spacing={{ xs:2, sm: 2, md: 0 }}>
+            <Grid
+              container
+              alignItems="center"
+              spacing={{ xs: 2, sm: 2, md: 0 }}
+            >
               <Grid item xs={12} sm={6} md={3}>
                 <div
                   className={`card6_style  ${

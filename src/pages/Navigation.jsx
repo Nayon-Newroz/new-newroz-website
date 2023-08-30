@@ -12,6 +12,10 @@ import ApplyForm from "./ApplyForm";
 import CaseStudies from "./CaseStudies";
 import Products from "./Products";
 import FastPayEwallet from "./FastPayEwallet";
+import DalkurdFootballAssociation from "./DalkurdFootballAssociation";
+import EKYCSolution from "./EKYCSolution";
+import FastConnectPOS from "./FastConnectPOS";
+import FaceRecognition from "./FaceRecognition";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -108,6 +112,46 @@ const Navigation = ({ translations, lang, darkMode }) => {
           path="/product/fastpay-ewallet"
           element={
             <FastPayEwallet
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/product/dalkurd-football-association"
+          element={
+            <DalkurdFootballAssociation
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/product/e-kyc-solution"
+          element={
+            <EKYCSolution
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/product/fast-connect-pos"
+          element={
+            <FastConnectPOS
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/product/face-recognition"
+          element={
+            <FaceRecognition
               translations={translations}
               lang={lang}
               darkMode={darkMode}

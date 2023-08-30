@@ -47,7 +47,13 @@ const Products = ({ translations, lang, darkMode }) => {
       setLocationOpen(false);
     }
   }, []);
-
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       <Container maxWidth="xl">
@@ -228,6 +234,8 @@ const Products = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/dalkurd-football-association"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>
@@ -282,6 +290,8 @@ const Products = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/fast-connect-pos"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>
@@ -336,6 +346,8 @@ const Products = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/e-kyc-solution"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>
@@ -444,6 +456,8 @@ const Products = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/face-recognition"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>

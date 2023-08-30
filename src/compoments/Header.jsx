@@ -635,7 +635,13 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                       rows={4}
                     />
                   </Grid>
-                  <Grid item xs={12} className="center mt25">
+
+                  <Grid
+                    item
+                    xs={12}
+                    className="center mt25"
+                    style={{ marginTop: "25px" }}
+                  >
                     <Button
                       variant="contained"
                       color="primary"
@@ -651,12 +657,6 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
               </Grid>
             </Grid>
           </DialogContent>
-          {/* <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
-          <Button onClick={handleClose} autoFocus>
-            Agree
-          </Button>
-        </DialogActions> */}
         </Dialog>
       </div>
     </>

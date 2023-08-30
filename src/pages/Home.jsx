@@ -135,6 +135,8 @@ const Home = ({ translations, lang, darkMode }) => {
                 }
                 className={`top_contained_buttton ${darkMode && "black"}`}
                 disableElevation
+                component={Link}
+                to="/contact"
               >
                 {translations.homeTopSetion.connectWithUs}
               </Button>
@@ -803,7 +805,7 @@ const Home = ({ translations, lang, darkMode }) => {
                   {translations.homeIdea.productName8}
                 </div>
               </Grid>
-              <Button
+              {/* <Button
                 variant="contained"
                 color="primary"
                 startIcon={
@@ -819,7 +821,7 @@ const Home = ({ translations, lang, darkMode }) => {
                 disableElevation
               >
                 {translations.buttonText.anyBusynessIdea}
-              </Button>
+              </Button> */}
             </Grid>
           </Grid>
         </div>
@@ -938,6 +940,8 @@ const Home = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/dalkurd-football-association"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>
@@ -992,6 +996,8 @@ const Home = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/fast-connect-pos"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>
@@ -1046,6 +1052,8 @@ const Home = ({ translations, lang, darkMode }) => {
                       className={`card_button ${
                         darkMode && "card_button_dark"
                       } ${lang === "kr" && "card_button_for_rtl"}`}
+                      component={Link}
+                      to="/product/e-kyc-solution"
                     >
                       {translations.buttonText.visitNowText}
                     </Button>
