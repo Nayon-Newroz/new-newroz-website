@@ -4,7 +4,8 @@ import Home from "./Home";
 import Test from "../Test";
 import Company from "./Company";
 import Services from "./Services";
-import ServicesDetails from "./ServicesDetails";
+import MobileApplicationDevelopment from "./services/MobileApplicationDevelopment";
+import CustomSoftwareDevelopment from "./services/CustomSoftwareDevelopment";
 import Contact from "./Contact";
 import Career from "./Career";
 import CareerDetails from "./CareerDetails";
@@ -16,6 +17,12 @@ import DalkurdFootballAssociation from "./DalkurdFootballAssociation";
 import EKYCSolution from "./EKYCSolution";
 import FastConnectPOS from "./FastConnectPOS";
 import FaceRecognition from "./FaceRecognition";
+import DevopsServices from "./services/DevopsServices";
+import Blockchain from "./services/Blockchain";
+import SoftwareTesting from "./services/SoftwareTesting";
+import WebApplicationDevelopment from "./services/WebApplicationDevelopment";
+import Design from "./services/Design";
+import EKYCVerificationServices from "./services/EKYCVerificationServices";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -48,16 +55,87 @@ const Navigation = ({ translations, lang, darkMode }) => {
             />
           }
         />
-        <Route
-          path="/services/details"
+          <Route
+          path="/services/mobile-application-development"
           element={
-            <ServicesDetails
+            <MobileApplicationDevelopment
               translations={translations}
               lang={lang}
               darkMode={darkMode}
             />
           }
         />
+        {/* <Route
+          path="/services/custom-software-development"
+          element={
+            <CustomSoftwareDevelopment
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/services/devops-services"
+          element={
+            <DevopsServices
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/services/blockchain"
+          element={
+            <Blockchain
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/services/software-testing"
+          element={
+            <SoftwareTesting
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/services/web-application-development"
+          element={
+            <WebApplicationDevelopment
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/services/design"
+          element={
+            <Design
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+        <Route
+          path="/services/ekyc-verification-services"
+          element={
+            <EKYCVerificationServices
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        /> */}
+      
         <Route
           path="/contact"
           element={

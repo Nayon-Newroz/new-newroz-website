@@ -389,7 +389,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_button_for_rtl"
                     }`}
                     component={Link}
-                    to={"/services/details"}
+                    to={"/services/mobile-application-development"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -485,7 +485,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_button_for_rtl"
                     }`}
                     component={Link}
-                    to={"/services/details"}
+                    to={"/services/custom-software-development"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -553,7 +553,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_button_for_rtl"
                     }`}
                     component={Link}
-                    to={"/services/details"}
+                    to={"/services/devops-services"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -616,7 +616,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       lang === "kr" && "card_button_for_rtl"
                     }`}
                     component={Link}
-                    to={"/services/details"}
+                    to={"/services/blockchain"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>
@@ -679,7 +679,7 @@ const Home = ({ translations, lang, darkMode }) => {
                       darkMode && "card_button_dark"
                     } ${lang === "kr" && "card_button_for_rtl"}`}
                     component={Link}
-                    to={"/services/details"}
+                    to={"/services/software-testing"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>

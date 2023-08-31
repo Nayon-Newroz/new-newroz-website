@@ -900,7 +900,7 @@
 .card9_style {
   flex: 0 0 calc(33% - 17px);
   border-radius: 10px;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   background: rgba(255, 255, 255, 0.2);
   box-shadow: -2px -2px 0px 0px #c2d0e5 inset;
   backdrop-filter: blur(10px);

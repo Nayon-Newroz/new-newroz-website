@@ -57,48 +57,572 @@ const en = {
 
     card1: {
       title: "Mobile Application Development",
+      subtitle: "Choose The Best mobile solutions",
       details:
         "Adhering to a mobile-first philosophy, we conceptualize, design, and deploy innovative mobile applications across various platforms. Our aim is to provide seamless user experiences, extending your business's reach in the increasingly mobile-driven market.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "iOS App Development",
+            details:
+              "Our skilled developers craft feature-rich and user-centric apps, utilizing the latest iOS capabilities. Whether it's creating a new app from scratch or enhancing an existing one, we ensure a seamless user experience, adherence to design guidelines, and integration with device features.",
+          },
+          card2: {
+            title: "Android App Development",
+            details:
+              "We specialize in Android App Development that transforms your concepts into dynamic and engaging mobile experiences. Our expert team leverages the Android platform's versatility to design and develop apps tailored to your business needs.            ",
+          },
+          card3: {
+            title: "Cross-Platform App Development",
+            details:
+              "We excel in Cross-Platform App Development, harnessing the power of technology to create versatile apps that work seamlessly across multiple platforms. Our skilled developers use cutting-edge tools and frameworks to build apps that deliver a consistent user experience on both iOS and Android devices.",
+          },
+          card4: {
+            title: "Flutter Mobile App Development",
+            details:
+              "We use Flutter to create apps that work seamlessly across iOS and Android devices, ensuring consistent performance and engaging user experiences. From concept to deployment, we prioritize innovation, design aesthetics, and efficient functionality to deliver apps that stand out in the competitive mobile landscape.",
+          },
+
+          card5: {
+            title: "Mobile App Consulting",
+            details:
+              "Mobile App Consulting at our company is your pathway to successful app development. Our seasoned consultants provide valuable insights, strategies, and technical guidance to shape your mobile app idea into a winning solution.",
+          },
+          card6: {
+            title: "React Native App Development",
+            details:
+              "we adhere React Native App Development, delivering versatile and efficient solutions that bridge the gap between native performance and cross-platform capabilities. From idea conceptualization to deployment, our React Native app development services prioritize performance, responsiveness, and user engagement.",
+          },
+        },
+        cardSection2: {
+          title: "Mobile app design process",
+          card1: {
+            title: "Strategy",
+          },
+          card2: {
+            title: "Analysis & Planning",
+          },
+          card3: {
+            title: "UI/UX Design",
+          },
+          card4: {
+            title: "App Development",
+          },
+          card5: {
+            title: "Testing",
+          },
+          card6: {
+            title: "Deployment & Support",
+          },
+        },
+      },
     },
     card2: {
       title: "Custom Software Development",
+      subtitle: "Choose The Best CUSTOM SOFTWARE DEVELOPMENT SOLUTION",
       details:
         "Recognizing the unique nature of each business, we excel in devising bespoke software solutions. Our offerings are not just aligned with your processes and objectives, but are designed to provide a distinct competitive advantage in your respective industry.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "MVP for Startups",
+            details:
+              "Craft Minimum Viable Products (MVPs) to jumpstart startups' digital ventures. Our custom software development focuses on rapid prototyping, delivering essential features for testing and validation, ensuring cost-effectiveness and quicker market entry.",
+          },
+          card2: {
+            title: "DevOps & Automation",
+            details:
+              "Streamline development processes with DevOps practices and automation tools. We integrate continuous integration, continuous delivery (CI/CD), and automated deployment to enhance software quality, accelerate releases, and improve collaboration.",
+          },
+          card3: {
+            title: "Code Inspection",
+            details:
+              "Thoroughly review code to identify vulnerabilities, enhance code quality, and ensure adherence to coding standards. Our code inspection services help identify potential issues early in the development cycle, reducing future maintenance efforts and enhancing overall software reliability.",
+          },
+          card4: {
+            title: "Automated Testing",
+            details:
+              "Implement comprehensive automated testing strategies to ensure software functionality, performance, and security. Our custom software development incorporates automated unit, integration, and regression testing to detect issues quickly, enabling faster iterations and improved software quality.",
+          },
+          card5: {
+            title: "System Administration",
+            details:
+              "Provide ongoing support through system administration services. Our experts monitor, manage, and optimize the software system's performance, security, and scalability, allowing businesses to focus on their core operations while ensuring a reliable software environment.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "Analysis & Planning",
+          },
+          card2: {
+            title: "Design",
+          },
+          card3: {
+            title: "Development",
+          },
+          card4: {
+            title: "Implementation",
+          },
+          card5: {
+            title: "Testing",
+          },
+          card6: {
+            title: "Maintenance",
+          },
+        },
+      },
     },
     card3: {
       title: "Devops services",
+      subtitle: "Choose The Best devops services",
       details:
         "Our DevOps services streamline software delivery and deployment, enabling efficient collaboration and operations teams.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "Continuous Integration",
+            details:
+              "Automate the process of integrating code changes into a shared repository, ensuring that new code is regularly and automatically tested, reducing integration issues and promoting early bug detection.",
+          },
+          card2: {
+            title: "Continuous Delivery",
+            details:
+              "Extend CI by automating the deployment process to staging and production environments. CD ensures that tested code is consistently deployed to various environments, reducing manual errors and enabling faster release cycles.",
+          },
+          card3: {
+            title: "Configuration Management",
+            details:
+              "Manage and automate configurations of various components in the software environment. This ensures consistency across different environments and reduces manual setup efforts.",
+          },
+          card4: {
+            title: "Automated Testing",
+            details:
+              "Integrate automated testing practices throughout the development lifecycle, including unit tests, integration tests, performance tests, and security tests. Automated testing helps catch defects early and ensures software quality.",
+          },
+          card5: {
+            title: "Monitoring and Logging",
+            details:
+              "Set up monitoring tools to track application performance, infrastructure health, and user experience. Centralized logging and monitoring help in quickly identifying and resolving issues.",
+          },
+          card6: {
+            title: "Continuous Improvement",
+            details:
+              "Embrace a culture of continuous improvement by analyzing metrics, user feedback, and performance data. Regularly review and refine DevOps processes to optimize software delivery and operational efficiency.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "Operation",
+          },
+          card2: {
+            title: "Development",
+          },
+          card3: {
+            title: "Integration",
+          },
+          card4: {
+            title: "Testing",
+          },
+          card5: {
+            title: "Monitoring",
+          },
+          card6: {
+            title: "Deployment",
+          },
+        },
+      },
     },
     card4: {
       title: "Blockchain",
+      subtitle: "Choose The Best Blockchain services",
       details:
         "Our blockchain service offers secure, transparent, and decentralized transactions that enable trust and efficiency in various industries worldwide.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "Security",
+            details:
+              "Transactions are secured through cryptographic techniques. Each transaction is linked to the previous one, forming a chain of blocks, making it highly resistant to hacking and fraud.",
+          },
+          card2: {
+            title: "Data Consistency",
+            details:
+              "Consensus mechanisms ensure that all participants agree on the state of the data. This prevents inconsistencies and ensures a single version of truth.",
+          },
+          card3: {
+            title: "Distributed Database",
+            details:
+              "Data is distributed across multiple nodes in the network, improving redundancy and fault tolerance. This minimizes the risk of data loss due to a single point of failure.",
+          },
+          card4: {
+            title: "Interoperability",
+            details:
+              "Some blockchain platforms focus on interoperability, allowing different blockchains to communicate and share data, enabling more complex applications and networks.",
+          },
+          card5: {
+            title: "Auditing and Compliance",
+            details:
+              "The transparent and auditable nature of blockchain makes it suitable for industries with strict regulatory requirements, such as finance and healthcare.",
+          },
+          card6: {
+            title: "Environmental Impact",
+            details:
+              "Some blockchains use energy-efficient consensus algorithms, making them more environmentally friendly compared to traditional systems.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "P2P Computer Network",
+          },
+          card2: {
+            title: "Node Validation",
+          },
+          card3: {
+            title: "Verification",
+          },
+          card4: {
+            title: "Block Creation",
+          },
+          card5: {
+            title: "Create Blockchains",
+          },
+          card6: {
+            title: "Complete",
+          },
+        },
+      },
     },
     card5: {
       title: "Software Testing Services",
+      subtitle: "Choose The Best software testing service",
       details:
         "Quality and reliability form the bedrock of our software offerings. Our adept testing team leverages rigorous testing methodologies to spot and rectify issues, ensuring the delivery of robust, flawless applications.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "QA Consulting",
+            details:
+              "QA Consulting involves experts providing advice and guidance to improve the quality assurance processes. They assess the existing testing strategies, suggest improvements, and help organizations implement best practices.",
+          },
+          card2: {
+            title: "Independent QA",
+            details:
+              "Independent Quality Assurance involves a separate team or entity conducting testing without any involvement in the software's development. This ensures unbiased assessment, finding defects that might be overlooked by the development team.",
+          },
+          card3: {
+            title: "Integrated Testing",
+            details:
+              "Integrated Testing focuses on testing the interactions between different components or modules of a software system. It ensures that the integrated components function as expected, identifying issues that may arise when various parts of the system come together.",
+          },
+          card4: {
+            title: "Automated Testing",
+            details:
+              "Automated Testing involves using scripts and tools to execute test cases automatically. It enhances testing speed, accuracy, and repeatability. This is particularly useful for regression testing and repetitive tasks.",
+          },
+          card5: {
+            title: "Full-Cycle Testing",
+            details:
+              "Full-Cycle Testing covers the entire software development life cycle, from requirements analysis to post-release maintenance. It includes different testing phases like unit testing, integration testing, system testing, acceptance testing, and more.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "User Experience Testing",
+          },
+          card2: {
+            title: "Functionality Testing",
+          },
+          card3: {
+            title: "Performance Load Testing",
+          },
+          card4: {
+            title: "Compatibility Testing",
+          },
+          card5: {
+            title: "Test Management",
+          },
+          card6: {
+            title: "Security Testing",
+          },
+        },
+      },
     },
     card6: {
       title: "Web Application Development",
+      subtitle: "Choose The Best WEB APP DEVELOPMENT SYSTEM",
       details:
         "With a team of seasoned developers at our disposal, we construct robust, user-friendly web applications, meticulously designed to align with your business needs. From minimalist websites to intricate web portals, our solutions serve as catalysts for growth and efficiency.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "Project Plan",
+            details:
+              "Creating a project plan involves outlining the scope, timeline, resources, and milestones for the web application development.",
+          },
+          card2: {
+            title: "Requirement Analysis",
+            details:
+              "Requirement analysis involves understanding the client's needs and goals for the web application. It includes gathering, documenting, and refining the project's functional and non-functional requirements",
+          },
+          card3: {
+            title: "Environment Setup",
+            details:
+              "Environment setup involves configuring the necessary development, testing, and deployment environments. This includes setting up servers, databases, frameworks, and tools needed for the development and testing of the web application.",
+          },
+          card4: {
+            title: "Development and QA",
+            details:
+              "During the development phase, the actual coding of the web application takes place based on the requirements. Developers write code, create functionalities, and integrate components.",
+          },
+          card5: {
+            title: "Code Merge",
+            details:
+              "Code merge involves integrating code changes made by different developers into a shared codebase. This is usually done using version control systems like Git. Proper code merging prevents conflicts and ensures that the application's different components work harmoniously.",
+          },
+          card6: {
+            title: "Launch and Post-Launch Support",
+            details:
+              "The launch phase involves deploying the web application to a production environment and making it accessible to users. Post-launch support includes monitoring the application's performance, addressing any issues or bugs that arise, and providing ongoing updates and enhancements to improve user experience.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "Analysis",
+          },
+          card2: {
+            title: "Wireframe",
+          },
+          card3: {
+            title: "Design",
+          },
+          card4: {
+            title: "Development",
+          },
+          card5: {
+            title: "Deployment",
+          },
+          card6: {
+            title: "Maintenance",
+          },
+        },
+      },
     },
     card7: {
       title: "UI/UX Design",
+      subtitle: "Choose The Best UI/UX Service",
       details:
         "Our team of innovative UI/UX designers focuses on creating visually captivating and user-centric interfaces. These are tailored to not only enhance user satisfaction but also boost user adoption, cultivating exceptional digital experiences.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "Design Brief",
+            details:
+              "The design brief is an initial document that outlines project goals, objectives, target audience, and design preferences. It serves as a foundation for the design process and helps align the design team and stakeholders.",
+          },
+          card2: {
+            title: "Design Pattern",
+            details:
+              "Choosing a design pattern involves selecting a visual style that matches the project's purpose and audience. It includes decisions on color schemes, typography, imagery, and other design elements that reflect the brand's identity.",
+          },
+          card3: {
+            title: "Wireframes",
+            details:
+              "Wireframes are basic visual representations of the layout and structure of the user interface. They outline the placement of key elements, such as buttons and content sections, helping to plan the user experience and overall design flow.",
+          },
+          card4: {
+            title: "UI & UX Design",
+            details:
+              "User Interface (UI) design focuses on creating visually appealing and functional interfaces. It includes designing buttons, menus, icons, and other elements that users interact with. User Experience (UX) design involves enhancing usability and user satisfaction by designing intuitive navigation, clear workflows.",
+          },
+          card5: {
+            title: "Design Deliver",
+            details:
+              "Design deliverables include the final design assets that will be used in the development phase. This may include high-fidelity mockups, design files, style guides, and any other resources necessary to bring the design vision to life during development.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "Problem & Concepts",
+          },
+          card2: {
+            title: "User Needs",
+          },
+          card3: {
+            title: "Empathy Design",
+          },
+          card4: {
+            title: "Wireframing",
+          },
+          card5: {
+            title: "Visual Design",
+          },
+          card6: {
+            title: "Prototyping",
+          },
+        },
+      },
     },
     card8: {
       title: "E-KYC Verification Services",
+      subtitle: "Choose The Best KYC Verification Service",
       details:
         "In an era where regulatory compliance is crucial, our E-KYC verification services provide a streamlined and effective approach to identity verification. This helps meet stringent compliance standards and safeguards your business against potential risks.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "Document Verification",
+            details:
+              "The system automatically verifies identity documents such as IDs, passports, and driver's licenses for authenticity and accuracy.",
+          },
+          card2: {
+            title: "Face Recognition",
+            details:
+              "Users are required to provide a selfie that is compared to the photo on their ID document for identity verification.",
+          },
+          card3: {
+            title: "Real-time Verification",
+            details:
+              "Instant verification results to ensure a seamless user experience.",
+          },
+          card4: {
+            title: "Integration Options",
+            details:
+              "APIs and SDKs for easy integration into existing systems and platforms.",
+          },
+          card5: {
+            title: "Secure Data Handling",
+            details:
+              "Stringent data security protocols to protect user information.",
+          },
+          card6: {
+            title: "Data Accuracy",
+            details:
+              "High precision in document extraction and verification results.",
+          },
+          card7: {
+            title: "Scalability",
+            details:
+              "Capable of handling high volumes of verification requests as user numbers grow.",
+          },
+          card8: {
+            title: "Global Coverage",
+            details:
+              "Support for a wide range of document types and countries to cater to a diverse user base.",
+          },
+          card9: {
+            title: "Customer Support",
+            details:
+              "Provide assistance to users experiencing issues during the verification process.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "Contact Verification",
+          },
+          card2: {
+            title: "Face Authentication",
+          },
+          card3: {
+            title: "Fraud Analysis",
+          },
+          card4: {
+            title: "Verify with NID server",
+          },
+          card5: {
+            title: "Additional Information",
+          },
+          card6: {
+            title: "Sanction Screening",
+          },
+        },
+      },
     },
     card9: {
       title: "Cloud Consultancy",
+      subtitle: "Choose The Best consultancy of cloud services",
       details:
         "We harness the transformative power of cloud technologies to give businesses an edge. Our experts guide you through every step of the process, from migration and architecture design to security optimization, ensuring you benefit from scalable, secure cloud solutions.",
+      servicesDetails: {
+        cardSection1: {
+          title: "What we do?",
+          card1: {
+            title: "Strategy Development",
+            details:
+              "Helping businesses formulate a tailored cloud strategy aligned with their goals and requirements.",
+          },
+          card2: {
+            title: "Architecture Design",
+            details:
+              "Designing scalable, reliable, and cost-effective cloud architectures that leverage the full potential of cloud technologies.",
+          },
+          card3: {
+            title: "Cost Optimization",
+            details:
+              "Analyzing cloud resource usage and providing strategies to optimize costs without sacrificing performance.",
+          },
+          card4: {
+            title: "Performance Optimization",
+            details:
+              "Fine-tuning cloud applications and infrastructure to achieve optimal performance and responsiveness.",
+          },
+          card5: {
+            title: "DevOps Integration",
+            details:
+              "Integrating DevOps practices into cloud environments to enable faster application development and deployment.",
+          },
+          card6: {
+            title: "Continuous Improvement",
+            details:
+              "Offering ongoing consultation to ensure that the cloud environment evolves with changing business needs and technological advancements.",
+          },
+          card7: {
+            title: "Multi-Cloud Strategy",
+            details:
+              "Advising on the implementation of a multi-cloud approach to distribute workloads across different cloud providers.",
+          },
+          card8: {
+            title: "Management",
+            details:
+              "Establishing governance frameworks and management practices for efficient cloud operations.",
+          },
+        },
+        cardSection2: {
+          title: "Design and Development process",
+          card1: {
+            title: "Cloud Advisory",
+          },
+          card2: {
+            title: "Migration",
+          },
+          card3: {
+            title: "Operation & Optimization",
+          },
+          card4: {
+            title: "Analysis",
+          },
+          card5: {
+            title: "Cloud Security",
+          },
+          card6: {
+            title: "Modernization & Devops",
+          },
+        },
+      },
     },
   },
   homeIdea: {
@@ -822,67 +1346,7 @@ const en = {
     details:
       "When designing a solution, we make solving problems our utmost priority while also keeping an equal emphasis on aesthetics.",
   },
-  servicesDetails: {
-    title: "Mobile solutions to suit your needs",
-    subtitle: "Choose The Best mobile solutions",
-    details:
-      "Adhering to a mobile-first philosophy, we conceptualize, design, and deploy innovative mobile applications across various platforms. Our aim is to provide seamless user experiences, extending your business's reach in the increasingly mobile-driven market.",
-    cardSection1: {
-      title: "What we do?",
-      card1: {
-        title: "iOS App Development",
-        details:
-          "Our skilled developers craft feature-rich and user-centric apps, utilizing the latest iOS capabilities. Whether it's creating a new app from scratch or enhancing an existing one, we ensure a seamless user experience, adherence to design guidelines, and integration with device features.",
-      },
-      card2: {
-        title: "Android App Development",
-        details:
-          "We specialize in Android App Development that transforms your concepts into dynamic and engaging mobile experiences. Our expert team leverages the Android platform's versatility to design and develop apps tailored to your business needs.            ",
-      },
-      card3: {
-        title: "Cross-Platform App Development",
-        details:
-          "We excel in Cross-Platform App Development, harnessing the power of technology to create versatile apps that work seamlessly across multiple platforms. Our skilled developers use cutting-edge tools and frameworks to build apps that deliver a consistent user experience on both iOS and Android devices.",
-      },
-      card4: {
-        title: "Flutter Mobile App Development",
-        details:
-          "We use Flutter to create apps that work seamlessly across iOS and Android devices, ensuring consistent performance and engaging user experiences. From concept to deployment, we prioritize innovation, design aesthetics, and efficient functionality to deliver apps that stand out in the competitive mobile landscape.",
-      },
 
-      card5: {
-        title: "Mobile App Consulting",
-        details:
-          "Mobile App Consulting at our company is your pathway to successful app development. Our seasoned consultants provide valuable insights, strategies, and technical guidance to shape your mobile app idea into a winning solution.",
-      },
-      card6: {
-        title: "React Native App Development",
-        details:
-          "we adhere React Native App Development, delivering versatile and efficient solutions that bridge the gap between native performance and cross-platform capabilities. From idea conceptualization to deployment, our React Native app development services prioritize performance, responsiveness, and user engagement.",
-      },
-    },
-    cardSection2: {
-      title: "Mobile app design process",
-      card1: {
-        title: "Strategy",
-      },
-      card2: {
-        title: "Analysis & Planning",
-      },
-      card3: {
-        title: "UI/UX Design",
-      },
-      card4: {
-        title: "App Development",
-      },
-      card5: {
-        title: "Testing",
-      },
-      card6: {
-        title: "Deployment & Support",
-      },
-    },
-  },
   contactFindUs: {
     title: "Find Us",
     subtitle: "Innovative Solutions For A Digital World",
