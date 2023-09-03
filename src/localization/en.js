@@ -14,7 +14,7 @@ const en = {
   footer: {
     titleAboutNewroz: "About Newroz",
     aboutNewrozDetails:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dictum aliquet accumsan porta lectus ridiculus in mattis. Netus sodales in volutpat ullamcorper amet adipiscing fermentum.",
+      "NewrozTech specializes in bridging organizational needs and tech possibilities, molding ideas into digital frameworks. We leverage tech's potential to realize visions, empowering businesses with cutting-edge solutions that exceed expectations. Our team's dedication ensures exceptional experiences, turning conceptual visions into reality.",
     titleAbout: "About",
     titleSoftwareEngineering: "Software Engineering",
     titleCentersofExcellence: "Centers of Excellence",
@@ -92,7 +92,7 @@ const en = {
           card6: {
             title: "React Native App Development",
             details:
-              "we adhere React Native App Development, delivering versatile and efficient solutions that bridge the gap between native performance and cross-platform capabilities. From idea conceptualization to deployment, our React Native app development services prioritize performance, responsiveness, and user engagement.",
+              "We adhere React Native App Development, delivering versatile and efficient solutions that bridge the gap between native performance and cross-platform capabilities. From idea conceptualization to deployment, our React Native app development services prioritize performance, responsiveness, and user engagement.",
           },
         },
         cardSection2: {
@@ -241,7 +241,7 @@ const en = {
       title: "Blockchain",
       subtitle: "Choose The Best Blockchain services",
       details:
-        "Our blockchain service offers secure, transparent, and decentralized transactions that enable trust and efficiency in various industries worldwide.",
+        "Harnessing the transformative potential of blockchain technology, we build decentralized applications and intelligent contracts. These offer secure, transparent and tamper-proof solutions, catering to a variety of industry needs.",
       servicesDetails: {
         cardSection1: {
           title: "What we do?",

@@ -54,11 +54,10 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
   const [activeImage, setActiveImage] = useState(firstImage);
 
   const handleChange = (panel, img) => (event, newExpanded) => {
-   
     setExpanded(newExpanded ? panel : false);
     setActiveImage(img);
   };
-  
+
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -73,7 +72,7 @@ const FastPayEwallet = ({ translations, lang, darkMode }) => {
           container
           justifyContent="space-between"
           alignItems="center"
-          className="journey_holder  "
+          className="journey_holder upper_slide   "
         >
           <Grid item sm={12} md={4} className="hideForTabAndMobileViewOnly">
             <h3 className={`subtitle mb20 ${darkMode && "white"}`}>

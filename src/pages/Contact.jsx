@@ -190,7 +190,7 @@ const Contact = ({ translations, lang, darkMode }) => {
           container
           justifyContent="space-between"
           alignItems="center"
-          className="journey_holder"
+          className="journey_holder upper_slide "
         >
           <Grid item sm={12} md={4} className="hideForTabAndMobileViewOnly">
             <h3 className={`subtitle mb20 ${darkMode && "white"}`}>
@@ -545,11 +545,7 @@ const Contact = ({ translations, lang, darkMode }) => {
                     </div>
                   </Grid>
                   <Grid item xs="auto">
-                    <h4
-                      className={`card_title fw500 ${
-                        darkMode && "white"
-                      }`}
-                    >
+                    <h4 className={`card_title fw500 ${darkMode && "white"}`}>
                       {translations.contactFollowUs.followUs}
                     </h4>
                   </Grid>
@@ -590,11 +586,7 @@ const Contact = ({ translations, lang, darkMode }) => {
                     </div>
                   </Grid>
                   <Grid item xs="auto">
-                    <h4
-                      className={`card_title fw500 ${
-                        darkMode && "white"
-                      }`}
-                    >
+                    <h4 className={`card_title fw500 ${darkMode && "white"}`}>
                       {translations.contactFollowUs.followUs}
                     </h4>
                   </Grid>
@@ -635,11 +627,7 @@ const Contact = ({ translations, lang, darkMode }) => {
                     </div>
                   </Grid>
                   <Grid item xs="auto">
-                    <h4
-                      className={`card_title fw500 ${
-                        darkMode && "white"
-                      }`}
-                    >
+                    <h4 className={`card_title fw500 ${darkMode && "white"}`}>
                       {translations.contactFollowUs.letsConnect}
                     </h4>
                   </Grid>
@@ -680,11 +668,7 @@ const Contact = ({ translations, lang, darkMode }) => {
                     </div>
                   </Grid>
                   <Grid item xs="auto">
-                    <h4
-                      className={`card_title fw500 ${
-                        darkMode && "white"
-                      }`}
-                    >
+                    <h4 className={`card_title fw500 ${darkMode && "white"}`}>
                       {translations.contactFollowUs.subscribe}
                     </h4>
                   </Grid>

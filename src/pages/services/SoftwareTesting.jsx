@@ -22,7 +22,7 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
           container
           justifyContent="space-between"
           alignItems="center"
-          className="journey_holder"
+          className="journey_holder upper_slide "
         >
           <Grid item sm={12} md={4} className="hideForTabAndMobileViewOnly">
             <h3 className={`subtitle mb20 ${darkMode && "white"}`}>
@@ -124,8 +124,8 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
             </p>
             <div className="detail_text_container">
               <p
-                className={`text_body_small_regular fw400 center  black2 ${
-                  darkMode && "white"
+                className={`text_body_small_regular fw400 center  ${
+                  darkMode ? "white" : "black2"
                 }`}
               >
                 {translations.homeService.card5.details}
@@ -161,8 +161,8 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
             </div>
             <div className="upper_slide">
               <h3
-                className={`title_semibold_medium mb30 center black ${
-                  darkMode && "white"
+                className={`title_semibold_medium mb30 center ${
+                  darkMode ? "white" : "black"
                 }`}
               >
                 {
@@ -183,7 +183,7 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
                   <div>
                     <h4
                       className={`text_body_medium fw500 mb8 deepBlue ${
-                        darkMode && "white"
+                        darkMode ? "lightBlue" : "deepBlue"
                       }`}
                     >
                       {
@@ -211,7 +211,7 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
                   <div>
                     <h4
                       className={`text_body_medium fw500 mb8 deepBlue ${
-                        darkMode && "white"
+                        darkMode ? "lightBlue" : "deepBlue"
                       }`}
                     >
                       {
@@ -239,7 +239,7 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
                   <div>
                     <h4
                       className={`text_body_medium fw500 mb8 deepBlue ${
-                        darkMode && "white"
+                        darkMode ? "lightBlue" : "deepBlue"
                       }`}
                     >
                       {
@@ -267,7 +267,7 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
                   <div>
                     <h4
                       className={`text_body_medium fw500 mb8 deepBlue ${
-                        darkMode && "white"
+                        darkMode ? "lightBlue" : "deepBlue"
                       }`}
                     >
                       {
@@ -295,7 +295,7 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
                   <div>
                     <h4
                       className={`text_body_medium fw500 mb8 deepBlue ${
-                        darkMode && "white"
+                        darkMode ? "lightBlue" : "deepBlue"
                       }`}
                     >
                       {
@@ -345,8 +345,8 @@ const SoftwareTesting = ({ translations, lang, darkMode }) => {
 
           <div className="upper_slide">
             <h3
-              className={`title_semibold_medium mb30 center black ${
-                darkMode && "white"
+              className={`title_semibold_medium mb30 center ${
+                darkMode ? "white" : "black"
               }`}
             >
               {

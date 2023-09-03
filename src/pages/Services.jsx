@@ -190,7 +190,7 @@ const Services = ({ translations, lang, darkMode }) => {
           container
           justifyContent="space-between"
           alignItems="center"
-          className="journey_holder"
+          className="journey_holder upper_slide "
         >
           <Grid item sm={12} md={4} className="hideForTabAndMobileViewOnly">
             <h3 className={`subtitle mb20 ${darkMode && "white"}`}>
@@ -234,8 +234,8 @@ const Services = ({ translations, lang, darkMode }) => {
           </p>
           <div className="detail_text_container">
             <p
-              className={`text_body_small_regular fw400 center mb50  black2 ${
-                darkMode && "white"
+              className={`text_body_small_regular fw400 center mb50  ${
+                darkMode ? "white" : "black2"
               }`}
             >
               {translations.services.details}
