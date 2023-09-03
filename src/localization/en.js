@@ -300,7 +300,7 @@ const en = {
       },
     },
     card5: {
-      title: "Software Testing Services",
+      title: "Software Testing",
       subtitle: "Choose The Best software testing service",
       details:
         "Quality and reliability form the bedrock of our software offerings. Our adept testing team leverages rigorous testing methodologies to spot and rectify issues, ensuring the delivery of robust, flawless applications.",

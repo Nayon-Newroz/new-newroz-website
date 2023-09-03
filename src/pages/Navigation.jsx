@@ -23,6 +23,7 @@ import SoftwareTesting from "./services/SoftwareTesting";
 import WebApplicationDevelopment from "./services/WebApplicationDevelopment";
 import Design from "./services/Design";
 import EKYCVerificationServices from "./services/EKYCVerificationServices";
+import CloudConsultancy from "./services/CloudConsultancy";
 
 const Navigation = ({ translations, lang, darkMode }) => {
   return (
@@ -55,7 +56,7 @@ const Navigation = ({ translations, lang, darkMode }) => {
             />
           }
         />
-          <Route
+        <Route
           path="/services/mobile-application-development"
           element={
             <MobileApplicationDevelopment
@@ -65,7 +66,7 @@ const Navigation = ({ translations, lang, darkMode }) => {
             />
           }
         />
-        {/* <Route
+        <Route
           path="/services/custom-software-development"
           element={
             <CustomSoftwareDevelopment
@@ -134,8 +135,18 @@ const Navigation = ({ translations, lang, darkMode }) => {
               darkMode={darkMode}
             />
           }
-        /> */}
-      
+        />
+        <Route
+          path="/services/cloud-consultancy"
+          element={
+            <CloudConsultancy
+              translations={translations}
+              lang={lang}
+              darkMode={darkMode}
+            />
+          }
+        />
+
         <Route
           path="/contact"
           element={

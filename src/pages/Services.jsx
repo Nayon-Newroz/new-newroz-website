@@ -954,7 +954,7 @@ const Services = ({ translations, lang, darkMode }) => {
                       darkMode && "card_button_dark"
                     } ${lang === "kr" && "card_button_for_rtl"}`}
                     component={Link}
-                    to={"/services/mobile-application-development"}
+                    to={"/services/cloud-consultancy"}
                   >
                     {translations.buttonText.visitNowText}
                   </Button>

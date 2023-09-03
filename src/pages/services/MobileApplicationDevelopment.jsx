@@ -718,7 +718,7 @@ const MobileApplicationDevelopment = ({ translations, lang, darkMode }) => {
                   >
                     {
                       translations.homeService.card1.servicesDetails
-                        .cardSection2.card3.title
+                        .cardSection2.card6.title
                     }
                   </h4>
                 </div>

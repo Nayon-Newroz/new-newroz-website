@@ -122,16 +122,16 @@ function App(props) {
       let y = divPosition.offsetTop;
       // console.log("---------y-----------", y);
       if (y < 80) {
-        // document.getElementById("header").style.top = "0px";
-        // divPosition.style.position = "absolute";
-        divPosition.style.background = "rgba(0,0,0,0)";
-        divPosition.style.backdropFilter = "blur(0px)";
+        // divPosition.style.background = "rgba(0,0,0,0)";
+        // divPosition.style.backdropFilter = "blur(0px)";
+        divPosition.classList.remove("navbar_style");
       } else if (y > 80) {
         // console.log(" ------------------else if---------------");
 
         // divPosition.style.position = "sticky";
-        divPosition.style.background = "rgba(207,227,255,.5)";
-        divPosition.style.backdropFilter = "blur(5px)";
+        // divPosition.style.background = "rgba(207,227,255,.5)";
+        // divPosition.style.backdropFilter = "blur(5px)";
+        divPosition.classList.add("navbar_style");
         // if (windowHeight < y + 120) {
         //   // document.getElementById("header").style.top = "0px";
         //   divPosition.style.background = "rgba(207,227,255,.5)";
