@@ -1288,7 +1288,7 @@ const Home = ({ translations, lang, darkMode }) => {
             </Grid>
           </Grid>
         </div>
-        <div className="section_style">
+        {/* <div className="section_style">
           <h2 className={`title_large2 mb8 center ${darkMode && "lightBlue"}`}>
             {translations.homeCaseStudies.title}
           </h2>
@@ -1487,7 +1487,7 @@ const Home = ({ translations, lang, darkMode }) => {
               {translations.buttonText.discoverMoreText}
             </Button>
           </div>
-        </div>
+        </div> */}
         <div className="section_style">
           <h2 className={`title_large2 mb5 ${darkMode && "lightBlue"}`}>
             {translations.homeContact.title}

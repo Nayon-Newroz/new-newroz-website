@@ -1,28 +1,32 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
-import { IconButton } from "@mui/material";
+import { IconButton, Menu, MenuItem } from "@mui/material";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";  
+import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Collapse from "@mui/material/Collapse";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../App.css";
-import "./Header.css"; 
+import "./Header.css";
 const MobileDrawer = ({
-  checkServiceMenuActive,
-  checkUseCasesMenuActive,
-  checkCaseStudiesMenuActive,
-  checkWhoWeServeMenuActive,
+  translations,
+  lang,
+  setLang,
+  darkMode,
+  languageButtonValue,
+  setLanguageButtonValue,
+  setDarkMode,
 }) => {
   const location = useLocation();
   const [state, setState] = useState({
@@ -33,7 +37,19 @@ const MobileDrawer = ({
   });
   const navigate = useNavigate();
   const [openCollapse, setOpenCollapse] = useState("");
+  const [open, setOpen] = React.useState(false);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const openLanguage = Boolean(anchorEl);
 
+  const handleLanguageClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleLanguageClose = () => {
+    setAnchorEl(null);
+  };
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
   const toggleDrawer = (anchor, open) => (event) => {
     if (
       event.type === "keydown" &&
@@ -62,9 +78,13 @@ const MobileDrawer = ({
       //   onClick={toggleDrawer(anchor, false)}
       //   onKeyDown={toggleDrawer(anchor, false)}
     >
-      <List className="mobile_drawer_menu">
+      <List
+        className={`mobile_drawer_menu ${
+          darkMode && "mobile_drawer_menu_dark"
+        } ${lang === "kr" && "mobile_drawer_menu_rtl"}`}
+      >
         <div style={{ position: "relative", padding: "10px 15px 15px" }}>
-          <img src="/images/logo.svg" alt="" style={{ width: "120px" }} />
+          <img src="/images/logo.png" alt="" style={{ width: "120px" }} />
           <IconButton
             id="closeButton"
             onClick={toggleDrawer(anchor, false)}
@@ -80,31 +100,76 @@ const MobileDrawer = ({
               handleChange("Home", "/");
               document.getElementById("closeButton").click();
             }}
-            style={{ background: location.pathname === "/" ? "#f3f3f3" : "" }}
+            style={{ background: location.pathname === "/" ? "#FF7539" : "" }}
           >
-            <ListItemIcon>
+            {/* <ListItemIcon>
               <img src="/images/home.svg" alt="" />
-            </ListItemIcon>
-            <ListItemText primary="Home" />
+            </ListItemIcon> */}
+            <ListItemText primary={translations.header.home} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
           <ListItemButton
             onClick={() => {
               document.getElementById("closeButton").click();
-              handleChange("Platform", "/platform");
+              handleChange("services", "/services");
             }}
             style={{
-              background: location.pathname === "/platform" ? "#f3f3f3" : "",
+              background: location.pathname === "/services" ? "#FF7539" : "",
             }}
           >
-            <ListItemIcon>
-              <img src="/images/apk_install.svg" alt="" />
-            </ListItemIcon>
-            <ListItemText primary="Platform" />
+            <ListItemText primary={translations.header.services} />
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              document.getElementById("closeButton").click();
+              handleChange("products", "/products");
+            }}
+            style={{
+              background: location.pathname === "/products" ? "#FF7539" : "",
+            }}
+          >
+            {/* <ListItemIcon>
+              <img src="/images/apk_install.svg" alt="" />
+            </ListItemIcon> */}
+            <ListItemText primary={translations.header.products} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              document.getElementById("closeButton").click();
+              handleChange("company", "/company");
+            }}
+            style={{
+              background: location.pathname === "/company" ? "#FF7539" : "",
+            }}
+          >
+            {/* <ListItemIcon>
+              <img src="/images/apk_install.svg" alt="" />
+            </ListItemIcon> */}
+            <ListItemText primary={translations.header.company} />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            onClick={() => {
+              document.getElementById("closeButton").click();
+              handleChange("company", "/company");
+            }}
+            style={{
+              background: location.pathname === "/company" ? "#FF7539" : "",
+            }}
+          >
+            {/* <ListItemIcon>
+              <img src="/images/apk_install.svg" alt="" />
+            </ListItemIcon> */}
+            <ListItemText primary={translations.header.company} />
+          </ListItemButton>
+        </ListItem>
+        {/* <ListItem disablePadding>
           <ListItemButton
             onClick={() => handleChange("Services")}
             style={{
@@ -114,9 +179,7 @@ const MobileDrawer = ({
                   : "",
             }}
           >
-            <ListItemIcon>
-              <img src="/images/services.svg" alt="" />
-            </ListItemIcon>
+           
             <ListItemText primary="Services" />
             {openCollapse === "Services" ? (
               <ExpandLess className="list_item_icon_style" />
@@ -189,313 +252,7 @@ const MobileDrawer = ({
             </div>
             <div>P2P development</div>
           </div>
-        </Collapse>
-        <ListItem disablePadding>
-          <ListItemButton
-            onClick={() => handleChange("Use cases")}
-            style={{
-              background:
-                openCollapse === "Use cases" || checkUseCasesMenuActive()
-                  ? "#b8cbe5"
-                  : "",
-            }}
-          >
-            <ListItemIcon>
-              <img src="/images/use-cases.svg" alt="" />
-            </ListItemIcon>
-            <ListItemText primary="Use cases" />
-            {openCollapse === "Use cases" ? (
-              <ExpandLess className="list_item_icon_style" />
-            ) : (
-              <ExpandMore className="list_item_icon_style" />
-            )}
-          </ListItemButton>
-        </ListItem>
-        <Collapse
-          in={openCollapse === "Use cases"}
-          timeout="auto"
-          unmountOnExit
-          style={{ background: "#e2e8f0" }}
-        >
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Use cases", "/e-wallet");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background: location.pathname === "/e-wallet" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>eWallet</div>
-          </div>
-
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Use cases", "/general-ledger");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/general-ledger" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>General ledger</div>
-          </div>
-
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Use cases", "/mobile-wallet");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/mobile-wallet" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Mobile wallet</div>
-          </div>
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Use cases", "/money-transfer");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/money-transfer" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Money transfer</div>
-          </div>
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Use cases", "/neobank");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background: location.pathname === "/neobank" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Neobank</div>
-          </div>
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Use cases", "/payment-acceptance");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/payment-acceptance" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Payment acceptance</div>
-          </div>
-        </Collapse>
-        <ListItem disablePadding>
-          <ListItemButton
-            onClick={() => handleChange("Case studies")}
-            style={{
-              background:
-                openCollapse === "Case studies" || checkCaseStudiesMenuActive()
-                  ? "#b8cbe5"
-                  : "",
-            }}
-          >
-            <ListItemIcon>
-              <img src="/images/case-studies.svg" alt="" />
-            </ListItemIcon>
-            <ListItemText primary="Case studies" />
-            {openCollapse === "Case studies" ? (
-              <ExpandLess className="list_item_icon_style" />
-            ) : (
-              <ExpandMore className="list_item_icon_style" />
-            )}
-          </ListItemButton>
-        </ListItem>
-        <Collapse
-          in={openCollapse === "Case studies"}
-          timeout="auto"
-          unmountOnExit
-          style={{ background: "#e2e8f0" }}
-        >
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Case studies", "/payment-solution-provider");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/payment-solution-provider"
-                  ? "#f3f3f3"
-                  : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Payment solution provider</div>
-          </div>
-
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Case studies", "/digital-wallet-solution");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/digital-wallet-solution"
-                  ? "#f3f3f3"
-                  : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Digital wallet system</div>
-          </div>
-
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Case studies", "/mobile-money-processing");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background:
-                location.pathname === "/mobile-money-processing"
-                  ? "#f3f3f3"
-                  : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Mobile money processing</div>
-          </div>
-        </Collapse>
-        <ListItem disablePadding>
-          <ListItemButton
-            onClick={() => handleChange("Who we serve")}
-            style={{
-              background:
-                openCollapse === "Who we serve" || checkWhoWeServeMenuActive()
-                  ? "#b8cbe5"
-                  : "",
-            }}
-          >
-            <ListItemIcon>
-              <img src="/images/user.svg" alt="" />
-            </ListItemIcon>
-            <ListItemText primary="Who we serve" />
-            {openCollapse === "Who we serve" ? (
-              <ExpandLess className="list_item_icon_style" />
-            ) : (
-              <ExpandMore className="list_item_icon_style" />
-            )}
-          </ListItemButton>
-        </ListItem>
-        <Collapse
-          in={openCollapse === "Who we serve"}
-          timeout="auto"
-          unmountOnExit
-          style={{ background: "#e2e8f0" }}
-        >
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Who we serve", "/startup");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background: location.pathname === "/startup" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Start up</div>
-          </div>
-
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Who we serve", "/smb");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background: location.pathname === "/smb" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>SMB’s</div>
-          </div>
-
-          <div
-            className="topbar_submenu_menu"
-            onClick={() => {
-              handleChange("Who we serve", "/enterprise");
-              document.getElementById("closeButton").click();
-            }}
-            style={{
-              borderBottom: "1px solid #f3f3f3",
-              background: location.pathname === "/enterprise" ? "#f3f3f3" : "",
-            }}
-          >
-            <div>
-              <FiberManualRecordIcon style={{ fontSize: "10px" }} />
-            </div>
-            <div>Enterprise</div>
-          </div>
-        </Collapse>
-        <ListItem disablePadding>
-          <ListItemButton
-            onClick={() => handleChange("Company")}
-            style={{ background: openCollapse === "Company" ? "#b8cbe5" : "" }}
-          >
-            <ListItemIcon>
-              <img src="/images/company.svg" alt="" />
-            </ListItemIcon>
-            <ListItemText primary="Company" />
-          </ListItemButton>
-        </ListItem>
+        </Collapse> */}
       </List>
     </Box>
   );
@@ -505,28 +262,116 @@ const MobileDrawer = ({
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
           {/* <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button> */}
-          <Button
-            variant="contained"
+          <IconButton
+            variant="outlined"
             disableElevation
             // color="#25316d"
             aria-label="open drawer"
             edge="start"
-            color="primary"
+            // color="primary"
             sx={{
               // display: { md: "none" },
-              padding: "6px 9px",
-              minWidth: "0px !important",
+              border: darkMode ? "1px solid #fff" : "1px solid #525252",
             }}
             onClick={toggleDrawer(anchor, true)}
           >
-            <MenuIcon />
-          </Button>
+            <MenuIcon
+              style={{
+                color: darkMode ? "#fff" : "#525252",
+              }}
+            />
+          </IconButton>
           <Drawer
             anchor={anchor}
             open={state[anchor]}
             onClose={toggleDrawer(anchor, false)}
+            className={`${darkMode ? "drawer_style_dark" : "drawer_style"}`}
           >
             {list(anchor)}
+            <Button
+              className={`nav_button ${darkMode && "nav_button_dark_color"} ${
+                lang === "kr" && "button_start_icon"
+              }`}
+              sx={
+                {
+                  // display: { xs: "none", sm: "inline-flex" },
+                }
+              }
+              startIcon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="23"
+                  height="20"
+                  viewBox="0 0 23 20"
+                  fill="none"
+                >
+                  <rect
+                    x="1.26758"
+                    y="3.69531"
+                    width="21.2322"
+                    height="14.9096"
+                    rx="1.5"
+                    fill="white"
+                    stroke="#113CFC"
+                  />
+                  <path
+                    d="M1.26758 9.47917V9.97917H1.76758H9.13566V11.4146C9.13566 12.2431 9.80723 12.9146 10.6357 12.9146H13.1317C13.9601 12.9146 14.6317 12.2431 14.6317 11.4146V9.97917H21.9998H22.4998V9.47917V5.19531C22.4998 4.36689 21.8282 3.69531 20.9998 3.69531H2.76758C1.93915 3.69531 1.26758 4.36688 1.26758 5.19531V9.47917Z"
+                    fill="#FFC93C"
+                    stroke="#113CFC"
+                  />
+                  <path
+                    d="M6.95801 2.93193V3.43193H7.45801H15.6773H16.1773V2.93193V2.03516C16.1773 1.20673 15.5058 0.535156 14.6773 0.535156H8.45801C7.62958 0.535156 6.95801 1.20673 6.95801 2.03516V2.93193Z"
+                    stroke="#113CFC"
+                  />
+                </svg>
+              }
+              onClick={handleClickOpen}
+            >
+              {translations.header.anyBusinessIdea}
+            </Button>
+            <br />
+            <Button
+              className={`nav_button ${darkMode && "nav_button_dark_color"} ${
+                lang === "kr" && "nav_button_endIcon"
+              }`}
+              endIcon={<KeyboardArrowDownIcon />}
+              id="basic-button"
+              aria-controls={openLanguage ? "basic-menu" : undefined}
+              aria-haspopup="true"
+              aria-expanded={openLanguage ? "true" : undefined}
+              onClick={handleLanguageClick}
+            >
+              {languageButtonValue}
+            </Button>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={openLanguage}
+              onClose={handleLanguageClose}
+              MenuListProps={{
+                "aria-labelledby": "basic-button",
+              }}
+            >
+              <MenuItem
+                onClick={() => {
+                  handleLanguageClose();
+                  setLang("en");
+                  setLanguageButtonValue(translations.header.english);
+                }}
+              >
+                &nbsp;&nbsp;{translations.header.english} &nbsp; &nbsp;
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  handleLanguageClose();
+                  setLang("kr");
+                  setLanguageButtonValue(translations.header.kurdish);
+                }}
+              >
+                {" "}
+                &nbsp;&nbsp;{translations.header.kurdish} &nbsp;&nbsp;
+              </MenuItem>
+            </Menu>
           </Drawer>
         </React.Fragment>
       ))}

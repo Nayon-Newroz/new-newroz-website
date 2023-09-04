@@ -138,21 +138,31 @@ const Footer = ({ translations, lang, darkMode }) => {
             </p>
             <ul className={`footer_list ${darkMode && "footer_list_dark"}`}>
               <li>
-                <Link to="/company" className="link_style">
+                <Link
+                  to="/company"
+                  className={`link_style ${darkMode && "link_style_dark"}`}
+                >
                   {translations.footer.aboutUs}
                 </Link>
               </li>
 
               {/* <li>{translations.footer.blog}</li> */}
               <li>
-                <Link to="/career" className="link_style">
+                <Link
+                  to="/career"
+                  className={`link_style ${darkMode && "link_style_dark"}`}
+                >
                   {translations.footer.careers}
                 </Link>
               </li>
               <li>
-              <Link to="/services" className="link_style">
-                {translations.footer.services}  </Link>
-                </li>
+                <Link
+                  to="/services"
+                  className={`link_style ${darkMode && "link_style_dark"}`}
+                >
+                  {translations.footer.services}{" "}
+                </Link>
+              </li>
               <li>{translations.footer.Portfolio}</li>
             </ul>
           </Grid>

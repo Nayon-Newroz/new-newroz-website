@@ -139,18 +139,6 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
                 display: { xs: "block", sm: "block", md: "block", lg: "none" },
               }}
             >
-              {/* <Button
-                className="nav_button"
-                endIcon={<KeyboardArrowDownIcon />}
-                // onClick={handleClickOpen}
-                id="basic-button"
-                aria-controls={openLanguage ? "basic-menu" : undefined}
-                aria-haspopup="true"
-                aria-expanded={openLanguage ? "true" : undefined}
-                onClick={handleLanguageClick}
-              >
-                {languageButtonValue}
-              </Button> */}
               <Menu
                 id="basic-menu"
                 anchorEl={anchorEl}
@@ -290,10 +278,13 @@ const Header = ({ translations, lang, setLang, darkMode, setDarkMode }) => {
               </IconButton>
 
               <MobileDrawer
-                checkServiceMenuActive={checkServiceMenuActive}
-                checkUseCasesMenuActive={checkUseCasesMenuActive}
-                checkCaseStudiesMenuActive={checkCaseStudiesMenuActive}
-                checkWhoWeServeMenuActive={checkWhoWeServeMenuActive}
+                translations={translations}
+                lang={lang}
+                setLang={setLang}
+                darkMode={darkMode}
+                setDarkMode={setDarkMode}
+                languageButtonValue={languageButtonValue}
+                setLanguageButtonValue={setLanguageButtonValue}
               />
             </Box>
             <Box

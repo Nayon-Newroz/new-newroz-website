@@ -1149,7 +1149,8 @@ const Company = ({ translations, lang, darkMode }) => {
                           darkMode && "white"
                         }`}
                       >
-                        {translations.companyAtAGlanceSection.card1.title}
+                        {/* {translations.companyAtAGlanceSection.card1.title} */}
+                        {item.title}
                       </h4>
                     </div>
                   </div>
